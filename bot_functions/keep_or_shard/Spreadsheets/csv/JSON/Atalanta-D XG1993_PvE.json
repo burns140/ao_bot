@@ -1,0 +1,11 @@
+{
+      "Archetype": "Precision Frame",
+      "Type": "Submachine Gun",
+      "Name": "Atalanta-D XG1993",
+      "Elemental": "N",
+      "Sights/Barrels": "SC Holo",
+      "Magazine": "Ricochet Rounds, High-Caliber Rounds",
+      "Perk 1": "Slideways, Moving Target, Zen Moment",
+      "Perk 2": "Kill Clip, Tap the Trigger, Grave Robber",
+      "Mode": "PvE"
+}

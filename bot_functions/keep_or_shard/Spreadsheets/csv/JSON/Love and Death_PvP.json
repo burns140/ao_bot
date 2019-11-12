@@ -1,0 +1,12 @@
+{
+      "Name": "Love and Death",
+      "Type": "Grenade Launcher",
+      "Archetype": "Aggressive Frame",
+      "Elemental": "Solar",
+      "Sights/Barrels": "Confined Launch, Linear Compensator",
+      "Magazine": "Proximity Grenades, High-Explosive Ordinance",
+      "Perk 1": "Rangefinder",
+      "Perk 2": "Quickdraw",
+      "Masterwork": "Blast Radius",
+      "Mode": "PvP"
+}

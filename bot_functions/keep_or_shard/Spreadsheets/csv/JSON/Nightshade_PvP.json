@@ -1,0 +1,11 @@
+{
+      "Archetype": "Lightweight Frame",
+      "Type": "Pulse Rifle",
+      "Name": "Nightshade",
+      "Elemental": "N",
+      "Sights/Barrels": "Cleanshot IS, HitMark IS, Red Dot Micro",
+      "Magazine": "Accurized Rounds, Tactical Mag, Steady Rounds",
+      "Perk 1": "Outlaw, Rangefinder, Moving Target",
+      "Perk 2": "Zen Moment, Kill Clip, Headseeker, Rampage",
+      "Mode": "PvP"
+}

@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Rocket Launcher",
+      "Name": "Bellowing Giant",
+      "Elemental": "Y",
+      "Sights/Barrels": "Hard Launch, Quick Launch, Linear Compensator",
+      "Magazine": "Impact Casing, Alloy Casing, Implosion Rounds",
+      "Perk 1": "Field Prep, Tracking Module, Quickdraw",
+      "Perk 2": "Cluster Bombs, Ambitious Assassin, Auto-Loading Holster",
+      "Mode": "PvE"
+}

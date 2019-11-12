@@ -1,0 +1,12 @@
+{
+      "Name": "Imperative",
+      "Type": "Scout Rifle",
+      "Archetype": "High-Impact Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Fluted Barrel, Corkscrew Rifling, Polygonal Rifling",
+      "Magazine": "Tactical Mag, Appended Mag, Flared Magwell",
+      "Perk 1": "Outlaw, Triple Tap, Eye of the Storm",
+      "Perk 2": "Multikill Clip, Rampage, Explosive Rounds",
+      "Masterwork": "Handling or Reload",
+      "Mode": "PvE"
+}

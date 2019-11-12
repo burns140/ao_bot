@@ -1,0 +1,11 @@
+{
+      "Archetype": "Aggressive Frame",
+      "Type": "Grenade Launcher",
+      "Name": "Acantha-D XK8435",
+      "Elemental": "Y",
+      "Sights/Barrels": "Volatile Launch, Linear Compensator",
+      "Magazine": "Proximity Grenades, Spike Grenades",
+      "Perk 1": "Auto-Loading Holster, Rangefinder",
+      "Perk 2": "Rampage, Quickdraw",
+      "Mode": "PvE"
+}

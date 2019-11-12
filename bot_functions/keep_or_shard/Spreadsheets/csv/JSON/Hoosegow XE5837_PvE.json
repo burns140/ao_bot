@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Rocket Launcher",
+      "Name": "Hoosegow XE5837",
+      "Elemental": "Y",
+      "Sights/Barrels": "Hard Launch, Quick Launch, Linear Compensator",
+      "Magazine": "Impact Casing, Alloy Casing, Implosion Rounds",
+      "Perk 1": "Field Prep, Auto-Loading Holster",
+      "Perk 2": "Cluster Bombs, Quickdraw, Ambitious Assassin",
+      "Mode": "PvE"
+}

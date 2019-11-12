@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Hand Cannon",
+      "Name": "Kindled Orchid",
+      "Elemental": "Y",
+      "Sights/Barrels": "Full Bore, Extended Barrel, Hammer-Forged Rifling, Smallbore",
+      "Magazine": "Accurized Rounds",
+      "Perk 1": "Rangefinder, Outlaw, Quickdraw, Kill Clip",
+      "Perk 2": "Explosive Rounds, Rapid Hit, Rampage",
+      "Mode": "PvP"
+}

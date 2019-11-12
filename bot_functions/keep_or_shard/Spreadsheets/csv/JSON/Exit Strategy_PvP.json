@@ -1,0 +1,12 @@
+{
+      "Name": "Exit Strategy",
+      "Type": "Submachine Gun",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Arrowhead Brake",
+      "Magazine": "Ricochet Rounds",
+      "Perk 1": "Underdog, Threat Detector",
+      "Perk 2": "Swashbuckler, Surrounded",
+      "Masterwork": "Stability",
+      "Mode": "PvP"
+}

@@ -1,0 +1,11 @@
+{
+      "Archetype": "Precision Frame",
+      "Type": "Submachine Gun",
+      "Name": "Atalanta-D XG1992",
+      "Elemental": "N",
+      "Sights/Barrels": "SC Holo, GB Iron, GA Post",
+      "Magazine": "Appended Mag, Extended Mag, Light Mag",
+      "Perk 1": "Zen Moment, Slideways",
+      "Perk 2": "Kill Clip, High-Impact Reserves, Tap the Trigger",
+      "Mode": "PvE"
+}

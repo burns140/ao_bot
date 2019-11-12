@@ -1,0 +1,11 @@
+{
+      "Archetype": "Precision Frame",
+      "Type": "Scout Rifle",
+      "Name": "No Feelings",
+      "Elemental": "Y",
+      "Sights/Barrels": "Rasmussen ISA, Meyrin RDS, Meyrin RDL",
+      "Magazine": "Appended Mag, Tactical Mag, Alloy Mag, Flared Magwell",
+      "Perk 1": "Outlaw, Rapid Hit, Triple Tap, Mulligan",
+      "Perk 2": "Box Breathing, Rampage, Kill Clip, Explosive Rounds",
+      "Mode": "PvE"
+}

@@ -1,0 +1,11 @@
+{
+      "Archetype": "Lightweight Frame",
+      "Type": "Scout Rifle",
+      "Name": "Night Watch",
+      "Elemental": "N",
+      "Sights/Barrels": "Arrowhead Brake, Fluted Barrel, Chambered Compensator",
+      "Magazine": "Tactical Mag, Appended Mag",
+      "Perk 1": "Rapid Hit, Outlaw, Subsistence",
+      "Perk 2": "Rampage, Explosive Rounds, Multikill Clip",
+      "Mode": "PvE"
+}

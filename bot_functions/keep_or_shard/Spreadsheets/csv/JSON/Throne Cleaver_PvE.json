@@ -1,0 +1,11 @@
+{
+      "Name": "Throne Cleaver",
+      "Type": "Sword",
+      "Archetype": "Aggressive Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Hungry Edge, Tempered Edge, Jagged Edge",
+      "Magazine": "Heavy Guard",
+      "Perk 1": "Shattering Blade, Relentless Strikes, Tireless Blade",
+      "Perk 2": "En Garde, Counterattack, Whirlwind Blade",
+      "Mode": "PvE"
+}

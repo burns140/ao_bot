@@ -1,0 +1,10 @@
+{
+      "Type": "Shotgun",
+      "Name": "Good Bone Structure",
+      "Archetype": "Precision Frame",
+      "Sights/Barrels": "Full Choke, Rifled Barrel",
+      "Magazine": "Assault Mag, Tactical Mag, Steady Rounds",
+      "Tier 1": "Outlaw, Full Auto Trigger System",
+      "Tier 2": "Triple Tap, Rampage",
+      "Mode": "PvE"
+}

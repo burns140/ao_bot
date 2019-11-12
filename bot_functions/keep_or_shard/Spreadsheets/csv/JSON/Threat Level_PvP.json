@@ -1,0 +1,11 @@
+{
+      "Archetype": "Rapid-Fire Frame",
+      "Type": "Shotgun",
+      "Name": "Threat Level",
+      "Elemental": "N",
+      "Sights/Barrels": "Full Choke, Rifled Barrel",
+      "Magazine": "Accurized Rounds",
+      "Perk 1": "Rampage, Moving Target, Slideshot",
+      "Perk 2": "Quickdraw, Snapshot Sights, Grave Robber",
+      "Mode": "PvP"
+}

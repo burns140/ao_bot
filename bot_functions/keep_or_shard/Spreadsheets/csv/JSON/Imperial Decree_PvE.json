@@ -1,0 +1,11 @@
+{
+      "Name": "Imperial Decree",
+      "Type": "Shotgun",
+      "Archetype": "Aggressive Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Smallbore, Rifled Barrel, Corkscrew Rifling",
+      "Magazine": "Tactical Mag, Appended Mag, Assault Mag, Extended Mag",
+      "Perk 1": "Feeding Frenzy, Grave Robber, Full Auto Trigger System",
+      "Perk 2": "Trench Barrel, Swashbucker, Rampage",
+      "Mode": "PvE"
+}

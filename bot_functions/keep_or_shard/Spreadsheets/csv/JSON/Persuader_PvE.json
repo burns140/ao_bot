@@ -1,0 +1,11 @@
+{
+      "Archetype": "Rapid-Fire Frame",
+      "Type": "Sniper Rifle",
+      "Name": "Persuader",
+      "Elemental": "Y",
+      "Sights/Barrels": "50Val Telescopic",
+      "Magazine": "Appended Mag, Tactical Mag, Extended Mag, Flared Magwell",
+      "Perk 1": "Rapid Hit, Field Prep",
+      "Perk 2": "Triple Tap, Outlaw",
+      "Mode": "PvE"
+}

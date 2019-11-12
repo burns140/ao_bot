@@ -1,0 +1,10 @@
+{
+      "Type": "Sub-Machine Gun",
+      "Name": "Pillager",
+      "Archetype": "Lightweight Frame",
+      "Sights/Barrels": "King Sight/Dot, Wolf Sight/Dot, Dusk Sight/Dot",
+      "Magazine": "High-Caliber Rounds, Appended Mag, Alloy Mag",
+      "Tier 1": "Zen Moment, Pulse Monitor, Threat Detector, Rampage",
+      "Tier 2": "Kill Clip, Outlaw, High-Impact Reserves",
+      "Mode": "PvE"
+}

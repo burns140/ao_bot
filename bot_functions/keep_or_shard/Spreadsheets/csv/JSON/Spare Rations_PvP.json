@@ -1,0 +1,11 @@
+{
+      "Archetype": "Lightweight Frame",
+      "Type": "Hand Cannon",
+      "Name": "Spare Rations",
+      "Elemental": "N",
+      "Sights/Barrels": "Full Bore, Hammer-Forged Rifling, Smallbore",
+      "Magazine": "Ricochet Rounds, Light Mag, High-Caliber Rounds",
+      "Perk 1": "Rapid Hit, Snapshot",
+      "Perk 2": "Kill Clip, Rangefinder, Slideshot, Moving Target",
+      "Mode": "PvP"
+}

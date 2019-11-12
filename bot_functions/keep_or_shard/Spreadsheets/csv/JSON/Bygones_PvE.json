@@ -1,0 +1,10 @@
+{
+      "Type": "Pulse Rifle",
+      "Name": "Bygones",
+      "Archetype": "Lightweight Frame",
+      "Sights/Barrels": "Arrowhead Brake, Fluted Barrel, Smallbore",
+      "Magazine": "Extended Mag, Light Mag, Flared Magwell, High-Caliber Rounds",
+      "Tier 1": "Rampage, Kill Clip, High-Impact Reserves",
+      "Tier 2": "Outlaw, Full Auto Trigger System",
+      "Mode": "PvE"
+}

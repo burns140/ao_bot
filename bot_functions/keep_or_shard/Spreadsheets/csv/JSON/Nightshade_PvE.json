@@ -1,0 +1,11 @@
+{
+      "Archetype": "Lightweight Frame",
+      "Type": "Pulse Rifle",
+      "Name": "Nightshade",
+      "Elemental": "N",
+      "Sights/Barrels": "Cleanshot IS, HitMark IS, Red Dot Micro",
+      "Magazine": "Tactical Mag, Extended Mag, Appended Mag, Flared Magwell",
+      "Perk 1": "Outlaw, Ambitious Assassin",
+      "Perk 2": "Rampage, Kill Clip, Full-Auto Trigger System",
+      "Mode": "PvE"
+}

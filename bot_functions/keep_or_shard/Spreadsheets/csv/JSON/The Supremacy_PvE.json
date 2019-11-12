@@ -1,0 +1,10 @@
+{
+      "Type": "Sniper Rifle",
+      "Name": "The Supremacy",
+      "Archetype": "Rapid-Fire Frame",
+      "Sights/Barrels": "Fluted Barrel, Arrowhead Brake, Polygonal Rifling",
+      "Magazine": "Extended Mag, Appended Mag, Alloy Mag",
+      "Tier 1": "Outlaw, Genesis, Ambitious Assassin",
+      "Tier 2": "Triple Tap, Rampage, Kill Clip, Rapid Hit",
+      "Mode": "PvE"
+}

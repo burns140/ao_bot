@@ -1,0 +1,10 @@
+{
+      "Type": "Hand Cannon",
+      "Name": "Trust",
+      "Archetype": "Precision Frame",
+      "Sights/Barrels": "Full Bore, Extended Barrel, Polygonal Rifling",
+      "Magazine": "Extended Mag, Alloy Magazine, Flared Magwell",
+      "Tier 1": "Outlaw, Dragonfly, Genesis, Triple Tap",
+      "Tier 2": "Rampage, Zen Moment, Explosive Payload",
+      "Mode": "PvE"
+}

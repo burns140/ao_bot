@@ -1,0 +1,10 @@
+{
+      "Type": "Fusion Rifle",
+      "Name": "Erentil FR4",
+      "Archetype": "High-Impact Frame",
+      "Sights/Barrels": "Flash HS5, Torch HS3",
+      "Magazine": "Enhanced Battery",
+      "Tier 1": "Auto-Loading Holster, Under Pressure",
+      "Tier 2": "Kill Clip, Rampage, High-Impact Reserves",
+      "Mode": "PvE"
+}

@@ -1,0 +1,10 @@
+{
+      "Type": "Auto Rifle",
+      "Name": "Hazard of the Cast",
+      "Archetype": "Precision Frame",
+      "Sights/Barrels": "Arrowhead Brake, Corkscrew Rifling, Chambered Compensator",
+      "Magazine": "Appended Mag, Light Mag, HCR",
+      "Tier 1": "Triple Tap, Ambitious Assassin",
+      "Tier 2": "Rampage, High-Impact Reserves",
+      "Mode": "PvE"
+}

@@ -1,0 +1,10 @@
+{
+      "Type": "Pulse Rifle",
+      "Name": "Eystein-D",
+      "Archetype": "High-Impact Frame",
+      "Sights/Barrels": "SC Holo, GB Iron",
+      "Magazine": "Flared Magwell, Light Mag, Alloy Mag",
+      "Tier 1": "Outlaw, Firmly Planted, Under Pressure",
+      "Tier 2": "Rampage, Kill Clip, Full Auto Trigger System, Zen Moment",
+      "Mode": "PvE"
+}

@@ -1,0 +1,11 @@
+{
+      "Archetype": "Lightweight Frame",
+      "Type": "Grenade Launcher",
+      "Name": "The Mountaintop",
+      "Elemental": "N",
+      "Sights/Barrels": "Volatile Launch",
+      "Magazine": "Spike Grenades, Sticky Grenades",
+      "Perk 1": "Rangefinder",
+      "Perk 2": "Micro-Missle",
+      "Mode": "PvE"
+}

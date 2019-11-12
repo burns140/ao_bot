@@ -1,0 +1,10 @@
+{
+      "Type": "Sub-Machine Gun",
+      "Name": "Trackless Waste",
+      "Archetype": "Adaptive Frame",
+      "Sights/Barrels": "King Sight/Dot, Wolf Sight/Dot, Dusk Sight/Dot",
+      "Magazine": "High-Caliber Rounds, Appended Mag, Alloy Mag",
+      "Tier 1": "Zen Moment, Pulse Monitor",
+      "Tier 2": "Kill Clip, Grave Robber, High-Impact Reserves",
+      "Mode": "PvE"
+}

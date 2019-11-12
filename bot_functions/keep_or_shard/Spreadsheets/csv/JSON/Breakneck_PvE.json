@@ -1,0 +1,11 @@
+{
+      "Archetype": "Precision Frame",
+      "Type": "Auto Rifle",
+      "Name": "Breakneck",
+      "Elemental": "N",
+      "Sights/Barrels": "Polygonal Rifling",
+      "Magazine": "Extended Mag",
+      "Perk 1": "Rampage",
+      "Perk 2": "Onslaught",
+      "Mode": "PvE"
+}

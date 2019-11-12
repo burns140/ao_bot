@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Sniper Rifle",
+      "Name": "Sole Survivor",
+      "Elemental": "Y",
+      "Sights/Barrels": "Fluted Barrel, Arrowhead Brake, Corkscrew Rifling",
+      "Magazine": "Appended Mag, Ricochet Rounds, Flared Magwell",
+      "Perk 1": "Snapshot",
+      "Perk 2": "Opening Shot, Slideshot, Demolitionist",
+      "Mode": "PvP"
+}

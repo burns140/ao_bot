@@ -1,0 +1,12 @@
+{
+      "Name": "Edgewise",
+      "Type": "Machine Gun",
+      "Archetype": "Rapid-Fire Frame",
+      "Elemental": "Solar",
+      "Sights/Barrels": "Polygonal Rifling",
+      "Magazine": "Light Mag",
+      "Perk 1": "Feeding Frenzy, Field Prep",
+      "Perk 2": "Rampage, Demolitionist",
+      "Masterwork": "Stability",
+      "Mode": "PvP"
+}

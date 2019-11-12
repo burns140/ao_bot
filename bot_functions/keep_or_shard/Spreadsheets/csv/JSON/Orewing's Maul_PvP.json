@@ -1,0 +1,11 @@
+{
+      "Archetype": "Lightweight Frame",
+      "Type": "Grenade Launcher",
+      "Name": "Orewing's Maul",
+      "Elemental": "Y",
+      "Sights/Barrels": "Volatile Launch, Hard Launch, Countermass",
+      "Magazine": "Spike Grenades, Proximity Grenades",
+      "Perk 1": "Quickdraw",
+      "Perk 2": "Demolitionist, Auto-Loading Holster",
+      "Mode": "PvP"
+}

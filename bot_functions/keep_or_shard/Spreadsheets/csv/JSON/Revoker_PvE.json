@@ -1,0 +1,11 @@
+{
+      "Name": "Revoker",
+      "Type": "Sniper Rifle",
+      "Archetype": "Aggressive Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Extended Barrel",
+      "Magazine": "Accurized Rounds",
+      "Perk 1": "Snapshot Sights",
+      "Perk 2": "Reversal of Fortune",
+      "Mode": "PvE"
+}

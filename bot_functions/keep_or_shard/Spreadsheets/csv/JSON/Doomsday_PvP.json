@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Grenade Launcher",
+      "Name": "Doomsday",
+      "Elemental": "Y",
+      "Sights/Barrels": "Volatile Launch, Smart Drift Control, Confined Launch",
+      "Magazine": "Proximity Grenades, Spike Grenades",
+      "Perk 1": "Threat Detector, Rangefinder, Auto-Loading Holster",
+      "Perk 2": "Quickdraw, Demolitionist, Full Court",
+      "Mode": "PvP"
+}

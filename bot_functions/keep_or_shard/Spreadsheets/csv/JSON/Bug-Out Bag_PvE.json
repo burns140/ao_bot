@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Submachine Gun",
+      "Name": "Bug-Out Bag",
+      "Elemental": "Y",
+      "Sights/Barrels": "Arrowhead Brake, Chambered Compensator, Corkscrew Rifling",
+      "Magazine": "Tactical Mag, Appended Mag, Extended Mag",
+      "Perk 1": "Zen Moment, Tap the Trigger, Subsistence",
+      "Perk 2": "Rampage, Multikill Clip, Demolitionist",
+      "Mode": "PvE"
+}

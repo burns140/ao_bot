@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Grenade Launcher",
+      "Name": "Doomsday",
+      "Elemental": "Y",
+      "Sights/Barrels": "Countermass, Linear Compensator, Quick Launch",
+      "Magazine": "Spike Grenades, Augmented Drum, High-Explosive Ordinance",
+      "Perk 1": "Field Prep, Auto-Loading Holster",
+      "Perk 2": "Demolitionist, Ambitious Assassin",
+      "Mode": "PvE"
+}

@@ -1,0 +1,11 @@
+{
+      "Name": "The Epicurean",
+      "Type": "Fusion Rifle",
+      "Archetype": "Precision Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Full Bore, Hammer Forged Rifling, Smallbore",
+      "Magazine": "Projection Fuse, Liquid Coils",
+      "Perk 1": "Tap the Trigger, Quickdraw, Feeding Frenzy, Under Pressure",
+      "Perk 2": "Rangefinder, Backup Plan, Demolitionist, Swashbuckler",
+      "Mode": "PvP"
+}

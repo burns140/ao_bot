@@ -1,0 +1,11 @@
+{
+      "Archetype": "Lightweight",
+      "Type": "Submachine Gun",
+      "Name": "The Recluse",
+      "Elemental": "Y",
+      "Sights/Barrels": "Polygonal Rifling",
+      "Magazine": "Ricochet Rounds",
+      "Perk 1": "Feeding Frenzy",
+      "Perk 2": "Master of Arms",
+      "Mode": "PvE"
+}

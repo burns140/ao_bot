@@ -1,0 +1,10 @@
+{
+      "Type": "Linear Fusion Rifle",
+      "Name": "Crooked Fang-4fr",
+      "Archetype": "Precision Frame",
+      "Sights/Barrels": "Fluted Barrel, Arrowhead Brake, Corkscrew Rifling",
+      "Magazine": "Enhanced Battery",
+      "Tier 1": "High Impact Reserves, Auto-Loading Holster",
+      "Tier 2": "Rampage, Dragonfly, Genesis, Box Breathing",
+      "Mode": "PvE"
+}

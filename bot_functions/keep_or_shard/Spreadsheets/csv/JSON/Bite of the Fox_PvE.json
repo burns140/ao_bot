@@ -1,0 +1,10 @@
+{
+      "Type": "Sniper Rifle",
+      "Name": "Bite of the Fox",
+      "Archetype": "Aggressive Frame",
+      "Sights/Barrels": "Fluted Barrel, Arrowhead Brake, Polygonal Rifling",
+      "Magazine": "Extended Mag, Appended Mag, Alloy Mag",
+      "Tier 1": "Full Auto Trigger System, Rapid Hit",
+      "Tier 2": "Box Breathing, Rampage",
+      "Mode": "PvE"
+}

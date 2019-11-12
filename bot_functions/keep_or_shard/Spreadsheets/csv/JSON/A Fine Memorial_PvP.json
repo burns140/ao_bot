@@ -1,0 +1,12 @@
+{
+      "Name": "A Fine Memorial",
+      "Type": "Machine Gun",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "Arc",
+      "Sights/Barrels": "Fluted Barrel, Hammer-Forged Rifling, Smallbore",
+      "Magazine": "High-Caliber Rounds, Ricochet Rounds, Light Mag",
+      "Perk 1": "Quickdraw, Moving Target",
+      "Perk 2": "Tap the Trigger, Demolitionist",
+      "Masterwork": "Range",
+      "Mode": "PvP"
+}

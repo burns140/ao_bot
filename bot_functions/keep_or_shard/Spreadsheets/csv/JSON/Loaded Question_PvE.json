@@ -1,0 +1,11 @@
+{
+      "Archetype": "High-Impact Frame",
+      "Type": "Fusion Rifle",
+      "Name": "Loaded Question",
+      "Elemental": "Y",
+      "Sights/Barrels": "Red Dot 2 MOA",
+      "Magazine": "Ionized Battery",
+      "Perk 1": "Auto-Loading Holster",
+      "Perk 2": "Reservoir Burst",
+      "Mode": "PvE"
+}

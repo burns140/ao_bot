@@ -1,0 +1,39 @@
+Name,Type,Archetype,Elemental,Sights/Barrels,Magazine,Perk 1,Perk 2,Masterwork
+Exit Strategy,Submachine Gun,Adaptive Frame,N,Arrowhead Brake,Ricochet Rounds,"Underdog, Threat Detector","Swashbuckler, Surrounded",Stability
+Exit Strategy,Submachine Gun,Adaptive Frame,N,Arrowhead Brake,Ricochet Rounds,"Underdog, Threat Detector","Swashbuckler, Surrounded",Stability
+Imperative,Scout Rifle,High-Impact Frame,N,"Fluted Barrel, Corkscrew Rifling, Polygonal Rifling","Tactical Mag, Appended Mag, Flared Magwell","Outlaw, Triple Tap, Eye of the Storm","Multikill Clip, Rampage, Explosive Rounds",Handling or Reload
+Imperative,Scout Rifle,High-Impact Frame,N,"Hammer-Forged Rifling, Fluted Barrel, Corkscrew Rifling","Accurized Rounds (PC), Steady Rounds (Console), Tactical Mag","No Distractions, Eye of the Storm, Outlaw","Opening Shot, Explosive Rounds, Rampage",Handling
+Loud Lullaby,Hand Cannon,Aggressive Frame,N,"Hammer-Forged Rifling, Smallbore, Corkscrew Rifling","Tactical Mag, Extended Mag","Outlaw, Grave Robber","Multikill Clip, Rampage, Demolitionist",Reload
+Loud Lullaby,Hand Cannon,Aggressive Frame,N,"Full Bore, Hammer-Forged Rifling, Extended Barrel","Accurized Rounds, Tactical Mag",Outlaw,"Opening Shot, Explosive Rounds, Demolitionist",Range
+One Small Step,Shotgun,Rapid-Fire Frame,N,"Smallbore, Barrel Shroud, Corkscrew Rifling","Tactical Mag, Extended Mag, Appended Mag","Grave Robber, Quickdraw, Auto-Loading Holster","One-Two Punch, Rampage",Reload
+One Small Step,Shotgun,Rapid-Fire Frame,N,"Full Choke, Rifled Barrel","Accurized Rounds, Light Mag","Quickdraw, Slideshot","Opening Shot, Snapshot Sights, One-Two Punch",Range
+Pluperfect,Pulse Rifle,High-Impact Frame,N,"Fluted Barrel, Corkscrew Rifling, Smallbore","High-Caliber Rounds, Appended Mag, Ricochet Rounds","Outlaw, Underdog, Zen Moment","Rampage, Kill Clip, High-Impact Reserves",Reload or Handling
+Pluperfect,Pulse Rifle,High-Impact Frame,N,"Extended Barrel, Hammer-Forged Rifling, Smallbore","High-Caliber Rounds, Ricochet Rounds, Light Mag","Underdog, Zen Moment, Outlaw","Rampage, Dynamic Sway Reduction, Mulligan",Range or Handling
+Randy's Throwing Knife,Scout Rifle,Rapid-Fire Frame,N,Fluted Barrel,Extended Mag,"Rapid Hit, Snapshot Sights","Kill Clip, Zen Moment",Range
+Randy's Throwing Knife,Scout Rifle,Rapid-Fire Frame,N,Fluted Barrel,Extended Mag,"Rapid Hit, Snapshot Sights","Kill Clip, Zen Moment",Range
+Tranquility,Sniper Rifle,Adaptive Frame,N,"Fluted Barrel, Corkscrew Rifling","Appended Mag, Extended Mag, Tactical Mag","Outlaw, Field Prep, Auto-Loading Holster","Firing Line, Fourth Time�s the Charm, Box Breathing",Reload
+Tranquility,Sniper Rifle,Adaptive Frame,N,"Fluted Barrel, Arrowhead Brake, Corkscrew Rifling","Tactical Mag, Accurized Rounds","No Distractions, Outlaw","Snapshot Sights, Opening Shot",Range or Reload
+Adhortative,Pulse Rifle,Adaptive Frame,Solar,"Arrowhead Brake, Extended Barrel, Chambered Compensator","High-Caliber Rounds, Appended Mag, Extended Mag","Feeding Frenzy, Underdog, Field Prep","Multikill Clip, Rampage, Dragonfly",Handling
+Adhortative,Pulse Rifle,Adaptive Frame,Solar,"Arrowhead Brake, Extended Barrel","High-Caliber Rounds, Ricochet Rounds, Light Mag","Feeding Frenzy, Firmly Planted, Underdog","Rangefinder, Dragonfly",Range
+Arc Logic,Auto Rifle,Adaptive Frame,Arc,"Fluted Barrel, Smallbore, Corkscrew Rifling","Tactical Mag, Extended Mag, Appended Mag","Overflow, Outlaw, Field Prep","Rampage, Demolitionist, Triple Tap",Reload or Handling
+Arc Logic,Auto Rifle,Adaptive Frame,Arc,"Arrowhead Brake, Smallbore, Extended Barrel",Accurized Rounds,"Outlaw, Moving Target","Tap the Trigger, Rangefinder",Range or Handling
+Dream Breaker,Fusion Rifle,Adaptive Frame,Solar,"Fluted Barrel, Corkscrew Rifling","Liquid Coils, Enhanced Battery, Accelerated Coils","Auto-Loading Holster, Underdog, Threat Detector","Backup Plan, Rampage, Disruption Break",Handling
+Dream Breaker,Fusion Rifle,Adaptive Frame,Solar,"Arrowhead Brake, Fluted Barrel, Hammer-Forged Rifling","Projection Fuse, Particle Repeater, Liquid Coils","Rangefinder, Moving Target, Firmly Planted","Backup Plan, Tap the Trigger, Rampage",Range or Stability
+Every Waking Moment,Submachine Gun,Precision Frame,Void,"Fluted Barrel, Arrowhead Brake, Chambered Compensator","Extended mag, High-Caliber Rounds","Outlaw, Slideways, Zen Moment","Swashbuckler, Kill Clip, Demolitionist",Reload
+Every Waking Moment,Submachine Gun,Precision Frame,Void,"Hammer-Forged Rifling, Smallbore, Polygonal Rifling","Ricochet Rounds, High-Caliber Rounds, Light Mag","Outlaw, Slideways, Zen Moment","Swashbuckler, Demolitionist, Eye of the Storm, Kill Clip",Range or Handling
+Optative,Hand Cannon,Precision Frame,Void,"Fluted Barrel, Corkscrew Rifling, Hammer-Forged Rifling","Tactical Mag, Extended Mag, Appended Mag","Rapid Hit, Outlaw, Fourth Time�s the Charm","Demolitionist, Kill Clip",Reload
+Optative,Hand Cannon,Precision Frame,Void,"Full Bore, Extended Barrel, Hammer-Forged Rifling",Accurized Rounds,"Rapid Hit, Outlaw","Kill Clip, Opening Shot",Range
+Premonition,Pulse Rifle,High-Impact Frame,Void,"Arrowhead Brake, Fluted Barrel","High-Caliber Rounds, Appended Mag","Outlaw, Firmly Planted","Demolitionist, Kill Clip",Handling or Reload
+Premonition,Pulse Rifle,High-Impact Frame,Void,"Arrowhead Brake, Smallbore, Corkscrew Rifling","High-Caliber Rounds, Ricochet Rounds","Outlaw, Firmly Planted","Kill Clip, Demolitionist","Range (PC), Stability (Console) or Handling"
+Subjunctive,Submachine Gun,Lightweight Frame,Arc,"Fluted Barrel, Corkscrew Rifling, Smallbore","Ricochet Rounds, Appended Mag","Outlaw, Quickdraw","Surrounded, Swashbuckler, Rampage Multikill Clip",Reload
+Subjunctive,Submachine Gun,Lightweight Frame,Arc,"Full Bore (PC), Polygonal Rifling (Console), Smallbore","High-Caliber Rounds, Ricochet Rounds","Quickdraw, Outlaw, Pulse Monitor","Swashbuckler, Rampage","Range (PC), Stability (Console)"
+A Fine Memorial,Machine Gun,Adaptive Frame,Arc,"Fluted Barrel, Arrowhead Brake, Corkscrew Rifling","High-Caliber Rounds, Appended Mag, Flared Magwell","Quickdraw, Pulse Monitor","Surrounded, Demolitionist",Reload
+A Fine Memorial,Machine Gun,Adaptive Frame,Arc,"Fluted Barrel, Hammer-Forged Rifling, Smallbore","High-Caliber Rounds, Ricochet Rounds, Light Mag","Quickdraw, Moving Target","Tap the Trigger, Demolitionist",Range
+Edgewise,Machine Gun,Rapid-Fire Frame,Solar,Polygonal Rifling,Light Mag,"Feeding Frenzy, Field Prep","Rampage, Demolitionist",Stability
+Edgewise,Machine Gun,Rapid-Fire Frame,Solar,Polygonal Rifling,Light Mag,"Feeding Frenzy, Field Prep","Rampage, Demolitionist",Stability
+Love and Death,Grenade Launcher,Aggressive Frame,Solar,"Volatile Launch, Hard Launch","Spike Grenades, Augmented Drum, Mini Frags","Field Prep, Threat Detector","Quickdraw, Full Court",Reload
+Love and Death,Grenade Launcher,Aggressive Frame,Solar,"Confined Launch, Linear Compensator","Proximity Grenades, High-Explosive Ordinance",Rangefinder,Quickdraw,Blast Radius
+Night Terror,Sword,Adaptive,Arc,"Jagged Edge, Honed Edge, Tempered Edge",Heavy Guard,"Relentless Strikes, Tireless Blade",Whirlwind Blade,Impact
+Night Terror,Sword,Adaptive,Arc,"Hungry Edge, Enduring Blade, Honed Edge",Heavy Guard,Tireless Blade,"Assassin�s Blade, En Garde",Impact
+Temporal Clause,Machine Gun,Rapid-Fire Frame,Void,"Fluted Barrel, Arrowhead Brake, Corkscrew Rifling","High-Caliber Rounds, Appended Mag, Flared Magwell","Quickdraw, Autoloading Holster","Surrounded, Rampage",Reload
+Temporal Clause,Machine Gun,Rapid-Fire Frame,Void,"Fluted Barrel, Arrowhead Brake","High-Caliber Rounds, Ricochet Rounds, Light Mag","Quickdraw, Firmly Planted","Rangefinder, Eye of the Storm, Rampage",Range

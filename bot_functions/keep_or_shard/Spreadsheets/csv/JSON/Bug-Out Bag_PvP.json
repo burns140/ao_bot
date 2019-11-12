@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Submachine Gun",
+      "Name": "Bug-Out Bag",
+      "Elemental": "Y",
+      "Sights/Barrels": "Extended Barrel, Hammer Forged Rifling, Smallbore",
+      "Magazine": "Accurized Rounds, Tactical Mag",
+      "Perk 1": "Tap the Trigger, Zen Moment",
+      "Perk 2": "Kill Clip, Demolitionist",
+      "Mode": "PvP"
+}

@@ -1,0 +1,11 @@
+{
+      "Archetype": "Precision Frame",
+      "Type": "Sidearm",
+      "Name": "Lonesome",
+      "Elemental": "N",
+      "Sights/Barrels": "Arrowhead Brake, Fluted Barrel, Polygonal Rifling",
+      "Magazine": "Appended Mag, Flared Magwell, Alloy Mag",
+      "Perk 1": "Outlaw, Rapid Hit, Full Auto Trigger System, Zen Moment",
+      "Perk 2": "Kill Clip, Multikill Clip, Demolitionist, Swashbuckler",
+      "Mode": "PvE"
+}

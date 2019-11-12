@@ -1,0 +1,10 @@
+{
+      "Type": "Sidearm",
+      "Name": "The Last Dance",
+      "Archetype": "Omolon Adaptive",
+      "Sights/Barrels": "Shortspec SAS, Target SAS, Control SAS",
+      "Magazine": "Appended Mag, Extended Mag, Tactical Mag",
+      "Tier 1": "Outlaw, Full Auto Trigger System",
+      "Tier 2": "Kill Clip, Dragonfly",
+      "Mode": "PvE"
+}

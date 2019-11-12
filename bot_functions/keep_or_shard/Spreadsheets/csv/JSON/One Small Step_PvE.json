@@ -1,0 +1,12 @@
+{
+      "Name": "One Small Step",
+      "Type": "Shotgun",
+      "Archetype": "Rapid-Fire Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Smallbore, Barrel Shroud, Corkscrew Rifling",
+      "Magazine": "Tactical Mag, Extended Mag, Appended Mag",
+      "Perk 1": "Grave Robber, Quickdraw, Auto-Loading Holster",
+      "Perk 2": "One-Two Punch, Rampage",
+      "Masterwork": "Reload",
+      "Mode": "PvE"
+}

@@ -1,0 +1,12 @@
+{
+      "Name": "Tranquility",
+      "Type": "Sniper Rifle",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Fluted Barrel, Corkscrew Rifling",
+      "Magazine": "Appended Mag, Extended Mag, Tactical Mag",
+      "Perk 1": "Outlaw, Field Prep, Auto-Loading Holster",
+      "Perk 2": "Firing Line, Fourth Time�s the Charm, Box Breathing",
+      "Masterwork": "Reload",
+      "Mode": "PvE"
+}

@@ -1,0 +1,11 @@
+{
+      "Archetype": "Precision Frame",
+      "Type": "Auto Rifle",
+      "Name": "The Ringing Nail",
+      "Elemental": "Y",
+      "Sights/Barrels": "Rasmussen ISA, Meyrin RDS, Meyrin RDL",
+      "Magazine": "Appended Mag, Light Mag, High-Caliber Rounds, Extended Mag",
+      "Perk 1": "Dragonfly, Zen Moment, Shield Disorient",
+      "Perk 2": "Rampage, Kill Clip, High Impact Reserves",
+      "Mode": "PvE"
+}

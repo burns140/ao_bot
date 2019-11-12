@@ -1,0 +1,11 @@
+{
+      "Name": "Gunnora's Axe",
+      "Type": "Shotgun",
+      "Archetype": "Precision Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Fluted Barrel, Hammer-Forged Rifling, Smallbore, Full Bore",
+      "Magazine": "Accurized Rounds, Assault Mag, Light Mag",
+      "Perk 1": "Quickdraw, Outlaw",
+      "Perk 2": "Opening Shot, Swashbuckler, Demolitionist, Slideshot, Rampage, Moving Target, Snapshot Sights",
+      "Mode": "PvP"
+}

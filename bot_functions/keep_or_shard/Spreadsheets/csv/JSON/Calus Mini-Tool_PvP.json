@@ -1,0 +1,11 @@
+{
+      "Name": "Calus Mini-Tool",
+      "Type": "Submachine Gun",
+      "Archetype": "Lightweight Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Hammer-Forged Rifling, Extended Barrel, Smallbore",
+      "Magazine": "Ricochet Rounds",
+      "Perk 1": "Moving Target, Slideways",
+      "Perk 2": "Tap the Trigger, Feeding Frenzy, Disruption Break",
+      "Mode": "PvP"
+}

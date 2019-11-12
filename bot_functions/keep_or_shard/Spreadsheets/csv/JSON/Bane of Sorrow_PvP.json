@@ -1,0 +1,11 @@
+{
+      "Name": "Bane of Sorrow",
+      "Type": "Machine Gun",
+      "Archetype": "High-Impact Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Extended Barrel, Chambered Compensator, Hammer-Forged Rifling",
+      "Magazine": "Ricochet Rounds, High-Caliber Rounds, Appended Mag",
+      "Perk 1": "Tap the Trigger, Eye of the Storm, Feeding Frenzy",
+      "Perk 2": "Demolitionist, Rampage, Mulligan",
+      "Mode": "PvP"
+}

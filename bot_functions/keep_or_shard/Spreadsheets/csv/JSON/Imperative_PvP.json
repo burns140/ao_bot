@@ -1,0 +1,12 @@
+{
+      "Name": "Imperative",
+      "Type": "Scout Rifle",
+      "Archetype": "High-Impact Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Hammer-Forged Rifling, Fluted Barrel, Corkscrew Rifling",
+      "Magazine": "Accurized Rounds (PC), Steady Rounds (Console), Tactical Mag",
+      "Perk 1": "No Distractions, Eye of the Storm, Outlaw",
+      "Perk 2": "Opening Shot, Explosive Rounds, Rampage",
+      "Masterwork": "Handling",
+      "Mode": "PvP"
+}

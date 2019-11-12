@@ -1,0 +1,11 @@
+{
+      "Archetype": "Adaptive Frame",
+      "Type": "Sword",
+      "Name": "Just in Case",
+      "Elemental": "Y",
+      "Sights/Barrels": "Honed Edge, Jagged Edge",
+      "Magazine": "Heavy Guard, Enduring Guard",
+      "Perk 1": "Tireless Blade",
+      "Perk 2": "Assassin's Blade, En Garde, Shattering Blade",
+      "Mode": "PvP"
+}

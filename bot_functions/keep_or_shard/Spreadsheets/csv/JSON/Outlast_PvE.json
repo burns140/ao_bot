@@ -1,0 +1,11 @@
+{
+      "Archetype": "Rapid-Fire Frame",
+      "Type": "Pulse Rifle",
+      "Name": "Outlast",
+      "Elemental": "Y",
+      "Sights/Barrels": "Arrowhead Brake, Chambered Compensator, Extended Barrel",
+      "Magazine": "Tactical Mag, Appended Mag, Extended Mag, Flared Magwell",
+      "Perk 1": "Feeding Frenzy, Outlaw, Full Auto Trigger System",
+      "Perk 2": "Rampage, Kill Clip, Demolitionist",
+      "Mode": "PvE"
+}

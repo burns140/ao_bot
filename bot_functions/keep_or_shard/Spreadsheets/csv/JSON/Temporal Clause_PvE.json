@@ -1,0 +1,12 @@
+{
+      "Name": "Temporal Clause",
+      "Type": "Machine Gun",
+      "Archetype": "Rapid-Fire Frame",
+      "Elemental": "Void",
+      "Sights/Barrels": "Fluted Barrel, Arrowhead Brake, Corkscrew Rifling",
+      "Magazine": "High-Caliber Rounds, Appended Mag, Flared Magwell",
+      "Perk 1": "Quickdraw, Autoloading Holster",
+      "Perk 2": "Surrounded, Rampage",
+      "Masterwork": "Reload",
+      "Mode": "PvE"
+}

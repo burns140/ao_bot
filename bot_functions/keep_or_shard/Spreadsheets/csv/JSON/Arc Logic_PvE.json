@@ -1,0 +1,12 @@
+{
+      "Name": "Arc Logic",
+      "Type": "Auto Rifle",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "Arc",
+      "Sights/Barrels": "Fluted Barrel, Smallbore, Corkscrew Rifling",
+      "Magazine": "Tactical Mag, Extended Mag, Appended Mag",
+      "Perk 1": "Overflow, Outlaw, Field Prep",
+      "Perk 2": "Rampage, Demolitionist, Triple Tap",
+      "Masterwork": "Reload or Handling",
+      "Mode": "PvE"
+}

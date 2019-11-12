@@ -1,0 +1,10 @@
+{
+      "Type": "Shotgun",
+      "Name": "Dust Rock Blues",
+      "Archetype": "Precision Frame",
+      "Sights/Barrels": "Full Choke, Rifled Barrel",
+      "Magazine": "Assault Mag, Tactical Mag, Appended Mag",
+      "Tier 1": "Slideshot, Threat Detector",
+      "Tier 2": "Rampage, Grave Robber, Full Auto Trigger System",
+      "Mode": "PvE"
+}

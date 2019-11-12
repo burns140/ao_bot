@@ -1,0 +1,11 @@
+{
+      "Name": "Fixed Odds",
+      "Type": "Machine Gun",
+      "Archetype": "High-Impact Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Arrowhead Brake, Fluted Barrel, Corkscrew Rifling",
+      "Magazine": "Appended Mag, High-Caliber Rounds, Extended Mag",
+      "Perk 1": "Feeding Frenzy, Quickdraw",
+      "Perk 2": "Rampage, Surrounded",
+      "Mode": "PvE"
+}

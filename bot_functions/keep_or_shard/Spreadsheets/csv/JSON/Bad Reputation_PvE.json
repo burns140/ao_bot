@@ -1,0 +1,10 @@
+{
+      "Type": "Sub-Machine Gun",
+      "Name": "Bad Reputation",
+      "Archetype": "Precision Frame",
+      "Sights/Barrels": "King Sight K1, Dusk Sight K1",
+      "Magazine": "High-Caliber Rounds, Appended Mag, Alloy Mag",
+      "Tier 1": "Genesis, Zen Moment, Grave Robber",
+      "Tier 2": "Outlaw, Kill Clip, High-Impact Reserves",
+      "Mode": "PvE"
+}

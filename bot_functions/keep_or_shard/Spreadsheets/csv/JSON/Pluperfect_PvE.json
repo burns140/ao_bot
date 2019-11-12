@@ -1,0 +1,12 @@
+{
+      "Name": "Pluperfect",
+      "Type": "Pulse Rifle",
+      "Archetype": "High-Impact Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Fluted Barrel, Corkscrew Rifling, Smallbore",
+      "Magazine": "High-Caliber Rounds, Appended Mag, Ricochet Rounds",
+      "Perk 1": "Outlaw, Underdog, Zen Moment",
+      "Perk 2": "Rampage, Kill Clip, High-Impact Reserves",
+      "Masterwork": "Reload or Handling",
+      "Mode": "PvE"
+}

@@ -1,0 +1,11 @@
+{
+      "Archetype": "Precision Frame",
+      "Type": "Hand Cannon",
+      "Name": "Service Revolver",
+      "Elemental": "N",
+      "Sights/Barrels": "TrueSight HCS, Fastdraw HCS, SteadyHand HCS",
+      "Magazine": "Appended Mag, Extended Mag, High-Caliber Rounds, Light Mag",
+      "Perk 1": "Outlaw, Rapid Hit, Triple Tap",
+      "Perk 2": "Rampage, Kill Clip",
+      "Mode": "PvE"
+}

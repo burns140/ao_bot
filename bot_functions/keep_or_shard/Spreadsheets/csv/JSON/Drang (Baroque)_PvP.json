@@ -1,0 +1,11 @@
+{
+      "Name": "Drang (Baroque)",
+      "Type": "Sidearm",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Full Bore, Extended Barrel, Hammer-Forged Rifling",
+      "Magazine": "Ricochet Rounds, High-Caliber Rounds, Light Mag",
+      "Perk 1": "Quickdraw, Moving Target, Eye of the Storm",
+      "Perk 2": "Swashbuckler, Rampage, Zen Moment",
+      "Mode": "PvP"
+}

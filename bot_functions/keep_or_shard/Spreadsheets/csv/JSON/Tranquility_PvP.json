@@ -1,0 +1,12 @@
+{
+      "Name": "Tranquility",
+      "Type": "Sniper Rifle",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "N",
+      "Sights/Barrels": "Fluted Barrel, Arrowhead Brake, Corkscrew Rifling",
+      "Magazine": "Tactical Mag, Accurized Rounds",
+      "Perk 1": "No Distractions, Outlaw",
+      "Perk 2": "Snapshot Sights, Opening Shot",
+      "Masterwork": "Range or Reload",
+      "Mode": "PvP"
+}

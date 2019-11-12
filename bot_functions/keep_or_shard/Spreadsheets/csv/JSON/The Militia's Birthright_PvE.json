@@ -1,0 +1,10 @@
+{
+      "Type": "Grenade Launcher",
+      "Name": "The Militia's Birthright",
+      "Archetype": "Lightweight Frame",
+      "Sights/Barrels": "Linear Compensator, Quick Launch",
+      "Magazine": "Proximity Grenades, Spike Grenades, Concussion Grenades",
+      "Tier 1": "Ambitious Assassin, Genesis, Quickdraw",
+      "Tier 2": "Rangefinder, Threat Detector",
+      "Mode": "PvE"
+}

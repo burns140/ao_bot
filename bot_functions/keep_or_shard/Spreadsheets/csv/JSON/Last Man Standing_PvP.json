@@ -1,0 +1,11 @@
+{
+      "Archetype": "Aggressive Frame",
+      "Type": "Shotgun",
+      "Name": "Last Man Standing",
+      "Elemental": "Y",
+      "Sights/Barrels": "Full Choke, Rifled Barrel",
+      "Magazine": "Accurized Rounds, Light Mag",
+      "Perk 1": "Opening Shot",
+      "Perk 2": "Rampage, Swashbuckler, Demolitionist",
+      "Mode": "PvP"
+}

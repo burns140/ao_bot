@@ -1,0 +1,12 @@
+{
+      "Name": "Arc Logic",
+      "Type": "Auto Rifle",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "Arc",
+      "Sights/Barrels": "Arrowhead Brake, Smallbore, Extended Barrel",
+      "Magazine": "Accurized Rounds",
+      "Perk 1": "Outlaw, Moving Target",
+      "Perk 2": "Tap the Trigger, Rangefinder",
+      "Masterwork": "Range or Handling",
+      "Mode": "PvP"
+}

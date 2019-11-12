@@ -1,0 +1,11 @@
+{
+      "Archetype": "SUROS Rapid-Fire",
+      "Type": "Sidearm",
+      "Name": "Dead Man Walking XX7463",
+      "Elemental": "Y",
+      "Sights/Barrels": "ShortSpec SAS, Control SAS",
+      "Magazine": "Appended Mag, Tactical Mag, Extended Mag",
+      "Perk 1": "Outlaw, Quickdraw",
+      "Perk 2": "Kill Clip, Rampage, Grave Robber",
+      "Mode": "PvE"
+}

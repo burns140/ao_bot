@@ -1,0 +1,11 @@
+{
+      "Name": "Emperor's Courtesy",
+      "Type": "Shotgun",
+      "Archetype": "Lightweight Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Smallbore, Rifled Barrel, Corkscrew Rifling",
+      "Magazine": "Tactical Mag, Appended Mag, Assault Mag, Extended Mag",
+      "Perk 1": "Grave Robber, Quickdraw",
+      "Perk 2": "Swashbuckler, Rampage, Surrounded",
+      "Mode": "PvE"
+}

@@ -1,0 +1,10 @@
+{
+      "Type": "Shotgun",
+      "Name": "Toil and Trouble",
+      "Archetype": "Aggressive Frame",
+      "Sights/Barrels": "Full Choke, Rifled Barrel",
+      "Magazine": "Assault Mag, Appended Mag, Tactical Mag",
+      "Tier 1": "Slideshot, Auto-Loading Holster",
+      "Tier 2": "Rampage, Full Auto Trigger System, Outlaw",
+      "Mode": "PvE"
+}

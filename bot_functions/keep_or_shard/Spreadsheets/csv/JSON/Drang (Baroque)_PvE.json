@@ -1,0 +1,11 @@
+{
+      "Name": "Drang (Baroque)",
+      "Type": "Sidearm",
+      "Archetype": "Adaptive Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Chambered Compensator, Extended Barrel, Hammer-Forged Rifling",
+      "Magazine": "Appended Mag, High-Caliber Rounds, Alloy Mag",
+      "Perk 1": "Full Auto Trigger System, Disruption Break, Quickdraw",
+      "Perk 2": "Rampage, Swashbuckler, Underdog",
+      "Mode": "PvE"
+}

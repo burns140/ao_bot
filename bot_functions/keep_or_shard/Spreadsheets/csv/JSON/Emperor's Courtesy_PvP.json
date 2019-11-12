@@ -1,0 +1,11 @@
+{
+      "Name": "Emperor's Courtesy",
+      "Type": "Shotgun",
+      "Archetype": "Lightweight Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Full Choke, Rifled Barrel",
+      "Magazine": "Accurized Rounds",
+      "Perk 1": "Quickdraw, Snapshot Sights",
+      "Perk 2": "Opening Shot, Swashbuckler, Slideshot, Rampage, Surrounded",
+      "Mode": "PvP"
+}

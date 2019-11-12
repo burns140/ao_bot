@@ -1,0 +1,12 @@
+{
+      "Name": "Every Waking Moment",
+      "Type": "Submachine Gun",
+      "Archetype": "Precision Frame",
+      "Elemental": "Void",
+      "Sights/Barrels": "Fluted Barrel, Arrowhead Brake, Chambered Compensator",
+      "Magazine": "Extended mag, High-Caliber Rounds",
+      "Perk 1": "Outlaw, Slideways, Zen Moment",
+      "Perk 2": "Swashbuckler, Kill Clip, Demolitionist",
+      "Masterwork": "Reload",
+      "Mode": "PvE"
+}

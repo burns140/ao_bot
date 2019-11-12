@@ -1,0 +1,11 @@
+{
+      "Name": "Calusea Noblesse",
+      "Type": "Scout Rifle",
+      "Archetype": "High-Impact Frame",
+      "Elemental": "Y",
+      "Sights/Barrels": "Fluted Barrel, Polygonal Rifling, Corkscrew Rifling",
+      "Magazine": "Tactical Mag, Appended Mag, Steady Rounds",
+      "Perk 1": "Outlaw, Subsistence",
+      "Perk 2": "Multikill Clip, Rampage, Dragonfly",
+      "Mode": "PvE"
+}
