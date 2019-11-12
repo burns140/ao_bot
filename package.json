@@ -1,0 +1,25 @@
+{
+  "name": "ao_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aPhantomDolphin/ao_bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aPhantomDolphin/ao_bot/issues"
+  },
+  "homepage": "https://github.com/aPhantomDolphin/ao_bot#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "discord.js": "^11.5.1",
+    "request-promise": "^4.2.5"
+  }
+}
