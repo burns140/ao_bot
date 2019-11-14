@@ -1,7 +1,7 @@
 {
           "TYPE": "Pulse Rifle",
           "WEAPON": "Go Figure",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "Aggressive Burst",

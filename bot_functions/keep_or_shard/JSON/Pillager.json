@@ -1,7 +1,7 @@
 {
           "TYPE": "Submachine Gun",
           "WEAPON": "Pillager",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "Lightweight",

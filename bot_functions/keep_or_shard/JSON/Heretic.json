@@ -1,7 +1,7 @@
 {
           "TYPE": "Rocket Launcher",
           "WEAPON": "Heretic",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Aggressive",

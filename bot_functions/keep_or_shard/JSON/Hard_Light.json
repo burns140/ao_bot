@@ -1,7 +1,7 @@
 {
           "TYPE": "Auto Rifle",
           "WEAPON": "Hard Light",
-          "ELEMENT": "",
+          "ELEMENT": "All",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Volatile Light",

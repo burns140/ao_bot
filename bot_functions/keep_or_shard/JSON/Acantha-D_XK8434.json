@@ -1,7 +1,7 @@
 {
           "TYPE": "Grenade Launcher",
           "WEAPON": "Acantha-D XK8434",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Aggressive",

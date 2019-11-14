@@ -1,7 +1,7 @@
 {
           "TYPE": "Sniper Rifle",
           "WEAPON": "Borealis",
-          "ELEMENT": "",
+          "ELEMENT": "All",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "The Fundamentals",

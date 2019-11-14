@@ -1,7 +1,7 @@
 {
           "TYPE": "Submachine Gun",
           "WEAPON": "Bug-Out Bag",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Adaptive",

@@ -1,7 +1,7 @@
 {
           "TYPE": "Grenade Launcher",
           "WEAPON": "The Prospector",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Excavation",

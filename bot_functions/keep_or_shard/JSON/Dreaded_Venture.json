@@ -1,7 +1,7 @@
 {
           "TYPE": "Sniper Rifle",
           "WEAPON": "Dreaded Venture",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Special",
           "ARCHETYPE": "Aggressive",

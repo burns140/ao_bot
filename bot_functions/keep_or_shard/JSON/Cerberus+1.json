@@ -1,7 +1,7 @@
 {
           "TYPE": "Auto Rifle",
           "WEAPON": "Cerberus+1",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Four-Headed Dog",

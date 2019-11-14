@@ -1,7 +1,7 @@
 {
           "TYPE": "Grenade Launcher",
           "WEAPON": "Through Fire and Flood",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Adaptive",

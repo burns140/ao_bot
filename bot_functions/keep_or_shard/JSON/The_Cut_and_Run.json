@@ -1,7 +1,7 @@
 {
           "TYPE": "Scout Rifle",
           "WEAPON": "The Cut and Run",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "High-Impact",

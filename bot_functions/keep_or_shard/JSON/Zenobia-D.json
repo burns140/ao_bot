@@ -1,7 +1,7 @@
 {
           "TYPE": "Rocket Launcher",
           "WEAPON": "Zenobia-D",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Hakke Precision",

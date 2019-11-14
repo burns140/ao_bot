@@ -1,7 +1,7 @@
 {
           "TYPE": "Shotgun",
           "WEAPON": "Badlander",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Rapid-Fire",

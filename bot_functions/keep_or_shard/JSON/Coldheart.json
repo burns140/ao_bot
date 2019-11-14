@@ -1,7 +1,7 @@
 {
           "TYPE": "Trace Rifle",
           "WEAPON": "Coldheart",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Cold Fusion",

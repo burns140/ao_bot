@@ -1,7 +1,7 @@
 {
           "TYPE": "Sniper Rifle",
           "WEAPON": "Beloved",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Adaptive",

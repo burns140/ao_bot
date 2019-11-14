@@ -1,7 +1,7 @@
 {
           "TYPE": "Grenade Launcher",
           "WEAPON": "Orewing's Maul",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Lightweight",

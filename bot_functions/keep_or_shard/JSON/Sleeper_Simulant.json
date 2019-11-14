@@ -1,7 +1,7 @@
 {
           "TYPE": "Linear Fusion Rifle",
           "WEAPON": "Sleeper Simulant",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Dornroschen",

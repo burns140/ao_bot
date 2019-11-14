@@ -1,7 +1,7 @@
 {
           "TYPE": "Sniper Rifle",
           "WEAPON": "Tatara Gaze",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Aggressive",

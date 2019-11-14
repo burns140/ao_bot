@@ -1,7 +1,7 @@
 {
           "TYPE": "Pulse Rifle",
           "WEAPON": "Swift Ride XE8375",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Adaptive",

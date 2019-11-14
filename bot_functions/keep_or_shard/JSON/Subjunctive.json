@@ -1,7 +1,7 @@
 {
           "TYPE": "Submachine Gun",
           "WEAPON": "Subjunctive",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Lightweight",

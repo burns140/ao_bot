@@ -1,7 +1,7 @@
 {
           "TYPE": "Sidearm",
           "WEAPON": "Lonesome",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "Precision",

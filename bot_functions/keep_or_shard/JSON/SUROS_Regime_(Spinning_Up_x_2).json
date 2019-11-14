@@ -1,7 +1,7 @@
 {
           "TYPE": "Auto Rifle",
-          "WEAPON": "SUROS Regime (Spinning Up x2)",
-          "ELEMENT": "",
+          "WEAPON": "SUROS Regime (Spinning Up x 2)",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "Suros Legacy",

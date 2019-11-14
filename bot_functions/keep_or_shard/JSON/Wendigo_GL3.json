@@ -1,7 +1,7 @@
 {
           "TYPE": "Grenade Launcher",
           "WEAPON": "Wendigo GL3",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Adaptive",

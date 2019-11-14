@@ -1,7 +1,7 @@
 {
           "TYPE": "Bow",
           "WEAPON": "Accrued Redemption",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "Precision",

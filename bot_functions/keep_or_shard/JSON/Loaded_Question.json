@@ -1,7 +1,7 @@
 {
           "TYPE": "Fusion Rifle",
           "WEAPON": "Loaded Question",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "High-Impact",

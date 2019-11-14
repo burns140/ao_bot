@@ -1,7 +1,7 @@
 {
           "TYPE": "Pulse Rifle",
           "WEAPON": "Bad Juju",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "String of Curses",

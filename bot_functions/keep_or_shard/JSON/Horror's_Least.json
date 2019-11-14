@@ -1,7 +1,7 @@
 {
           "TYPE": "Pulse Rifle",
           "WEAPON": "Horror's Least",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Rapid-Fire",

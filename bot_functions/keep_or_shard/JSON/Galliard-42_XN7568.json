@@ -1,7 +1,7 @@
 {
           "TYPE": "Auto Rifle",
           "WEAPON": "Galliard-42 XN7568",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Adaptive",

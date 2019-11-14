@@ -1,7 +1,7 @@
 {
           "TYPE": "Scout Rifle",
           "WEAPON": "Oxygen SR3",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Precision",

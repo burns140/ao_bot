@@ -1,7 +1,7 @@
 {
           "TYPE": "Submachine Gun",
           "WEAPON": "Riskrunner",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Arc Conductor",

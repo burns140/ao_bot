@@ -1,7 +1,7 @@
 {
           "TYPE": "Fusion Rifle",
           "WEAPON": "Techeun Force",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Adaptive",

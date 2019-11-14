@@ -1,7 +1,7 @@
 {
           "TYPE": "Rocket Launcher",
           "WEAPON": "Hoosegow XE5837",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Adaptive",

@@ -1,7 +1,7 @@
 {
           "TYPE": "Machine Gun",
           "WEAPON": "A Fine Memorial",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Adaptive",

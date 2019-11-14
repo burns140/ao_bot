@@ -1,7 +1,7 @@
 {
           "TYPE": "Machine Gun",
           "WEAPON": "Thunderlord",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Reign Havoc",

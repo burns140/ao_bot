@@ -1,7 +1,7 @@
 {
           "TYPE": "Submachine Gun",
           "WEAPON": "Breath of the Dragon",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Lightweight",

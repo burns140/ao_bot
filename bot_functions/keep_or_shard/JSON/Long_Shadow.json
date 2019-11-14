@@ -1,7 +1,7 @@
 {
           "TYPE": "Sniper Rifle",
           "WEAPON": "Long Shadow",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Special",
           "ARCHETYPE": "Adaptive",

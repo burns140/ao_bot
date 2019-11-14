@@ -1,7 +1,7 @@
 {
           "TYPE": "Rocket Launcher",
           "WEAPON": "The Wardcliff Coil",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Mad Scientist",

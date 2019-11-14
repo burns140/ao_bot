@@ -1,7 +1,7 @@
 {
           "TYPE": "Rocket Launcher",
           "WEAPON": "Sleepless",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "High-Impact",

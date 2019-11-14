@@ -1,7 +1,7 @@
 {
           "TYPE": "Grenade Launcher",
           "WEAPON": "Terran Wind",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Aggressive",

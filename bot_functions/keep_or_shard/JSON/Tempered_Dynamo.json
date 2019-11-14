@@ -1,7 +1,7 @@
 {
           "TYPE": "Fusion Rifle",
           "WEAPON": "Tempered Dynamo",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Precision",

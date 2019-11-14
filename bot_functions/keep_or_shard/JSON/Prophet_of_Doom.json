@@ -1,7 +1,7 @@
 {
           "TYPE": "Shotgun",
           "WEAPON": "Prophet of Doom",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Precision",

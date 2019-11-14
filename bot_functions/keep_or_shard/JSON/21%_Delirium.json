@@ -1,7 +1,7 @@
 {
           "TYPE": "Machine Gun",
           "WEAPON": "21% Delirium",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Rapid-Fire",

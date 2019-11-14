@@ -1,7 +1,7 @@
 {
           "TYPE": "Scout Rifle",
           "WEAPON": "MIDA Multi-Tool",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "Mida Multi-Tool",

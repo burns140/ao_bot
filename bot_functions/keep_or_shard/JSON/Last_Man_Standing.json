@@ -1,7 +1,7 @@
 {
           "TYPE": "Shotgun",
           "WEAPON": "Last Man Standing",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Energy",
           "AMMO": "Special",
           "ARCHETYPE": "Aggressive",

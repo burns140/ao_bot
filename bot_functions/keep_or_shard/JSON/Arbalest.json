@@ -1,7 +1,7 @@
 {
           "TYPE": "Linear Fusion Rifle",
           "WEAPON": "Arbalest",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Special",
           "ARCHETYPE": "Compounding Force",

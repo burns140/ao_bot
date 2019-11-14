@@ -1,7 +1,7 @@
 {
           "TYPE": "Machine Gun",
           "WEAPON": "Xenophage",
-          "ELEMENT": "",
+          "ELEMENT": "Solar",
           "SLOT": "Power",
           "AMMO": "Heavy",
           "ARCHETYPE": "Pyrotoxin Rounds",

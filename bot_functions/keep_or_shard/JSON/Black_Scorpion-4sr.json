@@ -1,7 +1,7 @@
 {
           "TYPE": "Scout Rifle",
           "WEAPON": "Black Scorpion-4sr",
-          "ELEMENT": "",
+          "ELEMENT": "Arc",
           "SLOT": "Energy",
           "AMMO": "Primary",
           "ARCHETYPE": "Rapid-Fire",

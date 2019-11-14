@@ -1,7 +1,7 @@
 {
           "TYPE": "Bow",
           "WEAPON": "The Spiteful Fang",
-          "ELEMENT": "",
+          "ELEMENT": "Kinetic",
           "SLOT": "Kinetic",
           "AMMO": "Primary",
           "ARCHETYPE": "Lightweight",
