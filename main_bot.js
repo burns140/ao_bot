@@ -5,6 +5,7 @@ const VERSION_NUMBER = 1.0;
 const AGENT_URL = '';
 const Welcome = require('./bot_functions/welcome.js');
 const ActiveMembers = require('./bot_functions/active_members.js');
+const Lore = require('./bot_functions/lore.js');
 const channelid = '634782803124420630';
 const sendChannelId = '635288515101589525'
 const options = {
@@ -17,7 +18,6 @@ const options = {
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    //console.log(client.channels.get('446072280548769805'));
 });
 
 client.on('guildMemberAdd', (member) => {
@@ -33,6 +33,10 @@ client.on('message', (msg) => {
                 var sendChannel = client.channels.get(sendChannelId)
                 //ActiveMembers.activeMembers(client.channels.get(channelid, sendChannel));
                 ActiveMembers.activeMembers(msg.guild, sendChannel);
+                break;
+            case 'lore':
+                var sendChannel = msg.channel;
+                Lore.getLore(msg.content.substring(6), sendChannel);
                 break;
         }
     }

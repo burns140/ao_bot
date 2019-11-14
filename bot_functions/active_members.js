@@ -1,29 +1,5 @@
 const Discord = require('discord.js');
 
-/*module.exports.activeMembers = function(channel, sendChannel) {
-    //console.log('getting active members');
-    channel.fetchMessages( {limit: 300 } ).then(messages => {
-        var memberArr = [];
-        var members = "";
-        messages.forEach((value, key, map) => {
-            if (!memberArr.includes(value.author)) {
-                memberArr.push(value.author);
-                members += value.author.username;
-                members += '\n';
-            }
-        });
-        console.log(members);
-        sendChannel.send({
-            embed: {
-                'description': members
-            }
-        });
-    }).catch(err => {
-        console.log(err);
-    });
-
-}*/
-
 module.exports.activeMembers = function(guild, sendChannel) {
     var memberArr = [];
     var memberstr = "";
