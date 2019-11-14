@@ -1,7 +1,7 @@
 const rp = require('request-promise');
 const $ = require('cheerio');
 const BASEURL = 'https://www.ishtar-collective.net/entries/';
-const SECONDURL = 'https://ishtar-collective.net/categories/';
+const SECONDURL = 'https://www.ishtar-collective.net/categories/';
 var urls = [BASEURL, SECONDURL];
 
 module.exports.getLore = function(item, sendChannel) {
@@ -21,7 +21,6 @@ module.exports.getLore = function(item, sendChannel) {
         thisurl = url + item.toLowerCase();
         checkUrl(thisurl, sendChannel, formatString);
     }
-
 
 }
 
