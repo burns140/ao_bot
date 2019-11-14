@@ -1,0 +1,431 @@
+KINETIC VOID ARC SOLAR,,,,,BEST ROLL AT TOP,CURATED ROLLS,PINNACLE/RITUAL WEAPON,,,,,,,,,,,,
+AUTO RIFLE,SLOT,AMMO,ARCHETYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Gnawing Hunger,Energy,Primary,Adaptive,Gambit Prime,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling",Accurized Rounds,Subsistence,"Multikill Clip
+Swashbuckler",Range,"Counterbalance
+Minor Spec",600,21,57,54,70,64,65,44,54
+Gahlran's Right Hand,Kinetic,Primary,High-Impact,Crown of Sorrow,"Chambered Compensator
+Polygonal Rifling",Ricochet Rounds,"Zen Moment
+Tap the Trigger",Multikill Clip,Stability,"Backup Mag
+Minor Spec",360,33,82,25,45,38,56,32,85
+Age-Old Bond,Energy,Primary,High-Impact,Last Wish,Extended Barrel,Light Mag,Fourth Time's The Charm,Rampage,Range,"Backup Mag
+Minor Spec",360,33,82,18,38,34,61,35,79
+Halfdan-D,Kinetic,Primary,High-Impact,Gunsmith,"GA Post
+GB Iron","Tactical Mag
+Flared Magwell
+Appended Mag",Outlaw,Rampage,Stability,"Counterbalance
+Minor Spec",360,33,82,28,45,35,60,33,70
+Breakneck,Kinetic,Primary,Precision,Gambit Quest,Polygonal Rifling,Extended Mag,Rampage,Onslaught,Range,Rampage Spec,450,29,68,50,43,51,44,34,80
+Braytech Werewolf,Kinetic,Primary,Precision,Festival of the Lost,Hammer-forged RIfling,Armor-Piercing Rounds,Zen Moment,Multikill Clip,Range,Counterbalance,450,29,72,47,45,48,47,34,74
+The Ringing Nail,Energy,Primary,Precision,Forge,"Meyrin RDS
+Meyrin RDL
+Rasmussen ISA","Flared Magwell
+Ricochet Rounds
+Light Mag","Zen Moment
+Ambitious Assassin
+Dragonfly","Rampage
+Kill Clip",Range,"Counterbalance
+Minor Spec",450,29,64,51,51,52,37,32,69
+Reckless Oracle,Energy,Primary,Rapid-Fire,Garden of Salvation,"Fullbore
+Hammer-Forged Rifling
+Smallbore",Ricochet Rounds,Outlaw,Swashbuckler,Range,"Counterbalance
+Minor Spec",720,18,33,60,48,60,75,51,59
+BOW,SLOT,AMMO,TYPE,OBTAINED,STRING,ARROW,TRAIT,TRAIT,MASTERWORK,MOD,DRAW,IMPACT,ACCURACY,STABILITY,HANDLING,RELOAD,AIM ASSIST,,
+Arsenic Bite-4b,Energy,Primary,Lightweight,World,Polymer String,Carbon Arrow Shaft,Archer's Tempo,Rampage,Accuracy,Freehand Grip,612,68,52,62,64,81,64,,
+The Spiteful Fang,Kinetic,Primary,Lightweight,Forge,"Polymer String
+Tactile String
+Natural String","Straight Fletching
+Helical Fletching
+Compact Arrow Shaft","Archer's Tempo
+Moving Target",Rampage,"Accuracy
+Draw Time",Freehand Grip,612,68,53,55,64,76,73,,
+The Vow,Energy,Primary,Lightweight,Crimson Days,Polymer String,Natural Fletching,Rapid Hit,Archer's Tempo,Draw Time,Freehand Grip,612,68,54,64,64,84,64,,
+Hush,Energy,Primary,Precision,Gambit Quest,Natural String,Straight Fletching,Opening Shot,Archer's Gambit,Accuracy,Freehand Grip,684,76,79,46,46,64,54,,
+Subtle Calamity,Energy,Primary,Precision,World,"Natural String
+Flexible String
+Polymer String","Carbon Arrow Shaft
+Compact Arrow Shaft
+Helical Fletching","Rampage
+Moving Target
+Dragonfly",Archer’s Tempo,"Accuracy
+Draw Time","Freehand Grip
+Dragonfly Spec",684,76,79,46,46,70,52,,
+FUSION RIFLE,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,BATTERY,TRAIT,TRAIT,MASTERWORK,MOD,CHARGE,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Dream Breaker,Energy,Special,Adaptive,Moon,"Hammer Forged
+Smallbore
+Corkscrew Rifling",Projection Fuse,"Rangefinder
+Threat Detector
+Moving Target","Rampage
+Backup Plan
+High-Impact Reserves",Range,Major Spec,660,70,37,42,34,37,43,6,57
+Loaded Question,Energy,Special,High-Impact,Vanguard Quest,Red Dot 2 MOA,Ionized Battery,Auto-Loading Holster,Reservoir Burst,Stability,Major Spec,860,95,57,32,32,27,66,5,77
+Main Ingredient,Energy,Special,Precision,Vanguard,"Red Dot Micro
+Red Dot 2 MOA",Enhanced Battery,"
+Threat Detector
+Moving Target","Rampage
+Backup Plan
+Kill Clip",Range,Major Spec,740,80,63,54,38,32,59,5,73
+The Epicurean,Energy,Special,Precision,Menagerie,"Fluted Barrel
+Corkscrew Rifling",Accelerated Coils,Feeding Frenzy,"Swashbuckler
+Kill Clip
+Backup Plan",Range,Major Spec,740,80,63,54,37,33,65,5,80
+The Epicurean,Energy,Special,Precision,Menagerie,Hammer-Forged Rifling,Accelerated Coils,Tap the Trigger,Backup Plan,Handling,Major Spec,740,80,63,54,37,33,65,5,80
+Proelium FR3,Energy,Special,Rapid-Fire,Gunsmith,"Candle PS
+Spark PS
+Jolt PS",Projection Fuse,"
+Threat Detector
+Moving Target","Rampage
+Backup Plan
+Kill Clip",Range,Major Spec,540,55,32,35,57,50,33,7,45
+Zealot's Reward,Energy,Special,Rapid-Fire,Garden of Salvation,"Hammer Forged
+Smallbore
+Corkscrew Rifling",Projection Fuse,Feeding Frenzy,"Rampage
+Backup Plan
+High-Impact Reserves",Range,Major Spec,540,55,30,35,60,53,37,7,49
+GRENADE LAUNCHER,SLOT,AMMO,TYPE,OBTAINED,BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,BLAST,VELOCITY,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Doomsday,Power,Heavy,Adaptive,Gambit Prime,"Smart Drift Control
+Linear Compensator
+Quick Launch",Proximity Grenades,Field Prep,Full Court,Velocity,Major Spec,120,20,45,53,55,54,54,6,78
+Edge Transit,Power,Heavy,Adaptive,World,"Smart Drift Control
+Linear Compensator
+Quick Launch",Proximity Grenades,Field Prep,Rampage,Velocity,Major Spec,120,30,39,48,48,45,62,6,70
+Play of the Game,Power,Heavy,Adaptive,Crucible,"Smart Drift Control
+Linear Compensator
+Quick Launch",Proximity Grenades,Field Prep,Rampage,Velocity,Major Spec,120,30,45,42,40,51,65,6,70
+Love and Death,Power,Heavy,Aggressive,Moon,"Hard Launch
+Quick Launch
+Smart Drift Control",Spike Grenades,Field Prep,Full Court,Velocity,Boss Spec,150,15,55,29,26,33,29,5,50
+Acantha-D XK8434,Power,Heavy,Aggressive,Forge,"Hard Launch
+Quick Launch
+Smart Drift Control",Spike Grenades,"Auto-Loading Holster
+Field Prep","Quickdraw
+Rampage",Velocity,Boss Spec,150,15,47,28,31,36,25,5,80
+Swarm of the Raven,Power,Heavy,Aggressive,Iron Banner,"Hard Launch
+Quick Launch
+Smart Drift Control",Spike Grenades,"Auto-Loading Holster
+Field Prep","Quickdraw
+Rampage",Velocity,Boss Spec,150,15,54,29,26,29,27,5,63
+The Mountaintop,Kinetic,Special,Lightweight,PvP Pinnacle,Hard Launch,Spike Grenades,Range Finder,Micro-Missile,Velocity,Major Spec,90,55,78,31,72,67,75,1,62
+HAND CANNON,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Ancient Gospel,Energy,Primary,Adaptive,Garden of Salvation,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling","Accurized Rounds 
+Tactical Mag",Rapid Hit,"Swashbuckler
+Dragonfly",Range,"Backup Mag
+Dragonfly",139,84,47,62,51,49,74,11,100
+Austringer,Kinetic,Primary,Adaptive,Menagerie,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling","Accurized Rounds
+Tactical Mag
+Flared Magwell","Outlaw
+Subsistence",Rampage,Range,Backup Mag,139,84,51,63,52,51,75,11,95
+Kindled Orchid,Energy,Primary,Adaptive,Forge,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling","Accurized Rounds
+Tactical Mag
+Flared Magwell","Kill Clip
+Outlaw
+Rangefinder",Rampage,Range,Backup Mag,139,84,45,55,46,48,76,10,99
+Duke Mk. 44,Kinetic,Primary,Aggressive,World,"Steadyhand HCS
+Fastdraw HCS
+Truesight HCS","Flared Magwell
+Ricochet Rounds
+Alloy Magazineazine","Rapid Hit
+Outlaw","Rampage
+Kill Clip",Range,Backup Mag,113,92,68,36,37,37,64,9,90
+Spare Rations,Kinetic,Primary,Lightweight,Gambit Prime,"Smallbore
+Corkscrew Rifling","Ricochet Rounds
+Flared Magwell
+Light Mag","Rapid Hit
+Fourth Time's The Charm
+Subsistence","Multikill Clip
+Swashbuckler",Range,Backup Mag,150,78,45,55,76,64,92,13,100
+Loud Lullaby,Kinetic,Primary,Aggressive,Moon,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling",Accurized Rounds,Outlaw,"Multikill-Clip
+Rampage",Range,Backup Mag,113,92,58,25,32,31,60,8,98
+Not Forgotten,Energy,Primary,Precision,PvP Pinnacle,Extended Barrel,Accurized Rounds,Zen Moment,Magnificent Howl,Range,Backup Mag,150,78,65,62,33,59,79,10,100
+Service Revolver,Kinetic,Primary,Precision,Vanguard,Steadyhand HCS,"Ricochet Rounds
+Flared Magwell
+Light Mag","Rapid Hit
+Outlaw
+Triple Tap","Rampage
+Kill Clip",Range,Backup Mag,180,78,45,61,44,43,67,9,88
+LINEAR FUSION RIFLE,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,CHARGE,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Crooked Fang-4FR,Power,Heavy,Precision,Gunsmith,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling","Enhanced Battery
+Projection Fuse",Snapshot Sights,Box Breathing,Charge Time,Backup Mag,533,41,34,36,36,35,61,6,4
+MACHINE GUN,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Avalanche,Power,Heavy,Adaptive,Dawning,"SPO-26 Front
+SPO-28 Front",Appended Mag,Feeding Frenzy,Rampage,Range,Counterbalance,450,41,55,46,34,59,90,57,70
+Hammerhead,Power,Heavy,Adaptive,Forge,"Arrowhead Brake
+Fluted Barrel
+Smallbore","Flared Magwell
+Light Mag
+Appended Mag",Feeding Frenzy,Rampage,Range,Counterbalance,450,41,64,64,40,64,90,59,75
+Hammerhead,Power,Heavy,Adaptive,Forge,Hammer-Forged Rifling,Armor-Piercing Rounds,Feeding Frenzy,Rampage,Handling,Counterbalance,450,41,64,64,40,64,90,59,75
+21% Delirium,Power,Heavy,Rapid-Fire,Gambit Quest,Polygonal Rifling,Extended Mag,Overflow,Killing Tally,Stability,Counterbalance,900,25,50,70,39,43,70,132,60
+Bane of Sorrow,Power,Heavy,High-Impact,Crown of Sorrow,Polygonal Rifling,"Ricochet Rounds
+Flared Magwell",Feeding Frenzy,Rampage,Stability,Counterbalance,360,70,71,29,45,43,30,38,69
+PULSE RIFLE,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Adhortative,Energy,Primary,Adaptive,Vex Offensive,"Smallbore
+Corkscrew Rifling","Ricochet Rounds
+Flared Magwell","Feeding Frenzy
+Dragonfly",Multikill Clip,Range,Counterbalance,390,29,47,55,48,45,61,36,61
+Bygones,Kinetic,Primary,Adaptive,Gambit,"Arrowhead Brake
+Fluted Barrel
+Corkscrew Rifling","Extended Mag
+Light Mag
+Flared Magwell","Rampage
+Kill Clip",Outlaw,"Range
+Reload",Counterbalance,390,29,53,60,51,51,61,39,69
+Last Perdition,Energy,Primary,Adaptive,Crucible,"SPO-26 Front
+SPO-28 Front
+SLO-10 Post",Accurzied Rounds,Outlaw,"Rampage
+Kill Clip",Range,Counterbalance,390,29,50,66,49,53,60,39,63
+Blast Furnace,Kinetic,Primary,Aggressive,Forge,"Meyrin RDS
+Ramussen ISA","Tactical Mag
+Flared Magwell
+Alloy Magazine","Feeding Frenzy
+Outlaw","Rampage
+Kill Clip",Range,Counterbalance,450,35,81,67,31,42,42,40,65
+Go Figure,Kinetic,Primary,Aggressive,World,"Devil Scope D2
+King Sight K1
+Wolf Sight W1","Flared Magwell
+Appended Mag
+Light Mag",Outlaw,"Rampage
+Kill Clip",Range,Counterbalance,450,35,72,61,32,40,40,40,69
+Sacred Provenance,Kinetic,Primary,Aggressive,Garden of Salvation,"Smallbore
+Corkscrew Rifling",Ricochet Rounds,"Rapid Hit
+Outlaw",Kill Clip,Range,Target Adjuster,450,35,72,61,32,42,48,40,70
+Redrix's Broadsword,Kinetic,Primary,High-Impact,PvP Quest,Chambered Compensator,High-Caliber Rounds,Outlaw,Desperado,,Backup Mag,340,33,60,59,38,44,39,27,75
+Outlast,Energy,Primary,Rapid-Fire,Gambit Prime,"Hammer-Forged Rifling
+Arrowhead Brake
+Smallbore","Appended Mag
+Tactical Mag
+Accurized Rounds","Feeding Frenzy
+Outlaw","Rampage
+Kill Clip",Any,Backup Mag,540,23,43,53,36,38,78,27,60
+ROCKET LAUNCHER,SLOT,AMMO,TYPE,OBTAINED,BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,BLAST,VELOCITY,STABILITY,HANDLING,RELOAD,,MAG,RECOIL
+Bad Omens,Power,Heavy,Aggressive,Gambit,"Quick Launch
+Smart Drift Control
+Linear Compensator","Impact Casing
+High Velocity Rounds","Field Prep
+Tracking Module",Cluster Bomb,Velocity,"Boss Spec
+Major Spec",25,60,75,34,28,65,n/a,1,76
+Heretic,Power,Heavy,Aggressive,Altar of Sorrow,"Quick Launch
+Smart Drift Control
+Linear Compensator","Impact Casing
+High Velocity Rounds",Rangefinder,Cluster Bomb,Velocity,"Boss Spec
+Major Spec",25,60,81,33,31,62,n/a,1,68
+Hoosegow XE5837,Power,Heavy,Adaptive,Forge,"Quick Launch
+Smart Drift Control
+Linear Compensator","Impact Casing
+High Velocity Rounds","Field Prep
+Rangefinder",Cluster Bomb,Velocity,"Boss Spec
+Major Spec",15,95,43,61,68,41,n/a,1,45
+SCOUT RIFLE,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Calusea Noblesse,Energy,Primary,High-Impact,Crown of Sorrow,"Chambered Compensator
+Polygonal Rifling
+Smallbore","Tactical Mag
+Flared Magwell","Outlaw
+Subsistence","Multikill Clip
+Rampage","Stability
+Reload","Backup Mag
+Target Adjuster",150,67,74,29,36,37,32,14,75
+Talons of the Eagle,Kinetic,Primary,High-Impact,Iron Banner,"Fluted Barrel
+Arrowhead Brake
+Corkscrew Rifling","Tactical Mag
+Flared Magwell
+Appended Mag",Outlaw,Rampage,"Range
+Reload","Backup Mag
+Target Adjuster",150,67,71,36,33,39,30,14,71
+The Cut and Run,Energy,Primary,High-Impact,World,Devil Scope D2,Light Mag,Outlaw,Rampage,"Range
+Reload","Backup Mag
+Target Adjuster",150,67,68,36,34,37,37,13,80
+Night Watch,Kinetic,Primary,Lightweight,Gambit Prime,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling",Accurized Rounds,Outlaw,"Multikill Clip
+Rampage",Range,"Backup Mag
+Minor Spec",200,60,48,47,71,65,69,16,57
+No Feelings,Energy,Primary,Precision,Scourge of the Past,"Meyrin RDS
+Ramussen ISA","Tactical Mag
+Flared Magwell
+Appended Mag","Rapid Hit
+Outlaw","Box Breathing
+Rampage",Range,"Backup Mag
+Minor Spec",180,62,52,49,46,49,66,15,76
+Oxygen SR3,Energy,Primary,Precision,Vanguard Quest,Polygonal Rifling,Accurized Rounds,Dragonfly,Meganeura,Range,Dragonfly Spec,180,62,55,55,47,50,67,16,60
+Black Scorpion-4sr,Kinetic,Primary,Rapid-Fire,Gunsmith,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling",Accurized Rounds,Triple Tap,"Rampage
+Rangefinder
+Outlaw",Range,"Backup Mag
+Minor Spec",260,45,28,54,34,35,56,18,60
+SHOTGUN,SLOT,AMMO,TYPE,OBTAINED,BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Badlander,Energy,Special,Rapid-Fire,World,"Rifled Barrel
+Smallbore
+Corkscrew Rifling","Accurized Rounds
+Appended Mag","Threat Detector
+Pulse Monitor",Rampage,Range,"Backup Mag
+Major Spec",140,65,34,44,51,66,66,7,70
+IKELOS_SG_v1.0.1 (Set),Energy,Special,Rapid-Fire,Escalation Protocol,"Rifled Barrel
+Hammer-Forged Rifling",Trench Barrel,Tactical Mag,Threat Detector,N/A,N/A,140,65,40,38,49,64,72,7,69
+Threat Level,Kinetic,Special,Rapid-Fire,Scourge of the Past,Barrel Shroud,Light Mag,Trench Barrel,Grave Robber,Range,"Backup Mag
+Major Spec",140,65,37,45,48,68,74,7,66
+Threat Level,Kinetic,Special,Rapid-Fire,Scourge of the Past,"Rifled Barrel
+Smallbore
+Corkscrew Rifling",Appended Mag,Surrounded,"Threat Detector
+Grave Robber",Range,"Backup Mag
+Major Spec",140,65,37,45,48,68,74,7,66
+Blasphemer,Kinetic,Special,Precision Slug,Altar of Sorrow,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling","Accurized Rounds
+Light Mag
+Assault Mag",Outlaw,"Swashbuckler
+Rampage",Range,"Backup Mag
+Major Spec",70,62,46,49,49,61,6,60,60
+Gunnora's Axe,Energy,Special,Precision Slug,Iron Banner,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling","Accurized Rounds
+Light Mag
+Assault Mag",Outlaw,"Swashbuckler
+Rampage",Range,"Backup Mag
+Major Spec",70,70,54,68,53,34,6,51,51
+Imperial Decree,Kinetic,Special,Aggressive,Menagerie,"Rifled Barrel
+Smallbore
+Corkscrew Rifling","Assault Mag
+Accurized Rounds
+Light Mag","Grave Robber
+Full Auto Trigger System
+Feeding Frenzy","Swashbuckler
+Trench Barrel",Range,Major Spec,55,80,36,36,37,40,35,4,80
+Prophet of Doom,Energy,Special,Precision,Garden of Salvation,"Rifled Barrel
+Smallbore
+Corkscrew Rifling","Assault Mag
+Tactical Mag
+Light Mag",Feeding Frenzy,One-Two Punch,"Reload
+Range",Major Spec,65,70,70,52,41,52,73,5,77
+SNIPER RIFLE,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Beloved,Energy,Special,Adaptive,Menagerie,"Chambered Compensator
+Polygonal Rifling
+Smallbore","Flared Magwell
+Tactical Mag","Field Prep
+No Distractions
+Mulligan","Fourth Time's the Charm
+Box Breathing","Range
+Reload Speed","Boss Spec
+Major Spec",90,70,55,51,52,44,68,4,77
+Beloved,Energy,Special,Adaptive,Menagerie,Chambered Compensator,Accuraized Rounds,No Distractions,Box Breathing,Reload Speed,"Boss Spec
+Major Spec",90,70,55,51,52,44,68,4,77
+Sole Survivor,Energy,Special,Adaptive,Gambit Prime,"Smallbore
+Corkscrew Rifling",Ricochet Rounds,"Fourth Time's The Charm
+Rapid Hit
+Triple Tap",Firing Line,"Range
+Reload Speed","Boss Spec
+Major Spec",90,70,55,47,53,54,51,4,80
+Tranquility,Kinetic,Special,Adaptive,Moon,"Smallbore
+Corkscrew Rifling","Accurized Rounds
+Tactical Mag
+Flared Magwell","Field Prep
+Rangefinder
+No Distractions",Firing Line,"Range
+Reload Speed","Boss Spec
+Major Spec",90,70,52,43,52,42,61,4,62
+Dreaded Venture,Kinetic,Special,Aggressive,Gambit,"Fluted Barrel
+Corkscrew Rifling
+Arrowhead Break","Tactical Mag
+Flared Magwell
+Steady Rounds",Triple Tap,Rapid Hit,"Stability
+Reload Speed","Boss Spec
+Major Spec",72,90,74,35,31,39,49,3,76
+Tatara Gaze,Energy,Special,Aggressive,Forge,"Arrowhead Brake
+Smallbore
+Corkscrew Rifling","Tactical Mag
+Flared Magwell",Rapid Hit,Box Breathing,"Stability
+Reload Speed","Boss Spec
+Major Spec",72,90,73,30,33,41,45,3,79
+Apostate,Energy,Special,Rapid-Fire,Altar of Sorrow,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling",Accurized Rounds,"Rangefinder
+Firmly Planted","Rapid Hit
+Snapshot Sights
+Box Breathing",Range,"Boss Spec
+Major Spec",140,55,42,47,69,65,73,5,49
+Omniscient Eye,Energy,Special,Rapid-Fire,Garden of Salvation,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling",Accurized Rounds,"No Distractions
+Mulligan",Snapshot Sights,Range,"Boss Spec
+Major Spec",140,55,43,42,73,61,72,5,55
+SUBMACHINE GUN,SLOT,AMMO,TYPE,OBTAINED,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Bug-Out Bag,Energy,Primary,Adaptive,Gambit Prime,Corkscrew Rifling,Tactical Mag,"Subsistence
+Threat Detector
+Zen Moment","Multikill Clip
+Swashbuckler",Reload Speed,Backup Mag,900,20,49,50,56,56,46,32,88
+Bug-Out Bag,Energy,Primary,Adaptive,Gambit Prime,Corkscrew Rifling,Alloy Mag,Slideshot,Multikill Clip,Reload Speed,Backup Mag,900,20,49,50,56,56,46,32,88
+Exit Strategy,Kinetic,Primary,Adaptive,Gambit Quest,Arrowhead Brake,Ricochet Rounds,"Underdog
+Threat Detector","Swashbuckler
+Surrounded",Stability,Backup Mag,900,20,43,48,55,56,47,33,97
+Subjunctive,Energy,Primary,Lightweight,Vex Offensive,Corkscrew Rifling,Ricochet Rounds,"Outlaw
+Threat Detector","Multikill Clip
+Swashbuckler
+Surrounded","Range
+Stability",Backup Mag,900,15,33,43,69,35,52,36,92
+The Recluse,Energy,Primary,Lightweight,Crucible Quest,Polygonal Rifling,Ricochet Rounds,Feeding Frenzy,Master of Arms,Range,Backup Mag,900,15,46,56,67,35,55,36,100
+Pillager,Kinetic,Primary,Lightweight,Gambit,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling",Ricochet Rounds,Outlaw,Rampage,Range,Backup Mag,900,15,32,42,70,30,57,37,97
+Antiope-D,Kinetic,Primary,Precision,Gunsmith,"GB Iron
+GA Post",Ricochet Rounds,"Zen Moment
+Moving Target","Kill Clip
+Dynamic Sway Reduction",Stability,Backup Mag,600,25,63,39,26,27,58,26,90
+Every Waking Moment,Energy,Primary,Precision,Moon,"Hammer-Forged Rifling
+Smallbore
+Corkscrew Rifling","Light Mag
+Flared Magwell
+Ricochet Rounds","Outlaw
+Subsistence",Swashbuckler,"Reload Speed
+Range",Backup Mag,600,25,54,44,30,26,56,26,91
+SWORD,SLOT,AMMO,TYPE,OBTAINED,BLADE,GUARD,TRAIT,TRAIT,MASTERWORK,MOD,SWING,IMPACT,RANGE,EFFICIENCY,,DEFENSE,,MAG,
+Death's Razor (Warlock Only),Power,Heavy,Adaptive,Menagerie,Honed Edge,Infinite Guard,Energy Transfer,Counterattack,Impact,Major Spec,46,61,55,55,,55,,62,
+Throne-Cleaver (Titan Only),Power,Heavy,Aggressive,Menagerie,Tempered Edge,Heavy Guard,Shattering Blade,Counterattack,Impact,Major Spec,64,55,n/a,55,,58,,58,
+Just In Case,Power,Heavy,Adaptive,Gambit Prime,"Tempered Edge
+Honed Edge
+Hungry Edge","Heavy Guard
+Balanced Guard",Relentless Strikes,Whirlwind Blade,Impact,Major Spec,46,61,46,55,,60,,60,
+Stryker's Sure-Hand,Power,Heavy,Adaptive,Forge,"Tempered Edge
+Honed Edge
+Hungry Edge","Heavy Guard
+Balanced Guard",Relentless Strikes,Surrounded,Impact,Major Spec,46,61,46,55,,46,,60,
+Steel Sybil Z-14,Power,Heavy,Adaptive,Crucible,"Tempered Edge
+Honed Edge
+Hungry Edge","Heavy Guard
+Balanced Guard",Relentless Strikes,Whirlwind Blade,Impact,Major Spec,46,61,46,55,,55,,59,
+SIDEARM,,,,,SIGHT/BARREL,MAGAZINE,TRAIT,TRAIT,MASTERWORK,MOD,ROF,IMPACT,RANGE,STABILITY,HANDLING,RELOAD,AIM ASSIST,MAG,RECOIL
+Drang (Baroque),Energy,Primary,Together Forever,Menagerie,"Smallbore
+Corkscrew Rifling","Ricochet Rounds
+Flared Magwell","Full Auto Trigger System
+Moving Target","Swashbuckler
+Rampage","Range
+Stability",Backup Mag,300,49,41,64,74,37,70,18,80
+Lonesome,Kinetic,Primary,Precision,Gambit Prime,"Arrowhead Brake
+Smallbore
+Corkscrew Rifling","Ricochety Rounds
+Flared Magwell
+Light Mag","Rapid Hit
+Outlaw","Multikill Clip
+Swashbuckler",Any,Backup Mag,260,51,65,53,46,36,86,12,90
+Smuggler's Word,Kinetic,Primary,Aggressive Burst,World,"Control SAS
+Shortspec SAS
+Tactic SAS","Ricochet Rounds
+Lightmag
+Flared Magwell",Outlaw,"Rampage
+Kill Clip",Any,Backup Mag,325,56,55,42,42,30,82,24,96
+The Last Dance,Energy,Primary,Omolon Adaptive,Vanguard,"Tactic SAS
+Shortspec SAS","Lightmag
+Ricochet Rounds
+Flared Magwell",Outlaw,"Kill Clip
+Rangefinder","Range
+Reload Speed",Backup Mag,491,75,36,86,57,35,70,27,97
