@@ -19,13 +19,13 @@ if (testing) {
 //const auth = require('./auth.json');
 //const auth = process.env.BOT_TOKEN;
 
-const options = {
+/*const options = {
     headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bot ${auth.token}`,
         'User-Agent': `DiscordBot (${AGENT_URL}, ${VERSION_NUMBER})`
     }
-};
+};*/
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);

@@ -3,13 +3,25 @@ const client = new Discord.Client();
 const axios = require('axios');
 const VERSION_NUMBER = 1.0;
 const AGENT_URL = '';
-const options = {
-    headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bot ${auth.token}`,
-        'User-Agent': `DiscordBot (${AGENT_URL}, ${VERSION_NUMBER})`
-    }
-};
+var options;
+if (testing) {
+    options = {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bot ${auth.token}`,
+            'User-Agent': `DiscordBot (${AGENT_URL}, ${VERSION_NUMBER})`
+        }
+    };
+} else {
+    options = {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bot ${process.env.BOT_TOKEN}`,
+            'User-Agent': `DiscordBot (${AGENT_URL}, ${VERSION_NUMBER})`
+        }
+    };
+}
+
 
 module.exports.welcome = function(member) {
     //console.log(member.guild.channels);
