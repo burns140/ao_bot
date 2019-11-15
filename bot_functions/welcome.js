@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const auth = require('../auth.json');
 const axios = require('axios');
 const VERSION_NUMBER = 1.0;
 const AGENT_URL = '';
