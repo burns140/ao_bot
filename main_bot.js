@@ -6,6 +6,7 @@ const AGENT_URL = '';
 const Welcome = require('./bot_functions/welcome.js');
 const ActiveMembers = require('./bot_functions/active_members.js');
 const Lore = require('./bot_functions/lore.js');
+const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
 const channelid = '634782803124420630';
 const sendChannelId = '635288515101589525'
 const options = {
@@ -38,8 +39,12 @@ client.on('message', (msg) => {
                 var sendChannel = msg.channel;
                 Lore.getLore(msg.content.substring(6), sendChannel);
                 break;
+            case 'rolls':
+                var sendChannel = msg.channel;
+                Rolls.getRolls(msg, sendChannel);
         }
     }
 })
 
 client.login(auth.token);
+Rolls.initWeapons();
