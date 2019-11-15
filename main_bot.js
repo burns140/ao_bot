@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-//const auth = require('./auth.json');
+
 const VERSION_NUMBER = 1.0;
 const AGENT_URL = '';
 const Welcome = require('./bot_functions/welcome.js');
@@ -9,13 +9,8 @@ const Lore = require('./bot_functions/lore.js');
 const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
 const channelid = '634782803124420630';
 const sendChannelId = '635288515101589525';
-const testing = false;
-var auth;
-if (testing == true) {
-    auth = require('./auth.json');
-} else {
-    auth = process.env.BOT_TOKEN;
-}
+//const auth = require('./auth.json');
+const auth = process.env.BOT_TOKEN;
 
 const options = {
     headers: {
@@ -54,5 +49,6 @@ client.on('message', (msg) => {
     }
 })
 
-client.login(auth.token);
+//client.login(auth.token);
+client.login(auth);
 Rolls.initWeapons();
