@@ -8,13 +8,15 @@ const ActiveMembers = require('./bot_functions/active_members.js');
 const Lore = require('./bot_functions/lore.js');
 const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
 const channelid = '634782803124420630';
-const sendChannelId = '635288515101589525'
+const sendChannelId = '635288515101589525';
+const testing = false;
 var auth;
-try {
+if (testing == true) {
     auth = require('./auth.json');
-} catch (err) {
+} else {
     auth = process.env.BOT_TOKEN;
 }
+
 const options = {
     headers: {
         'Content-Type': 'application/json',
