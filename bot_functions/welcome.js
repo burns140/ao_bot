@@ -4,6 +4,7 @@ const axios = require('axios');
 const VERSION_NUMBER = 1.0;
 const AGENT_URL = '';
 var options;
+const testing = false;
 if (testing) {
     options = {
         headers: {
