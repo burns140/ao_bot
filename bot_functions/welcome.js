@@ -17,7 +17,7 @@ module.exports.welcome = function(member) {
     console.log('in welcome');
     member.guild.channels.forEach((value, key, map) => {
         //console.log(key);
-        if (map.get(key).name == 'links-for-bot') { 
+        if (map.get(key).name == 'social') { 
             var greeting = `Welcome to Alpha-Omega!!` 
             var message = `Welcome, <@${member.user.id}>! We have members from a wide variety of timezones with a wide variety of interests, ` + 
                 `so no matter what your favorite activity is, you will always have someone to group with. ` + 
@@ -27,8 +27,8 @@ module.exports.welcome = function(member) {
                 `channels have a bit more flexibility when finding a team. We are constantly changing, so if you ` + 
                 `have any questions, suggestions, or anything else, feel free to contact one of the admins <@360437260333744128>, ` + 
                 `<@209836090280902656>, <@232691801771868160>, <@147417761725808641>, or <@153392262171066369>.` + 
-                `Good luck out there Guardian. ` +
-                `(If you want to contribute to this bot, please message <@153392262171066369>)`;
+                `Please type '!register' in chat to get set up with Charlemagne. Good luck out there Guardian. ` +
+                `(If you want to contribute to this bot, message <@153392262171066369>)`;
             let data = {
                 //'content': 'fuck this server',
                 'embed': {
