@@ -68,7 +68,8 @@ function addType(arr, key) {
 
 
 module.exports.initWeapons = function() {
-    var content = fs.readFileSync('C:/Users/steph/Desktop/ao/ao_bot/bot_functions/keep_or_shard/JSON/Destiny 2 Roll Exporter.json');
+    //var content = fs.readFileSync('C:/Users/steph/Desktop/ao/ao_bot/bot_functions/keep_or_shard/JSON/Destiny 2 Roll Exporter.json');
+    var content = fs.readFileSync('bot_functions/keep_or_shard/JSON/Destiny 2 Roll Exporter.json');
     var weapons = JSON.parse(content);
 
     for (var key in weapons) {
