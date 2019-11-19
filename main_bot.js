@@ -9,7 +9,7 @@ const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
 const channelid = '634782803124420630';
 const sendChannelId = '635288515101589525';
 
-const testing = false;
+const testing = true;
 var auth;
 if (testing) {
     auth = require('./auth.json');
@@ -61,4 +61,5 @@ if (testing) {
 } else {
     client.login(auth);
 }
-Rolls.initWeapons();
+//Rolls.initWeapons();
+Rolls.initWeaponsApi();
