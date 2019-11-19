@@ -42,7 +42,6 @@ client.on('message', (msg) => {
         switch (command[0]) {
             case 'active':
                 var sendChannel = client.channels.get(sendChannelId)
-                //ActiveMembers.activeMembers(client.channels.get(channelid, sendChannel));
                 ActiveMembers.activeMembers(msg.guild, sendChannel);
                 break;
             case 'lore':
@@ -61,5 +60,5 @@ if (testing) {
 } else {
     client.login(auth);
 }
-//Rolls.initWeapons();
+
 Rolls.initWeaponsApi();
