@@ -6,10 +6,9 @@ const Welcome = require('./bot_functions/welcome.js');
 const ActiveMembers = require('./bot_functions/active_members.js');
 const Lore = require('./bot_functions/lore.js');
 const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
-const channelid = '634782803124420630';
 const sendChannelId = '635288515101589525';
 
-const testing = false;
+const testing = true;
 var auth;
 if (testing) {
     auth = require('./auth.json');
