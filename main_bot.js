@@ -8,23 +8,13 @@ const Lore = require('./bot_functions/lore.js');
 const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
 const sendChannelId = '635288515101589525';
 
-const testing = true;
+const testing = false;
 var auth;
 if (testing) {
     auth = require('./auth.json');
 } else {
     auth = process.env.BOT_TOKEN;
 }
-//const auth = require('./auth.json');
-//const auth = process.env.BOT_TOKEN;
-
-/*const options = {
-    headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bot ${auth.token}`,
-        'User-Agent': `DiscordBot (${AGENT_URL}, ${VERSION_NUMBER})`
-    }
-};*/
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
