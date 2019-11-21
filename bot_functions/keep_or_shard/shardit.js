@@ -6,6 +6,11 @@ const axios = require('axios');
 var pveWeapons = [];
 var pvpWeapons = [];
 
+/**
+ * Add the type of the weapon to its object
+ * @param {string} key: Name of the current sheet
+ * @param {Object: Weapon} wep: The current weapon that is being added
+ */
 function addType(key, wep) {
     if (key.includes('Auto Rifles')) {
         wep.type = "Auto Rifle";
@@ -39,20 +44,31 @@ function addType(key, wep) {
     return wep;
 }
 
+/**
+ * Initializes the weapon arrays using the api.
+ */
 module.exports.initWeaponsApi = (async function () {
+    
+    /* Get all the arguments from the index page */
     var html = await axios.get(`https://v2-api.sheety.co/cbb6ced6bab1fb2411c6960389d05dc7/destiny2WeaponSuggestions/index`);
+
+    /* Send request to each link */
     for (var el of html.data.index) {
         var thisel = el;
-        var result = await axios.get(`${thisel.url}`);
-        var tempweaponarr = result.data[Object.keys(result.data)[0]];
+        var result = await axios.get(`${thisel.url}`);                  
+        var tempweaponarr = result.data[Object.keys(result.data)[0]];   // Get the array of weapons from the current table
         if (thisel.sheet.includes('PVE')) {
+            /* Iterate through current weapon array */
             for (var thiswep of tempweaponarr) {
-                var typedWep = addType(thisel.sheet, thiswep);
-                typedWep.mode = 'PVE';
-                delete typedWep.id;
-                pveWeapons.push(typedWep);
+                var typedWep = addType(thisel.sheet, thiswep);          // Add the weapon type
+                typedWep.mode = 'PVE';                                  // Set the mode these rolls are good for
+                delete typedWep.id;                                     // IDs get duplicated, so just delete them
+                pveWeapons.push(typedWep);                              // Add to overall weapon array
             }
         } else if (thisel.sheet.includes('PVP')) {
+            /* This is a repeat of the above. I nearly duplicated
+               code so that we don't do an if statement in every 
+               iteration */
             for (var thiswep of tempweaponarr) {
                 var typedWep = addType(thisel.sheet, thiswep);
                 typedWep.mode = 'PVP';
@@ -72,31 +88,37 @@ module.exports.getRolls = function(msg, sendChannel) {
         return;
     }
     var weaponName = "";
-    var mode = "";
+
+    /* Determine the mode being played so we know what array to use. If there is no mode argument,
+       the name is the only argument so we can take a substring */
     if (command[command.length - 1].toLowerCase() != 'pve' && command[command.length - 1].toLowerCase() != 'pvp') {
         weaponName = content.substring(6);
         thisArr = pveWeapons;
-        mode = 'PvE';
     } else {
+        /* If there is a mode argument, must split and combine all strings minus the final (mode) element to get weapon name */
         for (var i = 1; i < command.length - 1; i++) {
             weaponName += command[i];
             if (i != command.length - 2) {
                 weaponName += ' ';
             }
         }
+        /* Set mode after getting weapon name */
         if (command[command.length - 1].toLowerCase() == 'pve') {
             thisArr = pveWeapons;
-            mode = 'PvE';
         } else {
             thisArr = pvpWeapons;
-            mode = 'PvP';
         }
     }
 
-    var richEmbed = new Discord.RichEmbed();
+    weaponName = weaponName.replace(/\'/g, '');     // Remove apostrophes from comparison
+    var richEmbed = new Discord.RichEmbed();        // The element that will be send to the chat channel
     var found = false;
     for (var weapon of thisArr) {
-        if (weapon.weapon.toLowerCase() == weaponName.toLowerCase()) {
+        /* For comparing name, we remove apostrophes and 'the' for ease of use.
+           Because different types of weapon have different parts, we check the type before adding to the RichEmbed.
+           For every single element, the sheet has elements formatted as 'best\nsecond\nworst. Replace
+           newlines with ' > ' to make it easier to read when returned */
+        if (weapon.weapon.toLowerCase().replace(/\'/g, '').replace(/^(the) /g, '') == weaponName.toLowerCase().replace(/^(the) /g, '')) {
             richEmbed.setTitle(`${weapon.weapon} ${weapon.mode} rolls`);
             richEmbed.addField('Obtained', weapon.obtained);
             if (weapon.type == 'Auto Rifle') {
@@ -157,13 +179,16 @@ module.exports.getRolls = function(msg, sendChannel) {
         }
     }
 
+    /* A weapon with that name doesn't exist */
     if (!found) {
-        sendChannel.send(`Jiang disapproves of your weapon choices`).catch(err => {
+        //sendChannel.send(`Jiang disapproves of your weapon choices`).catch(err => {
+        sendChannel.send(`No weapon with that name found.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
             console.log(err);
-        })
+        });
         return;
     }
 
+    /* Send the embed to the channel that we received the message from */
     sendChannel.send(richEmbed).catch(err => {
         console.log(err);
     });
