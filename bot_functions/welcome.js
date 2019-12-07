@@ -18,7 +18,6 @@ module.exports.welcome = function(member) {
         `If you would like to be notified when people are searching for certain activities, message the admins to be added as lfg-raider, lfg-pve'er, and/or lfg-pvper. `
         `Please type '!register' in chat to get set up with Charlemagne. ` +
         `If you visit the know-your-role channel, you can mark which dlc's you have so that others know what activities you can be involved in. ` +
-        ``
         `We are constantly changing, so if you have any questions, suggestions, or anything else, feel free to contact one of the admins: ` + 
         `'The Internet', 'aPhantomDolphin', 'Juncy', 'Swiftmood', or 'Azzarie'. ` +
        // `<@360437260333744128>, <@209836090280902656>, <@232691801771868160>, <@147417761725808641>, or <@153392262171066369>.` + 
