@@ -9,7 +9,7 @@ var splitString = "";
 var quote = false;
 var sent = false;
 
-module.exports.getLore = function(item, sendChannel) {
+module.exports.getLore = async function(item, sendChannel) {
     var itemString = item;
     item = item.replace(' ', '-');
     var itemArr = itemString.split(' ');
