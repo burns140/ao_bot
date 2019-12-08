@@ -38,7 +38,7 @@ function checkUrl(url, sendChannel, formatString) {
         buildLoreString(arr);
 
         if (description != '') {
-            sendChannel.send(`\n\n-------------Lore entry for ${formatString}\n-------------`);
+            sendChannel.send(`\n\n-------------\nLore entry for ${formatString}\n-------------`);
             for (var i = 0; i < loreString.length; i += 1985) {
                 if (i + 1985 > loreString.length) {
                     sendChannel.send(loreString.substr(i));
