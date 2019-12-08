@@ -64,6 +64,7 @@ async function checkUrl(url, sendChannel, formatString) {
         }    
     }).catch(err => {
         console.log('checkurl err');
+        console.log(url);
         //console.log(err);
     });
 }
@@ -80,7 +81,6 @@ function buildLoreString(arr) {
                 if (loreString.charAt(loreString.length - 1) == '"') {
                     quote = true;
                 }
-                console.log('fuck');
                 loreString += ' ';
             }
             if (specialChars.includes(loreString.charAt(loreString.length - 2)) && loreString.charAt(loreString.length - 1) == ' ' && quote == false) {
