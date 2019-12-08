@@ -181,7 +181,6 @@ module.exports.getRolls = function(msg, sendChannel) {
 
     /* A weapon with that name doesn't exist */
     if (!found) {
-        //sendChannel.send(`Jiang disapproves of your weapon choices`).catch(err => {
         sendChannel.send(`No weapon with that name found.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
             console.log(err);
         });
