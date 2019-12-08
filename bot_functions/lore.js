@@ -3,7 +3,7 @@ const $ = require('cheerio');
 const BASEURL = 'https://www.ishtar-collective.net/entries/';
 const SECONDURL = 'https://www.ishtar-collective.net/categories/';
 var urls = [BASEURL, SECONDURL];
-var specialChars = ['?', '!', '.'];
+var specialChars = ['?', '!', '.', '"'];
 var loreString = "";
 var workingurl = "";
 var splitString = "";
@@ -51,26 +51,9 @@ function checkUrl(url, sendChannel, formatString) {
                     sendChannel.send(splitString);
                 }
             }
-            /*sendChannel.send(
-                /*embed: {
-                    'title': formatString,
-                    'description': loreString
-                }
-            ).then(res => {
-                loreString = "";
-            }).catch(err => {
-                console.log('descrerr');
-                console.log(err);
-                if (err.code == 50035) {
-                    
-                }
-            });*/
-        }
-
-        //console.log(loreString);
-        
+        }        
     }).catch(err => {
-        //console.log(err);
+        console.log(err);
     });
 }
 
