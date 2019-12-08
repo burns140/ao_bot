@@ -5,8 +5,8 @@ const SECONDURL = 'https://www.ishtar-collective.net/categories/';
 var urls = [BASEURL, SECONDURL];
 var specialChars = ['?', '!', '.', '"'];
 var loreString = "";
-var workingurl = "";
 var splitString = "";
+var quote = false;
 
 module.exports.getLore = function(item, sendChannel) {
     var itemString = item;
@@ -66,13 +66,17 @@ function buildLoreString(arr) {
         var str = arr[i].data;
         if (str != undefined && isNaN(str)) {
             if (specialChars.includes(loreString.charAt(loreString.length - 1)) && str.charAt(0) != ' ') {
+                if (loreString.charAt(loreString.length - 1) == '"') {
+                    quote = true;
+                }
                 console.log('fuck');
                 loreString += ' ';
             }
-            if (specialChars.includes(loreString.charAt(loreString.length - 2)) && loreString.charAt(loreString.length - 1) == ' ') {
+            if (specialChars.includes(loreString.charAt(loreString.length - 2)) && loreString.charAt(loreString.length - 1) == ' ' && quote == false) {
                 loreString += '\n\n';
                 loreString += str;
             } else {
+                quote = false;
                 loreString += str; 
             }
             console.log(`-${str}-`);
