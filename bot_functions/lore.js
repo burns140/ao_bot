@@ -7,6 +7,7 @@ var specialChars = ['?', '!', '.', '"'];
 var loreString = "";
 var splitString = "";
 var quote = false;
+var sent = false;
 
 module.exports.getLore = function(item, sendChannel) {
     var itemString = item;
@@ -26,19 +27,25 @@ module.exports.getLore = function(item, sendChannel) {
         checkUrl(thisurl, sendChannel, formatString);
     }
 
-    //loreString = "";
-
+    if (!sent) {
+        sendChannel.send({
+            embed: {
+                title: "No entry found",
+                description: "No lore entry with that name was found\n"
+            }
+        });
+    }
 }
 
-function checkUrl(url, sendChannel, formatString) {
-    rp(url).then(html => {
+async function checkUrl(url, sendChannel, formatString) {
+    await rp(url).then(html => {
         var description = $('.description', html);
         var arr = description.children();
         workingurl = url;
         buildLoreString(arr);
 
         if (loreString != "") {
-            console.log(`lorestr: ---- ${loreString}`);
+            sent = true;
             sendChannel.send(`\n\n-------------\nLore entry for ${formatString}\n-------------`);
             for (var i = 0; i < loreString.length; i += 1985) {
                 if (i + 1985 > loreString.length) {
@@ -53,14 +60,7 @@ function checkUrl(url, sendChannel, formatString) {
                 }
             }
             loreString = "";
-        } else {
-            sendChannel.send({
-                embed: {
-                    title: "No entry found",
-                    description: "No lore entry with that name was found\n"
-                }
-            });
-        }       
+        }    
     }).catch(err => {
         console.log(err);
     });
