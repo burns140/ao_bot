@@ -35,6 +35,7 @@ module.exports.getLore = async function(item, sendChannel) {
             }
         });
     }
+    sent = false;
 }
 
 async function checkUrl(url, sendChannel, formatString) {
@@ -43,7 +44,6 @@ async function checkUrl(url, sendChannel, formatString) {
         var arr = description.children();
         workingurl = url;
         buildLoreString(arr);
-        console.log(loreString);
 
         if (loreString != "") {
             sent = true;
