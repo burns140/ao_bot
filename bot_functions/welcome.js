@@ -5,7 +5,6 @@ module.exports.welcome = function(member) {
     if (member.bot) {
         return;
     }
-    console.log('in welcome');
     var greeting = `Welcome to Alpha-Omega!!` 
     var message = `Welcome, <@${member.user.id}>! We have members from a wide variety of timezones with a wide variety of interests, ` + 
         `so no matter what your favorite activity is, you will always have someone to group with. ` + 
@@ -19,10 +18,9 @@ module.exports.welcome = function(member) {
         `Please type '!register' in chat to get set up with Charlemagne. ` +
         `If you visit the know-your-role channel, you can mark which dlc's you have so that others know what activities you can be involved in. ` +
         `We are constantly changing, so if you have any questions, suggestions, or anything else, feel free to contact one of the admins: ` + 
-        `'The Internet', 'aPhantomDolphin', 'Juncy', 'Swiftmood', or 'Azzarie'. ` +
+        `'Swiftmood', 'The Internet', 'aPhantomDolphin', 'Juncy', 'Azzarie', or 'Mr_Saltshaker1'. ` +
        // `<@360437260333744128>, <@209836090280902656>, <@232691801771868160>, <@147417761725808641>, or <@153392262171066369>.` + 
-        `Good luck out there Guardian. ` +
-        `(If you want to contribute to this bot, message 'aPhantomDolphin').`;
+        `Good luck out there Guardian. `;
     let data = {
         //'content': 'fuck this server',
         'embed': {
