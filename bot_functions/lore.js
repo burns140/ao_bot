@@ -38,6 +38,7 @@ function checkUrl(url, sendChannel, formatString) {
         buildLoreString(arr);
 
         if (loreString != "") {
+            console.log(`lorestr: ---- ${loreString}`);
             sendChannel.send(`\n\n-------------\nLore entry for ${formatString}\n-------------`);
             for (var i = 0; i < loreString.length; i += 1985) {
                 if (i + 1985 > loreString.length) {
@@ -55,7 +56,8 @@ function checkUrl(url, sendChannel, formatString) {
         } else {
             sendChannel.send({
                 embed: {
-                    description: 'No lore entry with that name was found\n'
+                    title: "No entry found",
+                    description: "No lore entry with that name was found\n"
                 }
             });
         }       
