@@ -24,7 +24,7 @@ module.exports.getLore = function(item, sendChannel) {
 
     for (url of urls) {
         thisurl = url + item.toLowerCase();
-        checkUrl(thisurl, sendChannel, formatString);
+        await checkUrl(thisurl, sendChannel, formatString);
     }
 
     if (!sent) {
