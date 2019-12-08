@@ -43,6 +43,7 @@ async function checkUrl(url, sendChannel, formatString) {
         var arr = description.children();
         workingurl = url;
         buildLoreString(arr);
+        console.log(loreString);
 
         if (loreString != "") {
             sent = true;
@@ -62,7 +63,8 @@ async function checkUrl(url, sendChannel, formatString) {
             loreString = "";
         }    
     }).catch(err => {
-        console.log(err);
+        console.log('checkurl err');
+        //console.log(err);
     });
 }
 
