@@ -51,6 +51,7 @@ function checkUrl(url, sendChannel, formatString) {
                     sendChannel.send(splitString);
                 }
             }
+            loreString = "";
         }        
     }).catch(err => {
         console.log(err);
