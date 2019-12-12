@@ -6,7 +6,7 @@ const axios = require('axios');
 var pveWeapons = [];
 var pvpWeapons = [];
 var topWeapons = [];
-const ignoreKeys = ['type', 'mode', 'archetype', 'weaponType'];
+const ignoreKeys = ['type', 'mode', 'weaponType'];
 
 /**
  * Add the type of the weapon to its object
