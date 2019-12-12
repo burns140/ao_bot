@@ -8,7 +8,7 @@ const Lore = require('./bot_functions/lore.js');
 const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
 const sendChannelId = '635288515101589525';
 
-const testing = true;
+const testing = false;
 var auth;
 if (testing) {
     auth = require('./auth.json');
