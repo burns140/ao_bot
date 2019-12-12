@@ -1,0 +1,54 @@
+/*richEmbed.setTitle(`${weapon.weapon} ${weapon.mode} rolls`);
+            richEmbed.addField('Obtained', weapon.obtained);
+            if (weapon.type == 'Auto Rifle') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Bow') {
+                richEmbed.addField('String', weapon.string.replace(/\n/g, ' > '));
+                richEmbed.addField('Arrow', weapon.arrow.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Fusion Rifle') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Battery', weapon.battery.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Grenade Launcher') {
+                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Hand Cannon') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Machine Gun') {
+                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Pulse Rifle') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Rocket Launcher') {
+                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Scout Rifle') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Shotgun') {
+                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Sidearm') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Sniper Rifle') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Submachine Gun') {
+                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+            } else if (weapon.type == 'Sword') {
+                richEmbed.addField('Blade', weapon.blade.replace(/\n/g, ' > '));
+                richEmbed.addField('Guard', weapon.guard.replace(/\n/g, ' > '));
+                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
+                richEmbed.addField('Trait', weapon.trait.replace(/\n/g, ' > '));
+            }
+            if (weapon.type != 'Sword') {
+                richEmbed.addField('Trait 1', weapon.trait1.replace(/\n/g, ' > '));
+                richEmbed.addField('Trait 2', weapon.trait2.replace(/\n/g, ' > '));
+            }
+            richEmbed.addField('Masterwork', weapon.masterwork.replace(/\n/g, ' > '));
+            richEmbed.addField('Mod', weapon.mod.replace(/\n/g, ' > '));
+            richEmbed.addField('Notes', weapon.notes);*/

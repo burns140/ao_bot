@@ -8,7 +8,7 @@ const Lore = require('./bot_functions/lore.js');
 const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
 const sendChannelId = '635288515101589525';
 
-const testing = false;
+const testing = true;
 var auth;
 if (testing) {
     auth = require('./auth.json');
@@ -40,6 +40,11 @@ client.on('message', (msg) => {
             case 'rolls':
                 var sendChannel = msg.channel;
                 Rolls.getRolls(msg, sendChannel);
+                break;
+            case 'best':
+                var sendChannel = msg.channel;
+                Rolls.bestInCategory(msg, sendChannel);
+                break;
         }
     }
 })

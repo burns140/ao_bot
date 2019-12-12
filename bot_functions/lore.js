@@ -65,7 +65,6 @@ async function checkUrl(url, sendChannel, formatString) {
     }).catch(err => {
         console.log('checkurl err');
         console.log(url);
-        //console.log(err);
     });
 }
 
