@@ -6,7 +6,7 @@ const axios = require('axios');
 var pveWeapons = [];
 var pvpWeapons = [];
 var topWeapons = [];
-const ignoreKeys = ['type', 'mode', 'weaponType'];
+const ignoreKeys = ['type', 'mode', 'weaponType', 'slot', 'energy', 'ammo', 'archetype'];
 
 /**
  * Add the type of the weapon to its object
@@ -182,16 +182,12 @@ module.exports.getRolls = function(msg, sendChannel) {
                     /* Band aid fix for bad formatting */
                     if (header == 'Trait1') {
                         header = 'Trait 1';
-                    }
-                    if (header == 'Trait2') {
+                    } else if (header == 'Trait2') {
                         header = 'Trait 2';
                     }
 
-                    if (i % 3 == 1) {
-                        richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
-                    } else {
-                        richEmbed.addField(header, vals[i].replace(/\n/g, ' > '), true);
-                    }
+                    richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                    //richEmbed.addField(header, vals[i].replace(/\n/g, ' > '), true);
                     
                 }
             }
