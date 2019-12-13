@@ -102,6 +102,15 @@ module.exports.bestInCategory = function(msg, sendChannel) {
                 if (!(ignoreKeys.includes(keys[i]))) {
                     var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
                     header = header.replace(/([A-Z])/g, ' $1').trim();
+                    
+                    /* Band aid fix for bad formatting */
+                    if (header == 'Trait1') {
+                        header = 'Trait 1';
+                    }
+                    if (header == 'Trait2') {
+                        header = 'Trait 2';
+                    }
+
                     richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
                 }
             }
