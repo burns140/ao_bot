@@ -102,15 +102,6 @@ module.exports.bestInCategory = function(msg, sendChannel) {
                 if (!(ignoreKeys.includes(keys[i]))) {
                     var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
                     header = header.replace(/([A-Z])/g, ' $1').trim();
-                    
-                    /* Band aid fix for bad formatting */
-                    if (header == 'Trait1') {
-                        header = 'Trait 1';
-                    }
-                    if (header == 'Trait2') {
-                        header = 'Trait 2';
-                    }
-
                     richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
                 }
             }
@@ -187,7 +178,21 @@ module.exports.getRolls = function(msg, sendChannel) {
                 if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i]))) {
                     var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
                     header = header.replace(/(^|\/)(\S)/g, s=>s.toUpperCase());
-                    richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                    
+                    /* Band aid fix for bad formatting */
+                    if (header == 'Trait1') {
+                        header = 'Trait 1';
+                    }
+                    if (header == 'Trait2') {
+                        header = 'Trait 2';
+                    }
+
+                    if (i % 3 == 1) {
+                        richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                    } else {
+                        richEmbed.addField(header, vals[i].replace(/\n/g, ' > '), true);
+                    }
+                    
                 }
             }
         
