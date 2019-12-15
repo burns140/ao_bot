@@ -6,6 +6,10 @@ const axios = require('axios');
 var pveWeapons = [];
 var pvpWeapons = [];
 var topWeapons = [];
+const subMachineStrings = ['smg', 'smgs', 'subs', 'sub', 'submachine guns'];
+const autoStrings = ['assault', 'assaults', 'ar', 'ars', 'auto', 'autos', 'auto rifles'];
+const sniperStrings = ['sniper', 'snipers', 'snipe', 'sniper rifles'];
+const linearFusionStrings = ['linear fusion', 'linear', 'linear rifles', 'linear fusion rifles'];
 const ignoreKeys = ['type', 'mode', 'weaponType', 'slot', 'energy', 'ammo', 'archetype'];
 
 /**
@@ -90,6 +94,19 @@ module.exports.initWeaponsApi = (async function () {
 
 module.exports.bestInCategory = function(msg, sendChannel) {
     var catName = msg.content.substring(6);
+
+    /* Allow abbreviations/acronyms */
+    if (subMachineStrings.includes(catName)) {
+        catName = 'Submachine Gun';
+    } else if (autoStrings.includes(catName)) {
+        catName = 'Auto Rifle';
+    } else if (sniperStrings.includes(catName)) {
+        catName = 'Sniper Rifle';
+    } else if (linearFusionStrings.includes(catName)) {
+        catName = 'Linear Fusion Rifle';
+    }
+
+
     var richEmbed = new Discord.RichEmbed();
     var found = false;
 

@@ -27,19 +27,38 @@ module.exports.getLore = async function(item, sendChannel) {
         await checkUrl(thisurl, sendChannel, formatString);
     }
 
-    if (!sent) {
+    /*if (!sent) {
         sendChannel.send({
             embed: {
                 title: "No entry found",
                 description: "No lore entry with that name was found\n"
             }
         });
+    }*/
+
+    if (!sent) {
+
+        sendChannel.send({
+            embed: {
+                title: "No entry found",
+                description: ""
+            }
+        })
     }
+
+
     sent = false;
 }
 
 async function checkUrl(url, sendChannel, formatString) {
     await rp(url).then(html => {
+        workingurl = url;
+        var entType;
+        if (workingurl.includes('categories')) {
+            entType = 'Category description'
+        } else if (workingurl.includes('entries')) {
+            entType = 'Lore entry'
+        }
         var description = $('.description', html);
         var arr = description.children();
         workingurl = url;
@@ -47,7 +66,7 @@ async function checkUrl(url, sendChannel, formatString) {
 
         if (loreString != "") {
             sent = true;
-            sendChannel.send(`\n\n-------------\nLore entry for ${formatString}\n-------------`);
+            sendChannel.send(`\n\n---------------------------------\n${entType} for ${formatString}\n---------------------------------`);
             for (var i = 0; i < loreString.length; i += 1985) {
                 if (i + 1985 > loreString.length) {
                     sendChannel.send(loreString.substr(i));
