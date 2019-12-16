@@ -16,7 +16,7 @@ module.exports.welcome = function(member) {
         `weapon rolls you've gotten are worth keeping. In the guides section, you can see information that is useful for various activities. ` +
         `If you would like to be notified when people are searching for certain activities, message the admins to be added as lfg-raider, lfg-pve'er, and/or lfg-pvper. ` +
         `Please type '!register' in chat to get set up with Charlemagne. ` +
-        `Visit the 'know your role' channel to select which classes you main. ` +
+        `Visit the 'know your role' channel to select which classes you main. Refrain from using the 'everyone' tag in chat. This is reserved for important announcements, as it can bypass channel mutes. ` +
         `We are constantly changing, so if you have any questions, suggestions, or anything else, feel free to contact one of the admins: ` + 
         `'Swiftmood', 'The Internet', 'aPhantomDolphin', 'Juncy', 'Azzarie', or 'Mr_Saltshaker1'. ` +
        // `<@360437260333744128>, <@209836090280902656>, <@232691801771868160>, <@147417761725808641>, or <@153392262171066369>.` + 
