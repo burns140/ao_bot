@@ -192,7 +192,7 @@ module.exports.getRolls = function(msg, sendChannel) {
                     richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
                     continue;
                 }
-                if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i]))) {
+                if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i])) && !(vals[i] == 'n/a')) {
                     var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
                     header = header.replace(/(^|\/)(\S)/g, s=>s.toUpperCase());
                     
