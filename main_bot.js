@@ -6,9 +6,14 @@ const Welcome = require('./bot_functions/welcome.js');
 const ActiveMembers = require('./bot_functions/active_members.js');
 const Lore = require('./bot_functions/lore.js');
 const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
+const DM = require('./bot_functions/dm.js');
+const Update = require('./write_id_to_file.js');
 const sendChannelId = '635288515101589525';
+const fs = require('fs');
 
-const testing = false;
+var allids = [];
+
+const testing = true;
 var auth;
 if (testing) {
     auth = require('./auth.json');
@@ -45,6 +50,17 @@ client.on('message', (msg) => {
                 var sendChannel = msg.channel;
                 Rolls.bestInCategory(msg, sendChannel);
                 break;
+            case 'dm':
+                if (!msg.author.id == '153392262171066369') {
+                    break;
+                }
+                var members = msg.guild.members;
+                DM.sendDm(members);
+                break;
+            case 'updateid':
+                var guild = msg.guild;
+                Update.updateIds(guild);
+                break;
         }
     }
 })
@@ -55,4 +71,8 @@ if (testing) {
     client.login(auth);
 }
 
+fs.readFile('αlpha_ωmega_ids.txt', (err, data) => {
+    if (err) throw err;
+    allids = data.toString().split('\n');
+})
 Rolls.initWeaponsApi();
