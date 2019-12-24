@@ -13,7 +13,7 @@ const fs = require('fs');
 
 var allids = [];
 
-const testing = true;
+const testing = false;
 var auth;
 if (testing) {
     auth = require('./auth.json');
