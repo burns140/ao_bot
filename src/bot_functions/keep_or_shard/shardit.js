@@ -3,14 +3,14 @@ const client = new Discord.Client();
 const axios = require('axios');
 
 
-var pveWeapons = [];
-var pvpWeapons = [];
-var topWeapons = [];
-const subMachineStrings = ['smg', 'smgs', 'subs', 'sub', 'submachine guns'];
-const autoStrings = ['assault', 'assaults', 'ar', 'ars', 'auto', 'autos', 'auto rifles'];
-const sniperStrings = ['sniper', 'snipers', 'snipe', 'sniper rifles'];
-const linearFusionStrings = ['linear fusion', 'linear', 'linear rifles', 'linear fusion rifles'];
-const ignoreKeys = ['type', 'mode', 'weaponType', 'slot', 'energy', 'ammo', 'archetype'];
+var pveWeapons = [];    // Store rolls for PvE
+var pvpWeapons = [];    // Store rolls for PvP
+var topWeapons = [];    // Store top weapons from each category
+const subMachineStrings = ['smg', 'smgs', 'subs', 'sub', 'submachine guns'];                        // Strings referencing SMG 
+const autoStrings = ['assault', 'assaults', 'ar', 'ars', 'auto', 'autos', 'auto rifles'];           // Strings referencing auto rifles
+const sniperStrings = ['sniper', 'snipers', 'snipe', 'sniper rifles'];                              // Strings referencing snipers
+const linearFusionStrings = ['linear fusion', 'linear', 'linear rifles', 'linear fusion rifles'];   // Strings referencing linear fusions
+const ignoreKeys = ['type', 'mode', 'weaponType', 'slot', 'energy', 'ammo', 'archetype'];           // Values to not include in embed
 
 /**
  * Add the type of the weapon to its object
@@ -51,7 +51,7 @@ function addType(key, wep) {
 }
 
 /**
- * Initializes the weapon arrays using the api.
+ * Initializes the weapon arrays using the api from clan member jiangshi
  */
 module.exports.initWeaponsApi = (async function () {
     
@@ -79,8 +79,7 @@ module.exports.initWeaponsApi = (async function () {
         } else if (thisel.sheet.includes('PVP')) {
             /* This is a repeat of the above. I nearly duplicated
                code so that we don't do an if statement in every 
-               iteration 
-               TODO: MOVE TO FUNCTION */
+               iteration. Can be moved to function for cleanliness */
             for (var thiswep of tempweaponarr) {
                 var typedWep = addType(thisel.sheet, thiswep);
                 typedWep.mode = 'PVP';
@@ -92,6 +91,9 @@ module.exports.initWeaponsApi = (async function () {
     console.log('finished populating weapon arrays');
 });
 
+/**
+ * Create embeds when someone requests best weapons from a category 
+ */
 module.exports.bestInCategory = function(msg, sendChannel) {
     var catName = msg.content.substring(6);
 
@@ -110,11 +112,15 @@ module.exports.bestInCategory = function(msg, sendChannel) {
     var richEmbed = new Discord.RichEmbed();
     var found = false;
 
+    /* Create the embed to be returned */
     for (var cat of topWeapons) {
         if (cat.weaponType.toLowerCase() == catName.toLowerCase()) {
             richEmbed.setTitle(`Best ${cat.weaponType}s`);
             const keys = Object.keys(cat);
             const vals = Object.values(cat);
+
+            /* If the field is not set to be ignored, format the text and add said field to the embed
+               Mark boolean as true so I know not to send help message */
             for (var i = 0; i < keys.length; i++) {
                 if (!(ignoreKeys.includes(keys[i]))) {
                     var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
@@ -142,6 +148,9 @@ module.exports.bestInCategory = function(msg, sendChannel) {
 
 }
 
+/**
+ * Get the best rolls for a weapon
+ */
 module.exports.getRolls = function(msg, sendChannel) {
     var thisArr;
     var mode;

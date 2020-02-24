@@ -28,7 +28,11 @@ client.on('guildMemberAdd', (member) => {
     Welcome.welcome(member);
 });
 
+/**
+ * Determine which functionality is being requested
+ */
 client.on('message', (msg) => {
+    /* Only enter switch if first character matches the indicator */
     if (msg.content.substring(0, 1) == '?' && msg.content.length > 1) {
         var command = msg.content.substring(1).split(' ');
         switch (command[0]) {

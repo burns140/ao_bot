@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+/**
+ * Send welcome message to new members
+ */
 module.exports.welcome = function(member) {
     if (member.bot) {
         return;
@@ -18,11 +21,9 @@ module.exports.welcome = function(member) {
         `Please type '!register' in chat to get set up with Charlemagne. ` +
         `Visit the 'know your role' channel to select which classes you main. Refrain from using the 'everyone' tag in chat. This is reserved for important announcements, as it can bypass channel mutes. ` +
         `We are constantly changing, so if you have any questions, suggestions, or anything else, feel free to contact one of the admins: ` + 
-        `'Swiftmood', 'MachineGunShelly', 'StumptownRetro', 'The Internet', 'aPhantomDolphin', 'Juncy', or 'Mr_Saltshaker'. ` +
-       // `<@360437260333744128>, <@209836090280902656>, <@232691801771868160>, <@147417761725808641>, or <@153392262171066369>.` + 
+        `'Swiftmood', 'MachineGunShelly', 'StumptownRetro', 'The Internet', 'aPhantomDolphin', 'Juncy', or 'Mr_Saltshaker'. ` + 
         `Good luck out there Guardian. `;
     let data = {
-        //'content': 'fuck this server',
         'embed': {
             'title': greeting,
             'description': message
