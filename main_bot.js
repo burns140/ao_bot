@@ -5,7 +5,7 @@ const ActiveMembers = require('./src/bot_functions/active_members.js');
 const Lore = require('./src/bot_functions/lore.js');
 const Rolls = require('./src/bot_functions/keep_or_shard/shardit.js');
 const DM = require('./src/bot_functions/dm.js');
-const Update = require('./write_id_to_file.js');
+const Update = require('./src/misc/write_id_to_file.js');
 const sendChannelId = '635288515101589525';
 const fs = require('fs');
 
