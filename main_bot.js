@@ -69,7 +69,7 @@ if (testing) {
     client.login(auth);
 }
 
-fs.readFile('αlpha_ωmega_ids.txt', (err, data) => {
+fs.readFile('./src/misc/αlpha_ωmega_ids.txt', (err, data) => {
     if (err) throw err;
     allids = data.toString().split('\n');
 })
