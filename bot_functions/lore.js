@@ -53,6 +53,6 @@ function checkUrl(url, sendChannel, formatString) {
             });
         }
     }).catch(err => {
-        //console.log(err);
+        console.log(err);
     });
 }
