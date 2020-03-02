@@ -59,7 +59,7 @@ client.on('message', (msg) => {
                 Rolls.bestInCategory(msg, sendChannel);
                 break;
             case 'dm':
-                if (!msg.author.id == '153392262171066369') {
+                if (!msg.author.id == '153392262171066369') {       // Only I can do this
                     break;
                 }
                 var members = msg.guild.members;
@@ -72,7 +72,14 @@ client.on('message', (msg) => {
             case 'message':
                 var sendChannel = msg.channel;
                 var cmd = msg.content.substring(9);
-                sendChannel.send(cmd);
+                switch (cmd.split(' ')[0]) {
+                    case "default":
+                        compiled = compile(messageDefault);
+                    case "view":
+                        Welcome.viewMessage(sendChannel);
+                    case "set":
+                        Welcome.setMessage(cmd.substring(4), sendChannel);
+                }
         }
     }
 })
@@ -89,11 +96,10 @@ if (testing) {
     allids = data.toString().split('\n');
 }); */ 
 
-var data = fs.readFileSync("./src/resources/welcomeMessage.txt", "utf8");
-var compiled = compile(data);
+var compiled = compile(fs.readFileSync("./src/resources/welcomeMessage.txt", "utf8"));
 
 
-var messageDefault = "Welcome, <@${member.user.id}>! We have members from a wide variety of timezones with a wide variety of interests, " + 
+var messageDefault = "Welcome, <@${user.id}>! We have members from a wide variety of timezones with a wide variety of interests, " + 
         `so no matter what your favorite activity is, you will always have someone to group with. ` + 
         `If you take a look at our text channels, you can see that we have some designated chat groups ` + 
         `for each activity as well as designated lfg chats. The lfg channels use a bot to create and ` + 

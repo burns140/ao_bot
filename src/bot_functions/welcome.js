@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs')
+const compile = require('es6-template-strings/compile');
 const resolveToString = require('es6-template-strings/resolve-to-string');
 
 /**
@@ -24,9 +25,10 @@ module.exports.welcome = function(member) {
     member.user.send(data);
 }
 
-module.exports.getMessage = function(sendChannel) {
-    if (member.bot) {
-        return;
-    }
-    sendChannel.send(data);
+module.exports.viewMessage = function(sendChannel) {
+    sendChannel.send(compiled);
+}
+
+module.exports.setMessage = function(newMessage, sendChannel) {
+    compiled = compile(newMessage);
 }

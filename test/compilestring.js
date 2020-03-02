@@ -7,8 +7,7 @@ const user = {
     name: "testname"
 }
 
-var data = fs.readFileSync("./testString.txt", "utf8");
-var compiled = compile(data);
+var compiled = compile(fs.readFileSync("./testString.txt", "utf8"));
 
 console.log(content);
 
