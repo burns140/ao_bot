@@ -18,7 +18,7 @@ module.exports.welcome = function(member) {
         `The weapons channel uses information gathered by clan member Jiangshi to help you determine whether the ` + 
         `weapon rolls you've gotten are worth keeping. In the guides section, you can see information that is useful for various activities. ` +
         `If you would like to be notified when people are searching for certain activities, message the admins to be added as lfg-raider, lfg-pve'er, and/or lfg-pvper. ` +
-        `Please type '!register' in chat to get set up with Charlemagne. ` +
+        `Please type '?register' in chat to get set up with Charlemagne. ` +
         `Visit the 'know your role' channel to select which classes you main. Refrain from using the 'everyone' tag in chat. This is reserved for important announcements, as it can bypass channel mutes. ` +
         `We are constantly changing, so if you have any questions, suggestions, or anything else, feel free to contact one of the admins: ` + 
         `'Swiftmood', 'MachineGunShelly', 'StumptownRetro', 'The Internet', 'aPhantomDolphin', 'Juncy', or 'Mr_Saltshaker'. ` + 
