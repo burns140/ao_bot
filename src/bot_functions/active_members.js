@@ -1,10 +1,14 @@
 const Discord = require('discord.js');
 
+/**
+ * Iterates through each member in the guild and sees if they have sent a recent message in our server
+ * If yes, add them to array.
+ * Send string with all member names when complete
+ */
 module.exports.activeMembers = function(guild, sendChannel) {
     var memberArr = [];
     var memberstr = "";
     guild.members.forEach((value, key, map) => {
-        //console.log(value);
         if (value.lastMessage) {
             if (!memberArr.includes(value.user.id)) {
                 memberArr.push(value.user.id);

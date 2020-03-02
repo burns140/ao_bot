@@ -1,1 +1,1 @@
-# ao_bot
+# Bot for Alpha Omega clan

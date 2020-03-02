@@ -3,8 +3,14 @@ const client = new Discord.Client();
 const axios = require('axios');
 
 
-var pveWeapons = [];
-var pvpWeapons = [];
+var pveWeapons = [];    // Store rolls for PvE
+var pvpWeapons = [];    // Store rolls for PvP
+var topWeapons = [];    // Store top weapons from each category
+const subMachineStrings = ['smg', 'smgs', 'subs', 'sub', 'submachine guns'];                        // Strings referencing SMG 
+const autoStrings = ['assault', 'assaults', 'ar', 'ars', 'auto', 'autos', 'auto rifles'];           // Strings referencing auto rifles
+const sniperStrings = ['sniper', 'snipers', 'snipe', 'sniper rifles'];                              // Strings referencing snipers
+const linearFusionStrings = ['linear fusion', 'linear', 'linear rifles', 'linear fusion rifles'];   // Strings referencing linear fusions
+const ignoreKeys = ['type', 'mode', 'weaponType', 'slot', 'energy', 'ammo', 'archetype'];           // Values to not include in embed
 
 /**
  * Add the type of the weapon to its object
@@ -45,7 +51,7 @@ function addType(key, wep) {
 }
 
 /**
- * Initializes the weapon arrays using the api.
+ * Initializes the weapon arrays using the api from clan member jiangshi
  */
 module.exports.initWeaponsApi = (async function () {
     
@@ -57,7 +63,12 @@ module.exports.initWeaponsApi = (async function () {
         var thisel = el;
         var result = await axios.get(`${thisel.url}`);                  
         var tempweaponarr = result.data[Object.keys(result.data)[0]];   // Get the array of weapons from the current table
-        if (thisel.sheet.includes('PVE')) {
+        if (thisel.sheet.includes('Top')) {
+            for (var wepClass of tempweaponarr) {
+                delete wepClass.id;
+                topWeapons.push(wepClass);
+            }
+        } else if (thisel.sheet.includes('PVE')) {
             /* Iterate through current weapon array */
             for (var thiswep of tempweaponarr) {
                 var typedWep = addType(thisel.sheet, thiswep);          // Add the weapon type
@@ -68,7 +79,7 @@ module.exports.initWeaponsApi = (async function () {
         } else if (thisel.sheet.includes('PVP')) {
             /* This is a repeat of the above. I nearly duplicated
                code so that we don't do an if statement in every 
-               iteration */
+               iteration. Can be moved to function for cleanliness */
             for (var thiswep of tempweaponarr) {
                 var typedWep = addType(thisel.sheet, thiswep);
                 typedWep.mode = 'PVP';
@@ -80,8 +91,69 @@ module.exports.initWeaponsApi = (async function () {
     console.log('finished populating weapon arrays');
 });
 
+/**
+ * Create embeds when someone requests best weapons from a category 
+ */
+module.exports.bestInCategory = function(msg, sendChannel) {
+    var catName = msg.content.substring(6);
+
+    /* Allow abbreviations/acronyms */
+    if (subMachineStrings.includes(catName)) {
+        catName = 'Submachine Gun';
+    } else if (autoStrings.includes(catName)) {
+        catName = 'Auto Rifle';
+    } else if (sniperStrings.includes(catName)) {
+        catName = 'Sniper Rifle';
+    } else if (linearFusionStrings.includes(catName)) {
+        catName = 'Linear Fusion Rifle';
+    }
+
+
+    var richEmbed = new Discord.RichEmbed();
+    var found = false;
+
+    /* Create the embed to be returned */
+    for (var cat of topWeapons) {
+        if (cat.weaponType.toLowerCase() == catName.toLowerCase()) {
+            richEmbed.setTitle(`Best ${cat.weaponType}s`);
+            const keys = Object.keys(cat);
+            const vals = Object.values(cat);
+
+            /* If the field is not set to be ignored, format the text and add said field to the embed
+               Mark boolean as true so I know not to send help message */
+            for (var i = 0; i < keys.length; i++) {
+                if (!(ignoreKeys.includes(keys[i]))) {
+                    var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
+                    header = header.replace(/([A-Z])/g, ' $1').trim();
+                    richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                }
+            }
+            found = true;
+            break;
+        }
+    }
+
+    /* A weapon with that name doesn't exist */
+    if (!found) {
+        sendChannel.send(`No weapon class found.\nUsage: ?best weapon_class`).catch(err => {
+            console.log(err);
+        });
+        return;
+    }
+
+    /* Send the embed to the channel that we received the message from */
+    sendChannel.send(richEmbed).catch(err => {
+        console.log(err);
+    });
+
+}
+
+/**
+ * Get the best rolls for a weapon
+ */
 module.exports.getRolls = function(msg, sendChannel) {
     var thisArr;
+    var mode;
     var content = msg.content.substring(1);
     var command = content.split(' '); 
     if (command.length == 1) {
@@ -94,6 +166,7 @@ module.exports.getRolls = function(msg, sendChannel) {
     if (command[command.length - 1].toLowerCase() != 'pve' && command[command.length - 1].toLowerCase() != 'pvp') {
         weaponName = content.substring(6);
         thisArr = pveWeapons;
+        mode = 'PVE';
     } else {
         /* If there is a mode argument, must split and combine all strings minus the final (mode) element to get weapon name */
         for (var i = 1; i < command.length - 1; i++) {
@@ -105,8 +178,10 @@ module.exports.getRolls = function(msg, sendChannel) {
         /* Set mode after getting weapon name */
         if (command[command.length - 1].toLowerCase() == 'pve') {
             thisArr = pveWeapons;
+            mode = 'PVE';
         } else {
             thisArr = pvpWeapons;
+            mode = 'PVP';
         }
     }
 
@@ -119,60 +194,30 @@ module.exports.getRolls = function(msg, sendChannel) {
            For every single element, the sheet has elements formatted as 'best\nsecond\nworst. Replace
            newlines with ' > ' to make it easier to read when returned */
         if (weapon.weapon.toLowerCase().replace(/\'/g, '').replace(/^(the) /g, '') == weaponName.toLowerCase().replace(/^(the) /g, '')) {
-            richEmbed.setTitle(`${weapon.weapon} ${weapon.mode} rolls`);
-            richEmbed.addField('Obtained', weapon.obtained);
-            if (weapon.type == 'Auto Rifle') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Bow') {
-                richEmbed.addField('String', weapon.string.replace(/\n/g, ' > '));
-                richEmbed.addField('Arrow', weapon.arrow.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Fusion Rifle') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Battery', weapon.battery.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Grenade Launcher') {
-                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Hand Cannon') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Machine Gun') {
-                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Pulse Rifle') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Rocket Launcher') {
-                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Scout Rifle') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Shotgun') {
-                richEmbed.addField('Barrel', weapon.barrel.replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Sidearm') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Sniper Rifle') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Submachine Gun') {
-                richEmbed.addField('Sight/Barrel', weapon['sight/barrel'].replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-            } else if (weapon.type == 'Sword') {
-                richEmbed.addField('Blade', weapon.blade.replace(/\n/g, ' > '));
-                richEmbed.addField('Guard', weapon.guard.replace(/\n/g, ' > '));
-                richEmbed.addField('Magazine', weapon.magazine.replace(/\n/g, ' > '));
-                richEmbed.addField('Trait', weapon.trait.replace(/\n/g, ' > '));
+            const keys = Object.keys(weapon);
+            const vals = Object.values(weapon);
+            for (var i = 0; i < keys.length; i++) {
+                if (i == 0) {
+                    richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
+                    continue;
+                }
+                if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i])) && !(vals[i] == 'n/a')) {
+                    var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
+                    header = header.replace(/(^|\/)(\S)/g, s=>s.toUpperCase());
+                    
+                    /* Band aid fix for bad formatting */
+                    if (header == 'Trait1') {
+                        header = 'Trait 1';
+                    } else if (header == 'Trait2') {
+                        header = 'Trait 2';
+                    }
+
+                    richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                    //richEmbed.addField(header, vals[i].replace(/\n/g, ' > '), true);
+                    
+                }
             }
-            if (weapon.type != 'Sword') {
-                richEmbed.addField('Trait 1', weapon.trait1.replace(/\n/g, ' > '));
-                richEmbed.addField('Trait 2', weapon.trait2.replace(/\n/g, ' > '));
-            }
-            richEmbed.addField('Masterwork', weapon.masterwork.replace(/\n/g, ' > '));
-            richEmbed.addField('Mod', weapon.mod.replace(/\n/g, ' > '));
-            richEmbed.addField('Notes', weapon.notes);
+        
             console.log(richEmbed);
             found = true;
             break;
@@ -181,7 +226,6 @@ module.exports.getRolls = function(msg, sendChannel) {
 
     /* A weapon with that name doesn't exist */
     if (!found) {
-        //sendChannel.send(`Jiang disapproves of your weapon choices`).catch(err => {
         sendChannel.send(`No weapon with that name found.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
             console.log(err);
         });
