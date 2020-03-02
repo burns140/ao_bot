@@ -93,7 +93,7 @@ var data = fs.readFileSync("./src/resources/welcomeMessage.txt", "utf8");
 var compiled = compile(data);
 
 
-var messageDefault = `Welcome, <@${member.user.id}>! We have members from a wide variety of timezones with a wide variety of interests, ` + 
+var messageDefault = "Welcome, <@${member.user.id}>! We have members from a wide variety of timezones with a wide variety of interests, ` + 
         `so no matter what your favorite activity is, you will always have someone to group with. ` + 
         `If you take a look at our text channels, you can see that we have some designated chat groups ` + 
         `for each activity as well as designated lfg chats. The lfg channels use a bot to create and ` + 
@@ -106,7 +106,7 @@ var messageDefault = `Welcome, <@${member.user.id}>! We have members from a wide
         `Visit the 'know your role' channel to select which classes you main. Refrain from using the 'everyone' tag in chat. This is reserved for important announcements, as it can bypass channel mutes. ` +
         `We are constantly changing, so if you have any questions, suggestions, or anything else, feel free to contact one of the admins: ` + 
         `'Swiftmood', 'MachineGunShelly', 'StumptownRetro', 'The Internet', 'aPhantomDolphin', 'Juncy', or 'Mr_Saltshaker'. ` + 
-        `Good luck out there Guardian.`;
+        `Good luck out there Guardian.";
 
 
 /* Initialize the weapon arrays needed for the rolls */
