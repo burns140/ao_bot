@@ -71,7 +71,8 @@ client.on('message', (msg) => {
                 break;
             case 'message':
                 var sendChannel = msg.channel;
-
+                var cmd = msg.content.substring(9);
+                sendChannel.send(cmd);
         }
     }
 })
