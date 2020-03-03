@@ -40,7 +40,7 @@ Returns an embed with the best weapons in each weapon class depending on what cr
 
 ### Output
 
-<img src="images/best_sniper_output" alt="Output for best snipers" height="400"/>
+<img src="images/best_sniper_output.PMG" alt="Output for best snipers" height="400"/>
 
 ## Lore
 
