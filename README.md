@@ -19,10 +19,16 @@ This returns an embed with the best rolls for each slot on in-game weapons. This
 ?rolls bad omens pvp
 ```
 
+<<<<<<< HEAD
 ### Output
 
 <img src="images/rolls_output.PNG" alt="Output for tranquility" height="480"/>
 <img src="images/rolls_bad_output.PNG" alt="Output for bad omens pvp" height="480"/>
+=======
+#### Output
+
+<img src="images/rolls_output.PNG" alt="Output for tranquility" height="480"/>
+>>>>>>> 85c4d35889209af16dcd970f1ea747b157fd84b2
 
 
 
