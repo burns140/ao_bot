@@ -9,13 +9,25 @@ const Update = require('./src/misc/write_id_to_file.js');
 const sendChannelId = '635288515101589525';
 const fs = require('fs');
 const compile = require('es6-template-strings/compile');
+var info = require('./src/resources/info.json');
+var data;
+var messageDefault = info.messageDefault;
 
+
+/* Read in welcome message. If there is an error, reset it to default */
+try {
+    data = fs.readFileSync("./src/resources/welcomeMessage.txt", "utf8");
+} catch (err) {
+    data = messageDefault;
+}
+
+var compiled = compile(data);
 
 var allids = [];
 
 /* Heroku needs to auth from environment variable.
    Testing is the binary variable acting as the switch */
-const testing = false;
+const testing = true;
 var auth;
 if (testing) {
     auth = require('./auth.json');
@@ -31,7 +43,7 @@ client.on('ready', () => {
 /* Call function whenever someone joins the server */
 client.on('guildMemberAdd', (member) => {
     console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
-    Welcome.welcome(member);
+    Welcome.welcome(compiled, member);
 });
 
 /**
@@ -72,13 +84,23 @@ client.on('message', (msg) => {
             case 'message':
                 var sendChannel = msg.channel;
                 var cmd = msg.content.substring(9);
-                switch (cmd.split(' ')[0]) {
-                    case "default":
-                        compiled = compile(messageDefault);
+                var cmdArr = cmd.split(' ');
+                switch (cmdArr[0]) {
                     case "view":
-                        Welcome.viewMessage(sendChannel);
+                        Welcome.viewMessage(data, sendChannel);
+                        break;
                     case "set":
-                        Welcome.setMessage(cmd.substring(4), sendChannel);
+                        var stringToSet = "";
+                        if (cmdArr[1] == "--default") {
+                            stringToSet = messageDefault;
+                        } else {
+                            stringToSet = cmd.substring(4);
+                        }
+                        if (Welcome.setMessage(stringToSet, sendChannel)) {
+                            data = stringToSet;
+                            compiled = compile(data);
+                        }
+                        break;
                 }
         }
     }
@@ -95,24 +117,6 @@ if (testing) {
     if (err) throw err;
     allids = data.toString().split('\n');
 }); */ 
-
-var compiled = compile(fs.readFileSync("./src/resources/welcomeMessage.txt", "utf8"));
-
-
-var messageDefault = "Welcome, <@${user.id}>! We have members from a wide variety of timezones with a wide variety of interests, " + 
-        `so no matter what your favorite activity is, you will always have someone to group with. ` + 
-        `If you take a look at our text channels, you can see that we have some designated chat groups ` + 
-        `for each activity as well as designated lfg chats. The lfg channels use a bot to create and ` + 
-        `schedule activities and can be used when you have a specific activity in mind, while the chat ` + 
-        `channels have a bit more flexibility when finding a team. ` +
-        `The weapons channel uses information gathered by clan member Jiangshi to help you determine whether the ` + 
-        `weapon rolls you've gotten are worth keeping. In the guides section, you can see information that is useful for various activities. ` +
-        `If you would like to be notified when people are searching for certain activities, message the admins to be added as lfg-raider, lfg-pve'er, and/or lfg-pvper. ` +
-        `Please type '?register' in chat to get set up with Charlemagne. ` +
-        `Visit the 'know your role' channel to select which classes you main. Refrain from using the 'everyone' tag in chat. This is reserved for important announcements, as it can bypass channel mutes. ` +
-        `We are constantly changing, so if you have any questions, suggestions, or anything else, feel free to contact one of the admins: ` + 
-        `'Swiftmood', 'MachineGunShelly', 'StumptownRetro', 'The Internet', 'aPhantomDolphin', 'Juncy', or 'Mr_Saltshaker'. ` + 
-        `Good luck out there Guardian.`;
 
 
 /* Initialize the weapon arrays needed for the rolls */
