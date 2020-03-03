@@ -58,7 +58,7 @@ Returns a message with the lore for an item. The information is retrieved throug
 
 ### Output
 
-<img src="images/lore_wormhusk_crown.PNG" alt="Lore output for wormhusk crown" height="360"/>
+<img src="images/lore_wormhusk_crown.PNG" alt="Lore output for wormhusk crown" height="420"/>
 
 ## Welcome message to new members
 
@@ -78,7 +78,7 @@ Automatically sends a welcome message to new clan members when they join the dis
 
 ### Output
 Note: The `<@${user.id}>` section of the message is compiled when the DM is actually sent in order to fill in the user's name using string interpolation. For the purposes of viewing the message in discord, however, it must be stored in plaintext when being sent.
-<img src="images/view_message.PNG" alt="View current message" height="450"/>
+<img src="images/view_message.PNG" alt="View current message" height="420"/>
 <img src="images/set_new_message.PNG" alt="Set message" height="200"/>
 
 
