@@ -14,7 +14,7 @@ var sent = false;
  */
 module.exports.getLore = async function(item, sendChannel) {
     var itemString = item;
-    item = item.replace(/ /g, '-');
+    item = item.replace(/ /g, '-').replace(/'/g, '');
     var itemArr = itemString.split(' ');
     var formatString = "";
     /* Format name of item */
