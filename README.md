@@ -22,7 +22,7 @@ Returns an embed with the best rolls for each slot on in-game weapons. This info
 ### Output
 
 <img src="images/rolls_output.PNG" alt="Output for tranquility" height="480"/>
-<img src="images/rolls_bad_output.PNG" alt="Output for bad omens pvp" height="240"/>
+<img src="images/rolls_bad_output.PNG" alt="Output for bad omens pvp" height="197"/>
 
 ## Best weapons in each weapon class
 
