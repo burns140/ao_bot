@@ -53,21 +53,18 @@ client.on('message', (msg) => {
     /* Only enter switch if first character matches the indicator */
     if (msg.content.substring(0, 1) == '?' && msg.content.length > 1) {
         var command = msg.content.substring(1).split(' ');
+        var sendChannel = msg.channel;
         switch (command[0]) {
             case 'active':
-                var sendChannel = msg.channel
                 ActiveMembers.activeMembers(msg.guild, sendChannel);
                 break;
             case 'lore':
-                var sendChannel = msg.channel;
                 Lore.getLore(msg.content.substring(6), sendChannel);
                 break;
             case 'rolls':
-                var sendChannel = msg.channel;
                 Rolls.getRolls(msg, sendChannel);
                 break;
             case 'best':
-                var sendChannel = msg.channel;
                 Rolls.bestInCategory(msg, sendChannel);
                 break;
             case 'dm':
@@ -79,10 +76,13 @@ client.on('message', (msg) => {
                 break;
             case 'updateid':
                 var guild = msg.guild;
-                Update.updateIds(guild);
+                if (Update.updateIds(guild)) {
+                    sendChannel.send("ID's updated");
+                } else {
+                    sendChannel.send("Failed to update ID's");
+                }
                 break;
-            case 'message':
-                var sendChannel = msg.channel;
+            case 'welcome':
                 var cmd = msg.content.substring(9);
                 var cmdArr = cmd.split(' ');
                 switch (cmdArr[0]) {

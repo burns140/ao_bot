@@ -8,12 +8,13 @@ var idfile = null;
  */
 module.exports.updateIds = function(guild) {
     var members = guild.members;
-    idfile = fs.createWriteStream(`${guild.name.replace(/ /g, '_').toLowerCase()}_ids.txt`);
+    idfile = fs.createWriteStream(`./src/misc/${guild.name.replace(/ /g, '_').toLowerCase()}_ids.txt`);
     members.forEach(addid);
     /*ids.forEach(id => {
         file.write(`${id}\n`);
     });*/
     idfile.end();
+    return true;
 }
 
 /**

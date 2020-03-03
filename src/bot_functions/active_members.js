@@ -10,7 +10,7 @@ module.exports.activeMembers = function(guild, sendChannel) {
     var memberstr = "";
     guild.members.forEach((value, key, map) => {
         if (value.lastMessage) {
-            if (!memberArr.includes(value.user.id) && !memberArr.bot) {
+            if (!memberArr.includes(value.user.id) && !value.user.bot) {
                 memberArr.push(value.user.id);
                 memberstr += value.user.username;
                 memberstr += '\n';

@@ -62,32 +62,57 @@ Returns a message with the lore for an item. The information is retrieved throug
 
 ## Welcome message to new members
 
-Sends a welcome message to new clan members when they join the discord server. This welcome message is loaded from a text file every time the server restarts. There is functionality to set, reset, and view the current welcome message through the discord server.
+Automatically sends a welcome message to new clan members when they join the discord server. This welcome message is loaded from a text file every time the server restarts. There is functionality to set, reset, and view the current welcome message through the discord server.
 
 ### Usage
 
 ```javascript
 // General
-?message view                   // Views current message
-?message set <message>          // Sets message to <message>
-?message set --default          // Sets message to the default message
+?welcome view                   // Views current message
+?welcome set <message>          // Sets message to <message>
+?welcome set --default          // Sets message to the default message
 
 // Examples
 ?message set We are changing the message
 ```
 
 ### Output
-Note: The <@${user.id}> section of the message is compiled when the DM is actually sent in order to fill in the user's name using string interpolation. For the purposes of viewing the message in discord, however, it must be stored in plaintext when being sent.
+Note: The `<@${user.id}>` section of the message is compiled when the DM is actually sent in order to fill in the user's name using string interpolation. For the purposes of viewing the message in discord, however, it must be stored in plaintext when being sent.
 <img src="images/view_message.PNG" alt="View current message" height="450"/>
 <img src="images/set_new_message.PNG" alt="Set message" height="200"/>
 
 
-## Active Members: ?active
+## Active Members
 
-This returns a message that displays all members who have sent a message since the server last booted. The server boots every 24 hours, so it isn't the greatest
+This returns a message that displays all members who have sent a message since the server last booted. The server boots every 24 hours. I was in the process of changing it to write values to a file, but the clan found a different bot to track this. Tracking activity was put on the backburner. 
+
+### Usage
+
+```javascript
+// Example
+?active
+```
+
+### Output
+
+<img src="images/active_output.PNG" alt="View active members" height="450"/>
+
+## Save clan member ID's
+
+This writes the Discord ID and this server's nickname to a file.
+
+### Usage
+```javascript
+// Example
+?updateid
+```
+
+### Output
+
+Output can be found in file "./src/misc/αlpha_ωmega_ids.txt"
 
 ## Direct message members
 
-Sends a direct message to any members who have been entered in the array. This functionality was a WIP and another bot was found to perform this functionality so it was put on the backburner
+Sends a direct message to any members who have been entered in the array. This functionality was a WIP and another bot was found to perform this functionality so it was put on the backburner.
 
 
