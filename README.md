@@ -22,7 +22,7 @@ This returns an embed with the best rolls for each slot on in-game weapons. This
 ```
 
 #### Output
-![Output for tranquility](../images/rolls_output.png)
+![Output for tranquility](../../images/rolls_output.png)
 
 
 
