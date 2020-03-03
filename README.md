@@ -22,7 +22,8 @@ This returns an embed with the best rolls for each slot on in-game weapons. This
 ```
 
 #### Output
-![Output for tranquility](https://github.com/aPhantomDolphin/ao_bot/blob/master/images/rolls_output.PNG)
+
+<img src="images/rolls_output.PNG" alt="Output for tranquility" height="480"/>
 
 
 
