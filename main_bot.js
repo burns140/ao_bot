@@ -55,7 +55,7 @@ client.on('message', (msg) => {
         var command = msg.content.substring(1).split(' ');
         switch (command[0]) {
             case 'active':
-                var sendChannel = client.channels.get(sendChannelId)
+                var sendChannel = msg.channel
                 ActiveMembers.activeMembers(msg.guild, sendChannel);
                 break;
             case 'lore':

@@ -10,7 +10,7 @@ module.exports.activeMembers = function(guild, sendChannel) {
     var memberstr = "";
     guild.members.forEach((value, key, map) => {
         if (value.lastMessage) {
-            if (!memberArr.includes(value.user.id)) {
+            if (!memberArr.includes(value.user.id) && !memberArr.bot) {
                 memberArr.push(value.user.id);
                 memberstr += value.user.username;
                 memberstr += '\n';
@@ -20,6 +20,7 @@ module.exports.activeMembers = function(guild, sendChannel) {
     console.log(memberstr);
     sendChannel.send({
         embed: {
+            'title': "Recently active members",
             'description': memberstr
         }
     }).catch(err => {
