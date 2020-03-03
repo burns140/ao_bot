@@ -60,9 +60,34 @@ Returns a message with the lore for an item. The information is retrieved throug
 
 <img src="images/lore_wormhusk_crown.PNG" alt="Lore output for wormhusk crown" height="360"/>
 
+## Welcome message to new members
+
+Sends a welcome message to new clan members when they join the discord server. This welcome message is loaded from a text file every time the server restarts. There is functionality to set, reset, and view the current welcome message through the discord server.
+
+### Usage
+
+```javascript
+// General
+?message view                   // Views current message
+?message set <message>          // Sets message to <message>
+?message set --default          // Sets message to the default message
+
+// Examples
+?message set We are changing the message
+```
+
+### Output
+Note: The <@${user.id}> section of the message is compiled when the DM is actually sent in order to fill in the user's name using string interpolation. For the purposes of viewing the message in discord, however, it must be stored in plaintext when being sent.
+<img src="images/view_message.PNG" alt="View current message" height="450"/>
+<img src="images/set_new_message.PNG" alt="Set message" height="200"/>
+
 
 ## Active Members: ?active
 
 This returns a message that displays all members who have sent a message since the server last booted. The server boots every 24 hours, so it isn't the greatest
+
+## Direct message members
+
+Sends a direct message to any members who have been entered in the array. This functionality was a WIP and another bot was found to perform this functionality so it was put on the backburner
 
 
