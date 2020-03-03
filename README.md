@@ -40,7 +40,7 @@ Returns an embed with the best weapons in each weapon class depending on what cr
 
 ### Output
 
-<img src="images/best_sniper_output.PMG" alt="Output for best snipers" height="400"/>
+<img src="images/best_sniper_output.PNG" alt="Output for best snipers" height="400"/>
 
 ## Lore
 
@@ -58,7 +58,7 @@ Returns a message with the lore for an item. The information is retrieved throug
 
 ### Output
 
-<img src="images/lore_wormhusk_crown" alt="Lore output for wormhusk crown" height="360"/>
+<img src="images/lore_wormhusk_crown.PNG" alt="Lore output for wormhusk crown" height="360"/>
 
 
 ## Active Members: ?active
