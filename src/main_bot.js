@@ -1,22 +1,21 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Welcome = require('./src/bot_functions/welcome.js');
-const ActiveMembers = require('./src/bot_functions/active_members.js');
-const Lore = require('./src/bot_functions/lore.js');
-const Rolls = require('./src/bot_functions/keep_or_shard/shardit.js');
-const DM = require('./src/bot_functions/dm.js');
-const Update = require('./src/misc/write_id_to_file.js');
-const sendChannelId = '635288515101589525';
+const Welcome = require('./bot_functions/welcome.js');
+const ActiveMembers = require('./bot_functions/active_members.js');
+const Lore = require('./bot_functions/lore.js');
+const Rolls = require('./bot_functions/keep_or_shard/shardit.js');
+const DM = require('./bot_functions/dm.js');
+const Update = require('./misc/write_id_to_file.js');
 const fs = require('fs');
 const compile = require('es6-template-strings/compile');
-var info = require('./src/resources/info.json');
+var info = require('./resources/info.json');
 var data;
 var messageDefault = info.messageDefault;
 
 
 /* Read in welcome message. If there is an error, reset it to default */
 try {
-    data = fs.readFileSync("./src/resources/welcomeMessage.txt", "utf8");
+    data = fs.readFileSync("./resources/welcomeMessage.txt", "utf8");
 } catch (err) {
     data = messageDefault;
 }
