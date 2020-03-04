@@ -1,3 +1,7 @@
+#### Note
+
+The main_bot.js is in the root directory because heroku and the local filesystem use different relative paths otherwise, breaking the program.
+
 # Bot for Alpha Omega clan
 
 Bot I created to help with some clan functionalities. Hosted on Heroku personal account.
