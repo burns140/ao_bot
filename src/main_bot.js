@@ -112,10 +112,10 @@ if (testing) {
 }
 
 /* Read in clan member ids from file */
-/* fs.readFile('./src/misc/αlpha_ωmega_ids.txt', (err, data) => {
+ fs.readFile('./misc/αlpha_ωmega_ids.txt', (err, data) => {
     if (err) throw err;
     allids = data.toString().split('\n');
-}); */ 
+});
 
 
 /* Initialize the weapon arrays needed for the rolls */
