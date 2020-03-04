@@ -17,6 +17,7 @@ var messageDefault = info.messageDefault;
 try {
     data = fs.readFileSync("./resources/welcomeMessage.txt", "utf8");
 } catch (err) {
+    console.log(err);
     data = messageDefault;
 }
 
@@ -112,7 +113,7 @@ if (testing) {
 }
 
 /* Read in clan member ids from file */
- fs.readFile('./misc/αlpha_ωmega_ids.txt', (err, data) => {
+fs.readFile('./src/misc/αlpha_ωmega_ids.txt', (err, data) => {
     if (err) throw err;
     allids = data.toString().split('\n');
 });
