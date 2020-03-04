@@ -27,7 +27,7 @@ var allids = [];
 
 /* Heroku needs to auth from environment variable.
    Testing is the binary variable acting as the switch */
-const testing = false;
+const testing = true;
 var auth;
 if (testing) {
     auth = require('./auth.json');
@@ -113,7 +113,7 @@ if (testing) {
 }
 
 /* Read in clan member ids from file */
-fs.readFile('./src/misc/αlpha_ωmega_ids.txt', (err, data) => {
+fs.readFile('./misc/αlpha_ωmega_ids.txt', (err, data) => {
     if (err) throw err;
     allids = data.toString().split('\n');
 });
