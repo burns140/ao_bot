@@ -226,7 +226,7 @@ module.exports.getRolls = function(msg, sendChannel) {
 
     /* A weapon with that name doesn't exist */
     if (!found) {
-        sendChannel.send(`No weapon with that name found.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
+        sendChannel.send(`No weapon with that name found. Info has not been updated for season of the worthy.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
             console.log(err);
         });
         return;
