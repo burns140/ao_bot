@@ -198,7 +198,11 @@ module.exports.getRolls = function(msg, sendChannel) {
             const vals = Object.values(weapon);
             for (var i = 0; i < keys.length; i++) {
                 if (i == 0) {
-                    richEmbed.setTitle(`${vals[i]} ${mode} rolls (not updated for season of the worthy)`);
+                    if (mode == 'PVP') {
+                        richEmbed.setTitle(`${vals[i]} ${mode} rolls (not updated for season of the worthy)`);
+                    } else {
+                        richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
+                    }
                     continue;
                 }
                 if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i])) && !(vals[i] == 'n/a')) {
@@ -226,7 +230,7 @@ module.exports.getRolls = function(msg, sendChannel) {
 
     /* A weapon with that name doesn't exist */
     if (!found) {
-        sendChannel.send(`No weapon with that name found. Info has not been updated for season of the worthy.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
+        sendChannel.send(`No weapon with that name found. PVP info has not been updated for season of the worthy.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
             console.log(err);
         });
         return;
