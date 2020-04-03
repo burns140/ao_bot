@@ -22,7 +22,7 @@ module.exports.welcome = function(member) {
             db.collection('messages').findOne(
                 { type: "Welcome" }
             ).then(result => {
-                var compiled = compile(data);
+                var compiled = compile(result.message);
 
                 var greeting = `Welcome to Alpha-Omega!!` 
                 var message = resolveToString(compiled, member);
@@ -34,6 +34,8 @@ module.exports.welcome = function(member) {
                         'description': message
                     }
                 }
+            
+                member.user.send(data);
             }).catch(err => {
                 console.log(err);
             });
@@ -44,7 +46,6 @@ module.exports.welcome = function(member) {
 
     
 
-    member.user.send(data);
 }
 
 /* Send the current welcome message in plaintext */
