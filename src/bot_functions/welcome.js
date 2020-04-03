@@ -3,7 +3,13 @@ const client = new Discord.Client();
 const fs = require('fs')
 const compile = require('es6-template-strings/compile');
 const resolveToString = require('es6-template-strings/resolve-to-string');
-const MongoClient = require('../database/mongo_connection.js');
+
+var MongoClient;
+if (testing) {
+    MongoClient = require('../database/mongo_connection.js');
+} else {
+    MongoClient = require('src/database/mongo_connection.js');
+}
 
 
 /**
