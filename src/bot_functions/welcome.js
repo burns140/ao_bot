@@ -9,7 +9,7 @@ var MongoClient;
 if (testing) {
     MongoClient = require('../database/mongo_connection.js');
 } else {
-    MongoClient = require('src/database/mongo_connection.js');
+    MongoClient = require('./src/database/mongo_connection.js');
 }
 
 
