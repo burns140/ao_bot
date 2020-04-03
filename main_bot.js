@@ -6,6 +6,7 @@ const Lore = require('./src/bot_functions/lore.js');
 const Rolls = require('./src/bot_functions/keep_or_shard/shardit.js');
 const DM = require('./src/bot_functions/dm.js');
 const Update = require('./src/misc/write_id_to_file.js');
+const MongoClient = require('./src/database/mongo_connection.js');
 const fs = require('fs');
 const compile = require('es6-template-strings/compile');
 var info = require('./src/resources/info.json');
@@ -43,7 +44,7 @@ client.on('ready', () => {
 /* Call function whenever someone joins the server */
 client.on('guildMemberAdd', (member) => {
     console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
-    Welcome.welcome(compiled, member);
+    Welcome.welcome(member);
 });
 
 /**
@@ -116,6 +117,12 @@ if (testing) {
 fs.readFile('./src/misc/αlpha_ωmega_ids.txt', (err, data) => {
     if (err) throw err;
     allids = data.toString().split('\n');
+});
+
+MongoClient.get().then((client) => {
+    console.log("mongo client established");
+}).catch(e => {
+    console.log(e);
 });
 
 

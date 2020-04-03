@@ -62,3 +62,4 @@ typings/
 
 # auth
 auth.json
+dbconfig.json
