@@ -1,12 +1,5 @@
 const assert = require('assert');
 const MongoClient = require('mongodb').MongoClient;
-var dbconfig;
-
-if (testing) {
-    dbconfig = require('../../dbconfig.json');
-} else {
-    dbconfig = require('dbconfig.json');
-}
 
 // create one mongo client because creating one every time it is needed is slow
 //  see https://stackoverflow.com/questions/10656574/how-do-i-manage-mongodb-connections-in-a-node-js-web-application#answer-14464750
@@ -26,9 +19,9 @@ function get() {
         }
 
         var url;
-
+        const testing = false;
         if (testing) {
-            url = dbconfig.url;
+            url = require('../../dbconfig.json').url;
         } else {
             url = process.env.CONNECT_URL;
         }
