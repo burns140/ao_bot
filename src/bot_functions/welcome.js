@@ -4,6 +4,7 @@ const fs = require('fs')
 const compile = require('es6-template-strings/compile');
 const resolveToString = require('es6-template-strings/resolve-to-string');
 
+const testing = false;
 var MongoClient;
 if (testing) {
     MongoClient = require('../database/mongo_connection.js');
