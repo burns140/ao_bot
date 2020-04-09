@@ -198,11 +198,7 @@ module.exports.getRolls = function(msg, sendChannel) {
             const vals = Object.values(weapon);
             for (var i = 0; i < keys.length; i++) {
                 if (i == 0) {
-                    if (mode == 'PVP') {
-                        richEmbed.setTitle(`${vals[i]} ${mode} rolls (not updated for season of the worthy)`);
-                    } else {
-                        richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
-                    }
+                    richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
                     continue;
                 }
                 if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i])) && !(vals[i] == 'n/a')) {
