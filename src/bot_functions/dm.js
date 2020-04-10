@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const MongoClient = require('../database/mongo_connection.js');
+const compile = require('es6-template-strings/compile');
+const resolveToString = require('es6-template-strings/resolve-to-string');
 
 
 /* I manually input the values because some people didn't match correctly
@@ -52,9 +53,13 @@ const reminder = `You are receiving this message because a survey was posted a f
                 `for everyone. Thanks.\n--If you believe you've received this message in error, you can ignore it.--`;
 
 module.exports.sendDm = function(members, text) {
+    var compiled = compile(text);
+    
     members.forEach(member => {
+        let toSend = resolveToString(compiled, member)
         if (!member.user.bot && (member.id == '153392262171066369' || member.id == '281604755376177154')) {
-            member.user.send(text);
+            member.user.send(toSend);
         }
     });
 }
+
