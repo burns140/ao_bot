@@ -69,7 +69,7 @@ client.on('message', (msg) => {
                 Rolls.bestInCategory(msg, sendChannel);
                 break;
             case 'dm':
-                if (!msg.author.id == '153392262171066369' && !msg.author.id == "281604755376177154") {       // Only I and Dank can do this
+                if (!info.adminIds.includes(msg.author.id)) {
                     break;
                 }
                 var members = msg.guild.members;
