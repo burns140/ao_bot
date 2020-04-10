@@ -47,7 +47,8 @@ const setDm = (text, sendChannel) => {
     
             db.collection('messages').updateOne(
                 { type: "dm" },
-                { $set: { message: text } }
+                { $set: { message: text } },
+                { upsert: true }
             ).then(result => {
                 if (result.modifiedCount == 1) {
                     var sendMessage = `DM has been set to\n----------------------------\n${newMessage}`;
