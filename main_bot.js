@@ -47,6 +47,12 @@ client.on('guildMemberAdd', (member) => {
     Welcome.welcome(member);
 });
 
+client.user.setActivity('a mass exodus', { type: 'WATCHING' }).then(presence => { 
+    console.log(`Activity set to ${presence.activities[0].name}`);
+}).catch(err => {
+    console.log(err);
+});
+
 /**
  * Determine which functionality is being requested
  */
