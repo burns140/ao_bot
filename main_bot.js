@@ -69,11 +69,12 @@ client.on('message', (msg) => {
                 Rolls.bestInCategory(msg, sendChannel);
                 break;
             case 'dm':
-                if (!msg.author.id == '153392262171066369') {       // Only I can do this
+                if (!msg.author.id == '153392262171066369' && !msg.author.id == "281604755376177154") {       // Only I and Dank can do this
                     break;
                 }
                 var members = msg.guild.members;
-                DM.sendDm(members);
+                var text = msg.content.substring(4);
+                DM.sendDm(members, text);
                 break;
             case 'updateid':
                 var guild = msg.guild;

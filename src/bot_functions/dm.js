@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const MongoClient = require('../database/mongo_connection.js');
+
 
 /* I manually input the values because some people didn't match correctly
    when submitting the survey */
@@ -49,14 +51,10 @@ const reminder = `You are receiving this message because a survey was posted a f
                 `will take no longer than 5 minutes and it helps the admins figure out how we can improve the clan experience ` +
                 `for everyone. Thanks.\n--If you believe you've received this message in error, you can ignore it.--`;
 
-module.exports.sendDm = function(members) {
-    members.forEach(logusers);
+module.exports.sendDm = function(members, text) {
+    members.foreach(member => {
+        if (!member.user.bot && (member.id == '153392262171066369' || member.id == '281604755376177154')) {
+            member.user.send(text);
+        }
+    });
 }
-
-function logusers(value, key, map) {
-    if (!value.user.bot && !(haveAnswered.includes(value.displayName))) {
-        //console.log(`id: ${value.id}`);
-        console.log(`name: ${value.displayName}`);
-        value.user.send(reminder);
-    }  
-} 
