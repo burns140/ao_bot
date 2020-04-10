@@ -54,12 +54,15 @@ const reminder = `You are receiving this message because a survey was posted a f
 
 module.exports.sendDm = function(members, text) {
     var compiled = compile(text);
+    var adminId = '634788993250099211';
     
     members.forEach(member => {
         let toSend = resolveToString(compiled, member)
-        if (!member.user.bot && (member.id == '153392262171066369' || member.id == '281604755376177154')) {
-            member.user.send(toSend);
-        }
+        member.roles.forEach(role => {
+            if (role.id == adminId) {
+                member.user.send(toSend);
+                return;
+            }
+        });
     });
 }
-
