@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const axios = require('axios');
+const info = require('../../resources/info.json');
 
 
 var pveWeapons = [];    // Store rolls for PvE
@@ -15,7 +16,7 @@ const ignoreKeys = ['type', 'mode', 'weaponType', 'slot', 'energy', 'ammo', 'arc
 /**
  * Add the type of the weapon to its object
  * @param {string} key: Name of the current sheet
- * @param {Object: Weapon} wep: The current weapon that is being added
+ * @param {Weapon} wep: The current weapon that is being added
  */
 function addType(key, wep) {
     if (key.includes('Auto Rifles')) {
@@ -56,7 +57,7 @@ function addType(key, wep) {
 module.exports.initWeaponsApi = (async function () {
     
     /* Get all the arguments from the index page */
-    var html = await axios.get(`https://v2-api.sheety.co/cbb6ced6bab1fb2411c6960389d05dc7/destiny2WeaponSuggestions/index`);
+    var html = await axios.get(`${info.apiLink}`);
 
     /* Send request to each link */
     for (var el of html.data.index) {
