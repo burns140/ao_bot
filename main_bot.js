@@ -96,7 +96,7 @@ client.on('message', (msg) => {
                         if (cmdArr[1] == "--default") {
                             stringToSet = messageDefault;
                         } else {
-                            stringToSet = cmd.substring(4);
+                            stringToSet = cmd.substring(6);
                         }
                         if (Welcome.setMessage(stringToSet, sendChannel)) {
                             data = stringToSet;
