@@ -36,7 +36,7 @@ if (testing) {
     auth = process.env.BOT_TOKEN;
 }
 
-/* Notify when the bot is up and running */
+/* Notify when the bot is up and running and set activity message */
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setActivity('a mass exodus', { type: 'WATCHING' }).then(presence => { 
