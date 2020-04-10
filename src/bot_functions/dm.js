@@ -19,13 +19,16 @@ const sendDm = (members) => {
                 { type: "dm" }
             ).then(result => {
                 var compiled = compile(result.message);
-                let toSend = resolveToString(compiled, member)
-                member.roles.forEach(role => {
-                    if (role.id == adminId) {
-                        member.user.send(toSend);
-                        return;
-                    }
-                });
+                members.forEach(member => {
+                    let toSend = resolveToString(compiled, member)
+                    member.roles.forEach(role => {
+                        if (role.id == adminId) {
+                            member.user.send(toSend);
+                            return;
+                        }
+                    });
+                })
+                
             }).catch(err => {
                 console.log(err);
             });
