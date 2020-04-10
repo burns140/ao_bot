@@ -84,6 +84,9 @@ client.on('message', (msg) => {
                         DM.viewDM(sendChannel);
                         break;
                     case "--send":
+                        if (cmdArr.length > 1) {
+                            break;
+                        }
                         var members = msg.guild.members;
                         DM.sendDm(members);
                         break;
