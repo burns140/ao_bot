@@ -88,10 +88,10 @@ client.on('message', (msg) => {
                 var cmd = msg.content.substring(9);
                 var cmdArr = cmd.split(' ');
                 switch (cmdArr[0]) {
-                    case "view":
+                    case "--view":
                         Welcome.viewMessage(data, sendChannel);
                         break;
-                    case "set":
+                    case "--set":
                         var stringToSet = "";
                         if (cmdArr[1] == "--default") {
                             stringToSet = messageDefault;
