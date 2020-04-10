@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const compile = require('es6-template-strings/compile');
 const resolveToString = require('es6-template-strings/resolve-to-string');
+const MongoClient = require('../database/mongo_connection.js');
 
 /**
  * Send the currently let dm to all clan members
