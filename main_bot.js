@@ -39,18 +39,17 @@ if (testing) {
 /* Notify when the bot is up and running */
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setActivity('a mass exodus', { type: 'WATCHING' }).then(presence => { 
+        console.log(`Activity set to ${presence.activities[0].name}`);
+    }).catch(err => {
+        console.log(err);
+    });
 });
 
 /* Call function whenever someone joins the server */
 client.on('guildMemberAdd', (member) => {
     console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
     Welcome.welcome(member);
-});
-
-client.user.setActivity('a mass exodus', { type: 'WATCHING' }).then(presence => { 
-    console.log(`Activity set to ${presence.activities[0].name}`);
-}).catch(err => {
-    console.log(err);
 });
 
 /**
