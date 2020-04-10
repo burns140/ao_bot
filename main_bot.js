@@ -72,9 +72,22 @@ client.on('message', (msg) => {
                 if (!info.adminIds.includes(msg.author.id)) {
                     break;
                 }
-                var members = msg.guild.members;
-                var text = msg.content.substring(4);
-                DM.sendDm(members, text);
+                var cmd = msg.content.substring(4);
+                var cmdArr = cmd.split(' ');
+                
+                switch (cmdArr[0]) {
+                    case "--set":
+                        stringToSet = cmd.substring(6);
+                        DM.setDm(stringToSet, sendChannel);
+                        break;
+                    case "--view":
+                        DM.viewDM(sendChannel);
+                        break;
+                    case "--send":
+                        var members = msg.guild.members;
+                        DM.sendDm(members);
+                        break;
+                }
                 break;
             case 'updateid':
                 var guild = msg.guild;
@@ -85,11 +98,14 @@ client.on('message', (msg) => {
                 }
                 break;
             case 'welcome':
+                if (!info.adminIds.includes(msg.author.id)) {
+                    break;
+                }
                 var cmd = msg.content.substring(9);
                 var cmdArr = cmd.split(' ');
                 switch (cmdArr[0]) {
                     case "--view":
-                        Welcome.viewMessage(data, sendChannel);
+                        Welcome.viewMessage(sendChannel);
                         break;
                     case "--set":
                         var stringToSet = "";

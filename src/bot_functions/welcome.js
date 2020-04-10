@@ -49,7 +49,7 @@ module.exports.welcome = function(member) {
 }
 
 /* Send the current welcome message in plaintext */
-module.exports.viewMessage = function(data, sendChannel) {
+module.exports.viewMessage = function(sendChannel) {
 
     try {
         MongoClient.get().then(client => {
@@ -68,8 +68,6 @@ module.exports.viewMessage = function(data, sendChannel) {
         console.log(err);
     }
     
-    //var sendMessage = `Welcome message is currently\n----------------------------\n${data}`;
-    //sendChannel.send(sendMessage);
 }
 
 /* Set the welcome message and write to a file so it can be read on server reboot */
@@ -88,7 +86,7 @@ module.exports.setMessage = function(newMessage, sendChannel) {
                     sendChannel.send(sendMessage);  
                     return;
                 } else {
-                    sendChannel.send("Error updating dm message");
+                    sendChannel.send("Error updating welcome message");
                 }
                 
             }).catch(err => {
@@ -98,14 +96,4 @@ module.exports.setMessage = function(newMessage, sendChannel) {
     } catch (err) {
         console.log(err);
     }
-
-    /* try {
-        fs.writeFileSync("./src/resources/welcomeMessage.txt", newMessage);
-        var sendMessage = `Welcome message has been set to\n----------------------------\n${newMessage}`;
-        sendChannel.send(sendMessage);
-        return true;
-    } catch (err) {
-        console.log(err);
-        return false;
-    } */
 }
