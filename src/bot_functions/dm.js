@@ -19,9 +19,11 @@ const sendDm = (members) => {
                 { type: "dm" }
             ).then(result => {
                 var compiled = compile(result.message);
+                var toSend = resolveToString(compiled, member)
                 members.forEach(member => {
-                    let toSend = resolveToString(compiled, member)
-                    member.user.send(toSend);
+                    if (!member.user.bot) {
+                        member.user.send(toSend);
+                    }
                     /* member.roles.forEach(role => {
                         if (role.id == adminId) {
                             member.user.send(toSend);
