@@ -50,7 +50,7 @@ const setDm = (text, sendChannel) => {
                 { $set: { message: text } }
             ).then(result => {
                 if (result.modifiedCount == 1) {
-                    var sendMessage = `DM has been set to\n----------------------------\n${newMessage}`;
+                    var sendMessage = `DM has been set to\n----------------------------\n${text}`;
                     sendChannel.send(sendMessage);  
                     return;
                 } else {
