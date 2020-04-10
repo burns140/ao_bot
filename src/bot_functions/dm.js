@@ -52,7 +52,7 @@ const reminder = `You are receiving this message because a survey was posted a f
                 `for everyone. Thanks.\n--If you believe you've received this message in error, you can ignore it.--`;
 
 module.exports.sendDm = function(members, text) {
-    members.foreach(member => {
+    members.forEach(member => {
         if (!member.user.bot && (member.id == '153392262171066369' || member.id == '281604755376177154')) {
             member.user.send(text);
         }
