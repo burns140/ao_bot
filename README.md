@@ -87,7 +87,7 @@ Note: The `<@${user.id}>` section of the message is compiled when the DM is actu
 
 ## Direct message members
 
-Sends a direct message to all members of the clan. The message to be sent is loaded from mongodb. It supports dynamically setting, viewing, and sending the message
+Sends a direct message to all members of the clan. The message to be sent is loaded from mongodb. It supports dynamically setting, viewing, and sending the message.
 
 ### Usage
 
