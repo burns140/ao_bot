@@ -39,7 +39,7 @@ if (testing) {
 /* Notify when the bot is up and running and set activity message */
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('MGK spit fire', { type: 'WATCHING' }).then(presence => { 
+    client.user.setActivity('in a treehouse', { type: 'PLAYING' }).then(presence => { 
         console.log(`Activity set to ${presence.activities[0].name}`);
     }).catch(err => {
         console.log(err);
