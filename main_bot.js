@@ -39,8 +39,8 @@ if (testing) {
 /* Notify when the bot is up and running and set activity message */
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('in a treehouse', { type: 'PLAYING' }).then(presence => { 
-        console.log(`Activity set to ${presence.activities[0].name}`);
+    client.user.setActivity('Destiny 2', { type: 'PLAYING' }).then(presence => { 
+        //console.log(`Activity set to ${presence.activities[0].name}`);
     }).catch(err => {
         console.log(err);
     });
@@ -56,11 +56,43 @@ client.on('guildMemberAdd', (member) => {
  * Determine which functionality is being requested
  */
 client.on('message', (msg) => {
+    if (msg.author.bot && msg.author.username == "Charlemagne") {
+        console.log(msg.author.id);
+        //console.log(msg.embeds);
+    }
+
+    if (msg.embeds && msg.author.username == "Charlemagne") {
+        try {
+            var map = new Map();
+            for (el of msg.embeds) {
+                if (el.author.name == "Top Guardians by Current Season Total Personal Clan XP") {
+                    var stats = el.description.split('\n');
+                    for (entry of stats) {
+                        var entrySplit = entry.split(/\*+|XP: |\)/)
+                        if (entrySplit.length >= 5) {
+                            map.set(entrySplit[2].trim(), entrySplit[5].trim());
+                        }
+                    }
+                    console.log(map);
+                    let sendChannel = msg.channel;
+                    let tempStr = ``;
+                    for (const [key, value] of map.entries()) {
+                        tempStr += `${value}\n`                        
+                    }
+                    sendChannel.send(tempStr);
+                }
+            }
+        } catch (err) {
+            //console.log(err);
+        }
+    }
+    
+
     /* Only enter switch if first character matches the indicator */
     if (msg.content.substring(0, 1) == '?' && msg.content.length > 1) {
         var command = msg.content.substring(1).split(' ');
         var sendChannel = msg.channel;
-        switch (command[0]) {
+        switch (command[0].toLowerCase()) {
             case 'active':
                 ActiveMembers.activeMembers(msg.guild, sendChannel);
                 break;
