@@ -19,7 +19,7 @@ function get() {
         }
 
         var url;
-        const testing = false;
+        const testing = true;
         if (testing) {
             url = require('../../dbconfig.json').url;
         } else {
