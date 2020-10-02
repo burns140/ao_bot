@@ -91,6 +91,7 @@ client.on('message', (msg) => {
     /* Only enter switch if first character matches the indicator */
     if (msg.content.substring(0, 1) == '?' && msg.content.length > 1) {
         var command = msg.content.substring(1).split(' ');
+        console.log(`Command received: ${command}`);
         var sendChannel = msg.channel;
         switch (command[0].toLowerCase()) {
             case 'active':
@@ -160,6 +161,12 @@ client.on('message', (msg) => {
                         }
                         break;
                 }
+            case 'updateweapons':
+                if (!info.adminIds.includes(msg.author.id) && msg.author.id != '131237935105179649') {
+                    break;
+                }
+                Rolls.updateWeaponDb(sendChannel);
+                sendChannel.send("Updating weapons");
         }
     }
 })
@@ -184,4 +191,4 @@ MongoClient.get().then((client) => {
 
 
 /* Initialize the weapon arrays needed for the rolls */
-Rolls.initWeaponsApi();
+Rolls.populateWeaponArrayFromDatabase();

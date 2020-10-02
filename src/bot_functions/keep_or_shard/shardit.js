@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const axios = require('axios');
 const info = require('../../resources/info.json');
+const MongoClient = require('../../database/mongo_connection.js');
 
 
 var pveWeapons = [];    // Store rolls for PvE
@@ -54,42 +55,101 @@ function addType(key, wep) {
 /**
  * Initializes the weapon arrays using the api from clan member jiangshi
  */
-module.exports.initWeaponsApi = (async function () {
-    
+module.exports.populateWeaponArrayFromApi = (async function (sendChannel) {
+    var html;
     /* Get all the arguments from the index page */
-    var html = await axios.get(`${info.apiLink}`);
-
-    /* Send request to each link */
-    for (var el of html.data.index) {
-        var thisel = el;
-        var result = await axios.get(`${thisel.url}`);                  
-        var tempweaponarr = result.data[Object.keys(result.data)[0]];   // Get the array of weapons from the current table
-        if (thisel.sheet.includes('Top')) {
-            for (var wepClass of tempweaponarr) {
-                delete wepClass.id;
-                topWeapons.push(wepClass);
-            }
-        } else if (thisel.sheet.includes('PVE')) {
-            /* Iterate through current weapon array */
-            for (var thiswep of tempweaponarr) {
-                var typedWep = addType(thisel.sheet, thiswep);          // Add the weapon type
-                typedWep.mode = 'PVE';                                  // Set the mode these rolls are good for
-                delete typedWep.id;                                     // IDs get duplicated, so just delete them
-                pveWeapons.push(typedWep);                              // Add to overall weapon array
-            }
-        } else if (thisel.sheet.includes('PVP')) {
-            /* This is a repeat of the above. I nearly duplicated
-               code so that we don't do an if statement in every 
-               iteration. Can be moved to function for cleanliness */
-            for (var thiswep of tempweaponarr) {
-                var typedWep = addType(thisel.sheet, thiswep);
-                typedWep.mode = 'PVP';
-                delete typedWep.id;
-                pvpWeapons.push(typedWep);
+    try {
+        html = await axios.get(`${info.apiLink}`);
+    } catch(err) {
+        console.log(`query to api failed`)
+        console.log(err);
+        console.log(err.response.status);
+        if (err.response.status == 402) {
+            sendChannel.send('The API people want money.');
+        }
+        sendChannel.send('Updating weapons failed.');
+        return false;
+    }
+    
+    try {
+        /* Send request to each link */
+        for (var el of html.data.index) {
+            var thisel = el;
+            var result = await axios.get(`${thisel.url}`);                  
+            var tempweaponarr = result.data[Object.keys(result.data)[0]];   // Get the array of weapons from the current table
+            if (thisel.sheet.includes('Top')) {
+                for (var wepClass of tempweaponarr) {
+                    delete wepClass.id;
+                    topWeapons.push(wepClass);
+                }
+            } else if (thisel.sheet.includes('PVE')) {
+                /* Iterate through current weapon array */
+                for (var thiswep of tempweaponarr) {
+                    var typedWep = addType(thisel.sheet, thiswep);          // Add the weapon type
+                    typedWep.mode = 'PVE';                                  // Set the mode these rolls are good for
+                    delete typedWep.id;                                     // IDs get duplicated, so just delete them
+                    pveWeapons.push(typedWep);                              // Add to overall weapon array
+                }
+            } else if (thisel.sheet.includes('PVP')) {
+                /* This is a repeat of the above. I nearly duplicated
+                code so that we don't do an if statement in every 
+                iteration. Can be moved to function for cleanliness */
+                for (var thiswep of tempweaponarr) {
+                    var typedWep = addType(thisel.sheet, thiswep);
+                    typedWep.mode = 'PVP';
+                    delete typedWep.id;
+                    pvpWeapons.push(typedWep);
+                }
             }
         }
+    } catch(err) {
+        console.log(`iterating through api return had problems`)
+        console.log(err);
+        return false;
     }
+    
     console.log('finished populating weapon arrays');
+});
+
+module.exports.populateWeaponArrayFromDatabase = (async function () {
+    try {
+        MongoClient.get().then(client => {
+            const db = client.db('weapons');
+
+            db.collection('pve').find()
+            .toArray().then(result => {
+                for (var weapon of result) {
+                    pveWeapons.push(weapon);
+                }
+                console.log('Populated pve array from db');
+            }).catch(err => {
+                console.log(`pve: ${err}`);
+            });
+
+            db.collection('pvp').find()
+            .toArray().then(result => {
+                for (var weapon of result) {
+                    pvpWeapons.push(weapon);
+                }
+                console.log('Populated pvp array from db');
+            }).catch(err => {
+                console.log(`pvp: ${err}`);
+            });
+
+            db.collection('top').find()
+            .toArray().then(result => {
+                for (var weapon of result) {
+                    pvpWeapons.push(weapon);
+                }
+                console.log('Populated top array from db');
+            }).catch(err => {
+                console.log(`top: ${err}`);
+            });
+
+        });
+    } catch (err) {
+        console.log(err);
+    }
 });
 
 /**
@@ -186,7 +246,11 @@ module.exports.getRolls = function(msg, sendChannel) {
         }
     }
 
+    if (thisArr == []) {
+        return;
+    }
     weaponName = weaponName.replace(/\'/g, '');     // Remove apostrophes from comparison
+    console.log(weaponName)
     var richEmbed = new Discord.RichEmbed();        // The element that will be send to the chat channel
     var found = false;
     for (var weapon of thisArr) {
@@ -194,9 +258,9 @@ module.exports.getRolls = function(msg, sendChannel) {
            Because different types of weapon have different parts, we check the type before adding to the RichEmbed.
            For every single element, the sheet has elements formatted as 'best\nsecond\nworst. Replace
            newlines with ' > ' to make it easier to read when returned */
-        if (weapon.weapon.toLowerCase().replace(/\'/g, '').replace(/^(the) /g, '') == weaponName.toLowerCase().replace(/^(the) /g, '')) {
-            const keys = Object.keys(weapon);
-            const vals = Object.values(weapon);
+        if (weapon.thisWeapon.weapon.toLowerCase().replace(/\'/g, '').replace(/^(the) /g, '') == weaponName.toLowerCase().replace(/^(the) /g, '')) {
+            const keys = Object.keys(weapon.thisWeapon);
+            const vals = Object.values(weapon.thisWeapon);
             for (var i = 0; i < keys.length; i++) {
                 if (i == 0) {
                     richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
@@ -238,4 +302,71 @@ module.exports.getRolls = function(msg, sendChannel) {
         console.log(err);
     });
 
+}
+
+/**
+ * Update mongodb with weapon info
+ */
+module.exports.updateWeaponDb = (async function (sendChannel) {
+    pveWeapons = [];
+    pvpWeapons = [];
+    topWeapons = [];
+    if (!await this.populateWeaponArrayFromApi(sendChannel)) {
+        return;
+    }
+
+    uploadArray(topWeapons, 'top', sendChannel);
+    uploadArray(pveWeapons, 'pve', sendChannel);
+    uploadArray(pvpWeapons, 'pvp', sendChannel);
+});
+
+/**
+ * Upload weapon arrays to mongo
+ * @param {Weapon []} weaponArray 
+ * @param {string} type 
+ */
+async function uploadArray(weaponArray, type, sendChannel) {
+    try {
+        MongoClient.get().then(client => {
+            const db = client.db('weapons');
+
+            if (type == 'top') {
+                for (var thisCategory of weaponArray) {
+                    db.collection(`${type}`).findOneAndReplace(
+                        { weaponType: thisCategory.weaponType },
+                        { thisCategory },
+                        { upsert: true }
+                    ).then(result => {
+                        if (!result) {
+                            throw new Error(`no result`);
+                        }
+                        console.log(`Updated top ${thisCategory.weaponType}`);
+                    }).catch(err => {
+                        console.log(err);
+                        sendChannel.send(`Failed to update ${type} weapons`)
+                    })
+                }
+            } else {
+                for (var thisWeapon of weaponArray) {
+                    db.collection(`${type}`).findOneAndReplace(
+                        { weapon: thisWeapon.weapon },
+                        { thisWeapon },
+                        { upsert: true }
+                    ).then(result => {
+                        if (!result) {
+                            throw new Error(`no result`);
+                        }
+                        console.log(`Updated ${thisWeapon.weapon}`);
+                    }).catch(err => {
+                        console.log(err);
+                        sendChannel.send(`Failed to update ${type} weapons`)
+                    })
+                }
+            }
+        }).catch(err => {
+            console.log(err);
+        });
+    } catch (err) {
+        console.log(err);
+    }
 }
