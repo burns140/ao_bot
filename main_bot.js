@@ -28,7 +28,7 @@ var allids = [];
 
 /* Heroku needs to auth from environment variable.
    Testing is the binary variable acting as the switch */
-const testing = false;
+const testing = true;
 var auth;
 if (testing) {
     auth = require('./auth.json');

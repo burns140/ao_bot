@@ -122,6 +122,7 @@ module.exports.populateWeaponArrayFromDatabase = (async function () {
                     pveWeapons.push(weapon);
                 }
                 console.log('Populated pve array from db');
+                console.log(pveWeapons.length);
             }).catch(err => {
                 console.log(`pve: ${err}`);
             });
@@ -132,6 +133,7 @@ module.exports.populateWeaponArrayFromDatabase = (async function () {
                     pvpWeapons.push(weapon);
                 }
                 console.log('Populated pvp array from db');
+                console.log(pvpWeapons.length);
             }).catch(err => {
                 console.log(`pvp: ${err}`);
             });
@@ -139,7 +141,7 @@ module.exports.populateWeaponArrayFromDatabase = (async function () {
             db.collection('top').find()
             .toArray().then(result => {
                 for (var weapon of result) {
-                    pvpWeapons.push(weapon);
+                    topWeapons.push(weapon);
                 }
                 console.log('Populated top array from db');
             }).catch(err => {
@@ -174,25 +176,35 @@ module.exports.bestInCategory = function(msg, sendChannel) {
     var found = false;
 
     /* Create the embed to be returned */
-    for (var cat of topWeapons) {
-        if (cat.weaponType.toLowerCase() == catName.toLowerCase()) {
-            richEmbed.setTitle(`Best ${cat.weaponType}s`);
-            const keys = Object.keys(cat);
-            const vals = Object.values(cat);
+    try {
+        for (var cat of topWeapons) {
+            if (cat["WEAPON TYPE"].toLowerCase() == catName.toLowerCase()) {
+                richEmbed.setTitle(`Best ${cat["WEAPON TYPE"]}s`);
+                const keys = Object.keys(cat);
+                const vals = Object.values(cat);
 
-            /* If the field is not set to be ignored, format the text and add said field to the embed
-               Mark boolean as true so I know not to send help message */
-            for (var i = 0; i < keys.length; i++) {
-                if (!(ignoreKeys.includes(keys[i]))) {
-                    var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
-                    header = header.replace(/([A-Z])/g, ' $1').trim();
-                    richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                /* If the field is not set to be ignored, format the text and add said field to the embed
+                Mark boolean as true so I know not to send help message */
+                for (var i = 0; i < keys.length; i++) {
+                    if (!(ignoreKeys.includes(keys[i]))) {
+                        var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
+                        console.log(header);
+                        //header = header.replace(/([A-Z])/g, ' $1').trim();
+                        //console.log(header);
+                        if (keys[i] == "_id" || keys[i] == `WEAPON TYPE`) {
+                            continue;
+                        }
+                        richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                    }
                 }
+                found = true;
+                break;
             }
-            found = true;
-            break;
         }
+    } catch (ex) {
+        console.log(ex);
     }
+    
 
     /* A weapon with that name doesn't exist */
     if (!found) {
@@ -216,6 +228,7 @@ module.exports.getRolls = function(msg, sendChannel) {
     var thisArr;
     var mode;
     var content = msg.content.substring(1);
+    console.log(content);
     var command = content.split(' '); 
     if (command.length == 1) {
         return;
@@ -250,44 +263,52 @@ module.exports.getRolls = function(msg, sendChannel) {
         return;
     }
     weaponName = weaponName.replace(/\'/g, '');     // Remove apostrophes from comparison
-    console.log(weaponName)
+    console.log(weaponName);
     var richEmbed = new Discord.RichEmbed();        // The element that will be send to the chat channel
     var found = false;
-    for (var weapon of thisArr) {
-        /* For comparing name, we remove apostrophes and 'the' for ease of use.
-           Because different types of weapon have different parts, we check the type before adding to the RichEmbed.
-           For every single element, the sheet has elements formatted as 'best\nsecond\nworst. Replace
-           newlines with ' > ' to make it easier to read when returned */
-        if (weapon.thisWeapon.weapon.toLowerCase().replace(/\'/g, '').replace(/^(the) /g, '') == weaponName.toLowerCase().replace(/^(the) /g, '')) {
-            const keys = Object.keys(weapon.thisWeapon);
-            const vals = Object.values(weapon.thisWeapon);
-            for (var i = 0; i < keys.length; i++) {
-                if (i == 0) {
-                    richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
-                    continue;
-                }
-                if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i])) && !(vals[i] == 'n/a')) {
-                    var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
-                    header = header.replace(/(^|\/)(\S)/g, s=>s.toUpperCase());
-                    
-                    /* Band aid fix for bad formatting */
-                    if (header == 'Trait1') {
-                        header = 'Trait 1';
-                    } else if (header == 'Trait2') {
-                        header = 'Trait 2';
+    console.log(thisArr);
+    var i = 0;
+    try {
+        for (var weapon of thisArr) {
+            console.log(i++);
+            /* For comparing name, we remove apostrophes and 'the' for ease of use.
+               Because different types of weapon have different parts, we check the type before adding to the RichEmbed.
+               For every single element, the sheet has elements formatted as 'best\nsecond\nworst. Replace
+               newlines with ' > ' to make it easier to read when returned */
+            if (weapon.thisWeapon.weapon.toLowerCase().replace(/\'/g, '').replace(/^(the) /g, '') == weaponName.toLowerCase().replace(/^(the) /g, '')) {
+                const keys = Object.keys(weapon.thisWeapon);
+                const vals = Object.values(weapon.thisWeapon);
+                for (var i = 0; i < keys.length; i++) {
+                    if (i == 0) {
+                        richEmbed.setTitle(`${vals[i]} ${mode} rolls`);
+                        continue;
                     }
-
-                    richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
-                    //richEmbed.addField(header, vals[i].replace(/\n/g, ' > '), true);
-                    
+                    if (isNaN(vals[i]) && !(keys[i] == 'element' && vals[i] == 'Kinetic') && !(ignoreKeys.includes(keys[i])) && !(vals[i] == 'n/a')) {
+                        var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
+                        header = header.replace(/(^|\/)(\S)/g, s=>s.toUpperCase());
+                        
+                        /* Band aid fix for bad formatting */
+                        if (header == 'Trait1') {
+                            header = 'Trait 1';
+                        } else if (header == 'Trait2') {
+                            header = 'Trait 2';
+                        }
+    
+                        richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
+                        //richEmbed.addField(header, vals[i].replace(/\n/g, ' > '), true);
+                        
+                    }
                 }
+            
+                console.log(richEmbed);
+                found = true;
+                break;
             }
-        
-            console.log(richEmbed);
-            found = true;
-            break;
         }
+    } catch (ex) {
+        console.log(ex);
     }
+    
 
     /* A weapon with that name doesn't exist */
     if (!found) {
