@@ -25,16 +25,9 @@ try {
 var compiled = compile(data);
 
 var allids = [];
-var auth;
-
-try {
-    auth = process.env.BOT_TOKEN;
-} catch {
-
-}
 
 /* Heroku needs to auth from environment variable.*/
-var auth = process.env.BOT_TOKEN //|| require('./auth.json');
+var auth = process.env.BOT_TOKEN || require('./auth.json');
 
 /* Notify when the bot is up and running and set activity message */
 client.on('ready', () => {
