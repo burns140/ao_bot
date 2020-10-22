@@ -29,6 +29,8 @@ var allids = [];
 /* Heroku needs to auth from environment variable.*/
 var auth = process.env.BOT_TOKEN || require('./auth.json');
 
+console.log(auth);
+
 /* Notify when the bot is up and running and set activity message */
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
