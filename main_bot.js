@@ -166,10 +166,16 @@ client.on('message', (msg) => {
     }
 })
 
-try {
+/*try {
     client.login(auth.token);
 } catch {
     client.login(auth);
+}*/
+
+if (typeof auth == 'string') {
+    client.login(auth);
+} else {
+    client.login(auth.token);
 }
 
 /* Read in clan member ids from file */
