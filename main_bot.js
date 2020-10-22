@@ -26,15 +26,8 @@ var compiled = compile(data);
 
 var allids = [];
 
-/* Heroku needs to auth from environment variable.
-   Testing is the binary variable acting as the switch */
-const testing = true;
-var auth;
-if (testing) {
-    auth = require('./auth.json');
-} else {
-    auth = process.env.BOT_TOKEN;
-}
+/* Heroku needs to auth from environment variable.*/
+var auth = process.env.BOT_TOKEN || require('./auth.json');
 
 /* Notify when the bot is up and running and set activity message */
 client.on('ready', () => {
@@ -171,9 +164,9 @@ client.on('message', (msg) => {
     }
 })
 
-if (testing) {
+try {
     client.login(auth.token);
-} else {
+} catch {
     client.login(auth);
 }
 

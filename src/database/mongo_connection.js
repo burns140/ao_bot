@@ -1,9 +1,6 @@
 const assert = require('assert');
 const MongoClient = require('mongodb').MongoClient;
 
-// create one mongo client because creating one every time it is needed is slow
-//  see https://stackoverflow.com/questions/10656574/how-do-i-manage-mongodb-connections-in-a-node-js-web-application#answer-14464750
-
 /** @type {MongoClient} */
 let mongoClient = null;
 
@@ -18,13 +15,7 @@ function get() {
             return;
         }
 
-        var url;
-        const testing = true;
-        if (testing) {
-            url = require('../../dbconfig.json').url;
-        } else {
-            url = process.env.CONNECT_URL;
-        }
+        const url = process.env.CONNECT_URL || require('../../dbconfig.json').url;
 
         MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
             assert.equal(null, err);
