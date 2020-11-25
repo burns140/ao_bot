@@ -78,7 +78,7 @@ client.on('message', (msg) => {
                 }
             }
         } catch (err) {
-            //console.log(err);
+            console.log(err);
         }
     }
     
@@ -156,6 +156,7 @@ client.on('message', (msg) => {
                         }
                         break;
                 }
+                break;
             case 'updateweapons':
                 if (!info.adminIds.includes(msg.author.id) && msg.author.id != '131237935105179649') {
                     break;
@@ -166,23 +167,11 @@ client.on('message', (msg) => {
     }
 })
 
-/*try {
-    client.login(auth.token);
-} catch {
-    client.login(auth);
-}*/
-
 if (typeof auth == 'string') {
     client.login(auth);
 } else {
     client.login(auth.token);
 }
-
-/* Read in clan member ids from file */
-fs.readFile('./src/misc/αlpha_ωmega_ids.txt', (err, data) => {
-    if (err) throw err;
-    allids = data.toString().split('\n');
-});
 
 MongoClient.get().then((client) => {
     console.log("mongo client established");

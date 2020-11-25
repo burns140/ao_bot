@@ -62,8 +62,6 @@ module.exports.populateWeaponArrayFromApi = (async function (sendChannel) {
         html = await axios.get(`${info.apiLink}`);
     } catch(err) {
         console.log(`query to api failed`)
-        console.log(err);
-        console.log(err.response.status);
         if (err.response.status == 402) {
             sendChannel.send('The API people want money.');
         }
@@ -75,7 +73,7 @@ module.exports.populateWeaponArrayFromApi = (async function (sendChannel) {
         /* Send request to each link */
         for (var el of html.data.index) {
             var thisel = el;
-            var result = await axios.get(`${thisel.url}`);                  
+            var result = await axios.get(`${thisel.url}`);      
             var tempweaponarr = result.data[Object.keys(result.data)[0]];   // Get the array of weapons from the current table
             if (thisel.sheet.includes('Top')) {
                 for (var wepClass of tempweaponarr) {
@@ -116,7 +114,7 @@ module.exports.populateWeaponArrayFromDatabase = (async function () {
         MongoClient.get().then(client => {
             const db = client.db('weapons');
 
-            db.collection('pve').find()
+            db.collection('NewPVE').find()
             .toArray().then(result => {
                 for (var weapon of result) {
                     pveWeapons.push(weapon);
@@ -178,22 +176,27 @@ module.exports.bestInCategory = function(msg, sendChannel) {
     /* Create the embed to be returned */
     try {
         for (var cat of topWeapons) {
-            if (cat["WEAPON TYPE"].toLowerCase() == catName.toLowerCase()) {
-                richEmbed.setTitle(`Best ${cat["WEAPON TYPE"]}s`);
-                const keys = Object.keys(cat);
-                const vals = Object.values(cat);
+            if (cat.thisCategory["WEAPON TYPE"].toLowerCase() == catName.toLowerCase()) {
+                richEmbed.setTitle(`Best ${cat.thisCategory["WEAPON TYPE"]}s`);
+                const keys = Object.keys(cat.thisCategory);
+                const vals = Object.values(cat.thisCategory);
 
                 /* If the field is not set to be ignored, format the text and add said field to the embed
                 Mark boolean as true so I know not to send help message */
+                console.log(keys);
                 for (var i = 0; i < keys.length; i++) {
                     if (!(ignoreKeys.includes(keys[i]))) {
                         var header = keys[i].charAt(0).toUpperCase() + keys[i].substring(1);
-                        console.log(header);
-                        //header = header.replace(/([A-Z])/g, ' $1').trim();
-                        //console.log(header);
                         if (keys[i] == "_id" || keys[i] == `WEAPON TYPE`) {
                             continue;
                         }
+                        var strArr = header.split(' ');
+                        for (let i = 0; i < strArr.length; i++) {
+                            let lowerstr = strArr[i].toLowerCase();
+                            let formatStr = lowerstr.charAt(0).toUpperCase() + lowerstr.substring(1);
+                            strArr[i] = formatStr;
+                        }
+                        header = strArr.join(' ');
                         richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
                     }
                 }
@@ -266,11 +269,9 @@ module.exports.getRolls = function(msg, sendChannel) {
     console.log(weaponName);
     var richEmbed = new Discord.RichEmbed();        // The element that will be send to the chat channel
     var found = false;
-    console.log(thisArr);
     var i = 0;
     try {
         for (var weapon of thisArr) {
-            console.log(i++);
             /* For comparing name, we remove apostrophes and 'the' for ease of use.
                Because different types of weapon have different parts, we check the type before adding to the RichEmbed.
                For every single element, the sheet has elements formatted as 'best\nsecond\nworst. Replace
@@ -295,12 +296,9 @@ module.exports.getRolls = function(msg, sendChannel) {
                         }
     
                         richEmbed.addField(header, vals[i].replace(/\n/g, ' > '));
-                        //richEmbed.addField(header, vals[i].replace(/\n/g, ' > '), true);
-                        
                     }
                 }
-            
-                console.log(richEmbed);
+
                 found = true;
                 break;
             }
@@ -312,7 +310,7 @@ module.exports.getRolls = function(msg, sendChannel) {
 
     /* A weapon with that name doesn't exist */
     if (!found) {
-        sendChannel.send(`No weapon with that name found. PVP info has not been updated for season of the worthy.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
+        sendChannel.send(`No weapon with that name found.\nIt is possible this weapon has been sunsetted so data is no longer available.\nUsage: ?rolls weapon_name [pve|pvp]`).catch(err => {
             console.log(err);
         });
         return;
@@ -336,6 +334,7 @@ module.exports.updateWeaponDb = (async function (sendChannel) {
         return;
     }
 
+    console.log('updating arrays');
     uploadArray(topWeapons, 'top', sendChannel);
     uploadArray(pveWeapons, 'pve', sendChannel);
     uploadArray(pvpWeapons, 'pvp', sendChannel);

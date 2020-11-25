@@ -1,0 +1,139 @@
+{
+  "PVE_Top": [
+    {
+      "WEAPON TYPE": "Auto Rifle",
+      "BEST KINETIC": "The Forward Path",
+      "BEST ARC": "Uriel's Gift (Only option)",
+      "BEST SOLAR": "The Summoner\nArctic Haze",
+      "BEST VOID": "Gnawing Hunger",
+      "HIGHEST DAMAGE ARCHETYPE": "Adaptive\nRapid-Fire",
+      "NOTES": "Auto Rifles cover a close to mid-range distance. Does not excel at anything. It's as generic weapon as you can get. For clearing adds, that's totally fine."
+    },
+    {
+      "WEAPON TYPE": "Bow",
+      "BEST KINETIC": "Accrued Redemption",
+      "BEST ARC": "Arsenic Bite-4b",
+      "BEST SOLAR": "Tyranny of Heaven (Only option)",
+      "BEST VOID": "n/a",
+      "HIGHEST DAMAGE ARCHETYPE": "All Similar",
+      "NOTES": "I really enjoy using bows but, they just take a bit too long to deal out their damage. That being said, it's the safest weapon to use as there is no damage fall off allowing you to stand well out of danger to dish out damage. Useful for very difficult content."
+    },
+    {
+      "WEAPON TYPE": "Fusion Rifle",
+      "BEST KINETIC": "n/a",
+      "BEST ARC": "Techeun Force",
+      "BEST SOLAR": "Gallant Charge",
+      "BEST VOID": "Zealot's Reward",
+      "HIGHEST DAMAGE ARCHETYPE": "Rapid-Fire",
+      "NOTES": "Fusion Rifles are close to medium range effectiveness with almost the power of a Shotgun and much less risk. Your primary use for them will be to clear majors as they aren't too effective against bosses."
+    },
+    {
+      "WEAPON TYPE": "Grenade Launcher",
+      "BEST KINETIC": "n/a",
+      "BEST ARC": "Interference VI",
+      "BEST SOLAR": "Martyr's Retribution (Wave)\nOutrageous Fortune (Only heavy option)",
+      "BEST VOID": "Truthteller\nDeafening Whisper (Wave)\nCrowd Pleaser",
+      "HIGHEST DAMAGE ARCHETYPE": "Adaptive",
+      "NOTES": "Great damage and versatility. It effectively kills Majors and adds and deals some of the highest damage to bosses."
+    },
+    {
+      "WEAPON TYPE": "Hand Cannon",
+      "BEST KINETIC": "The Steady Hand",
+      "BEST ARC": "Posterity",
+      "BEST SOLAR": "Ancient Gospel",
+      "BEST VOID": "IKELOS_HC_V1.0.2 (Only option)",
+      "HIGHEST DAMAGE ARCHETYPE": "Lightweight",
+      "NOTES": "Hand Cannons feel great this season and it's a welcome change for sure. Great at medium range and a bit trickier to use at close. The only way for it to be even near effective at long range is with Explosive/Timed Payload."
+    },
+    {
+      "WEAPON TYPE": "Linear Fusion Rifle",
+      "BEST KINETIC": "n/a",
+      "BEST ARC": "Line in the Sand",
+      "BEST SOLAR": "Komodo-4FR",
+      "BEST VOID": "n/a",
+      "HIGHEST DAMAGE ARCHETYPE": "There is only one.",
+      "NOTES": "Linear Fusion Rifles are still weak, especially since your legendary options all occupy the heavy slot. The only reason I've had to use it is when I want to run Izanagi and an additional Sniper type weapon while having add clear in my energy slot."
+    },
+    {
+      "WEAPON TYPE": "Machine Gun",
+      "BEST KINETIC": "n/a",
+      "BEST ARC": "Seventh Seraph SAW (Only option)",
+      "BEST SOLAR": "Thermal Erosion (Only option)",
+      "BEST VOID": "Commemoration (Only Option)",
+      "HIGHEST DAMAGE ARCHETYPE": "Rapid-Fire",
+      "NOTES": "It's pretty good at add clearing if you really need that, but you pay a heavy price, literally. Unforunately this season has a poor and very limited selection and I can't imagine a case where you will really want them in PvE."
+    },
+    {
+      "WEAPON TYPE": "Pulse Rifle",
+      "BEST KINETIC": "Hailing Confusion",
+      "BEST ARC": "Jian 7 Rifle",
+      "BEST SOLAR": "Stars in Shadow",
+      "BEST VOID": "Last Perdition (Only option)",
+      "HIGHEST DAMAGE ARCHETYPE": "Adaptive",
+      "NOTES": "Medium to Long range effectiveness which allow you to sit back a bit to clear adds. Still a solid option for your longer range add clearing needs. A couple great guns were added this season too."
+    },
+    {
+      "WEAPON TYPE": "Rocket Launcher",
+      "BEST KINETIC": "n/a",
+      "BEST ARC": "Mos Epoch III",
+      "BEST SOLAR": "Apex Predator (It's pretty bad though)",
+      "BEST VOID": "Bad Omens",
+      "HIGHEST DAMAGE ARCHETYPE": "Aggressive",
+      "NOTES": "Rocket Launcher's got a buff with a better ammo economy and are more viable this season. Are they great? No, not really. I think heavy Grenade Launchers still beat them out. But, it's definitely an option now."
+    },
+    {
+      "WEAPON TYPE": "Scout Rifle",
+      "BEST KINETIC": "Night Watch",
+      "BEST ARC": "n/a",
+      "BEST SOLAR": "Trustee (Only Option)",
+      "BEST VOID": "Royal Chase (Only option)",
+      "HIGHEST DAMAGE ARCHETYPE": "Lightweight",
+      "NOTES": "Scouts have the greatest range of the primaries. Unfortunately, there aren't many instances where you need a range that Pulse Rifles can't cover and do it better. I think it's still your best weapon choice for Overload as Auto-Rifle overload is very inconsistent. Unfortunately all but one Scout rifle is Kinetic so your options are quite limited."
+    },
+    {
+      "WEAPON TYPE": "Shotgun",
+      "BEST KINETIC": "Heritage\nPerfect Paradox",
+      "BEST ARC": "First In, Last Out",
+      "BEST SOLAR": "IKELOS_SG_V1.0.2",
+      "BEST VOID": "Python (Not great though)",
+      "HIGHEST DAMAGE ARCHETYPE": "Precision Slug\nRapid-Fire",
+      "NOTES": "Shotguns do great damage, but carry great risk. They are easily the top damage for your special ammo. But, using them on bosses usually means you get stomped out. If you can though, it's your best choice."
+    },
+    {
+      "WEAPON TYPE": "Sidearm",
+      "BEST KINETIC": "Buzzard\nBreachlight",
+      "BEST ARC": "Last Hope",
+      "BEST SOLAR": "Drang",
+      "BEST VOID": "Seventh Seraph SI-2 (Only option)",
+      "HIGHEST DAMAGE ARCHETYPE": "Adaptive",
+      "NOTES": "The range is painful, but the DPS is the highest of the primaries. It's gonna shred mobs if you can get in close. Expect to switch weapons for anything past medium range."
+    },
+    {
+      "WEAPON TYPE": "Sniper Rifle",
+      "BEST KINETIC": "Eye of Sol\nSuccession (?)",
+      "BEST ARC": "Adored",
+      "BEST SOLAR": "IKELOS_SR_V1.0.2\nDistant Tumulus",
+      "BEST VOID": "Trophy Hunter (Only option)",
+      "HIGHEST DAMAGE ARCHETYPE": "Rapid-Fire",
+      "NOTES": "Probably your best option for boss damage for your special ammo as most bosses are fought at range. If they don't stomp, you should use a Shotgun. Nothing particularly fancy about this season's selections. Though Adored can do surprisingly well."
+    },
+    {
+      "WEAPON TYPE": "Submachine Gun",
+      "BEST KINETIC": "Escape Velocity",
+      "BEST ARC": "IKELOS_SMG_V1.0.2",
+      "BEST SOLAR": "MIDA Mini-Tool",
+      "BEST VOID": "n/a",
+      "HIGHEST DAMAGE ARCHETYPE": "Lightweight",
+      "NOTES": "In close range fights SMGs will outclass Auto Rifles for add clearing easily. Once you enter medium range and beyond you'll very easily notice the loss in effectiveness. The weapon selection we have this season is also fairly unimpressive."
+    },
+    {
+      "WEAPON TYPE": "Sword",
+      "BEST KINETIC": "n/a",
+      "BEST ARC": "Temptation's Hook\nHonor's Edge",
+      "BEST SOLAR": "Negative Space",
+      "BEST VOID": "Falling Guillotine",
+      "HIGHEST DAMAGE ARCHETYPE": "Vortex",
+      "NOTES": "Sword damage is insanely high. If you can sword it without dying instantly, its easily the top pick. It does so much damage that it's worth building around survival to do it. Wells, bubbles, whatever you can."
+    }
+  ]
+}
