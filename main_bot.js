@@ -161,11 +161,8 @@ client.on('message', (msg) => {
                 if (!info.adminIds.includes(msg.author.id) && msg.author.id != '131237935105179649') {
                     break;
                 }
-                Rolls.updateWeaponDb(sendChannel);
+                Rolls.updateDatabaseFromApi();
                 sendChannel.send("Updating weapons");
-                break;
-            case 'rollq':
-                Rolls.getRollFromNewDatabase(msg, sendChannel);
                 break;
         }
     }
@@ -185,5 +182,4 @@ MongoClient.get().then((client) => {
 
 
 /* Initialize the weapon arrays needed for the rolls */
-Rolls.populateWeaponArrayFromDatabase();
-Rolls.updateFromNewApi();
+Rolls.initializeArrays();
