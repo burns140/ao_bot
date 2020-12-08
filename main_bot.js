@@ -163,6 +163,10 @@ client.on('message', (msg) => {
                 }
                 Rolls.updateWeaponDb(sendChannel);
                 sendChannel.send("Updating weapons");
+                break;
+            case 'rollq':
+                Rolls.getRollFromNewDatabase(msg, sendChannel);
+                break;
         }
     }
 })
@@ -182,3 +186,4 @@ MongoClient.get().then((client) => {
 
 /* Initialize the weapon arrays needed for the rolls */
 Rolls.populateWeaponArrayFromDatabase();
+Rolls.updateFromNewApi();
