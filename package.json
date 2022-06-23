@@ -27,7 +27,7 @@
     "es6-template-strings": "^2.0.1",
     "jquery": "^3.4.1",
     "jquery-csv": "^1.0.5",
-    "jsdom": "^15.2.1",
+    "jsdom": "^16.5.0",
     "mongodb": "^3.5.5",
     "request-promise": "^4.2.5",
     "stringify": "^5.2.0"
