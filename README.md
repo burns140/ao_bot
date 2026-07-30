@@ -1,3 +1,5 @@
+Rest in Peace Destiny 2
+
 #### Note
 
 The main_bot.js is in the root directory because heroku and the local filesystem use different relative paths otherwise, breaking the program.
